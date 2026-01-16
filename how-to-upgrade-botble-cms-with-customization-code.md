@@ -8,7 +8,7 @@ tags:
   - upgrade
   - customization
   - best-practices
-image: news/get-started-with-laravel-6-400x277.png
+image: https://docs.botble.com/assets/upgrade-1.B4DEOp9q.png
 status: published
 is_featured: false
 ---
@@ -28,6 +28,8 @@ The easiest way to upgrade:
 3. Click **Download & Install Update** if available
 4. System handles everything automatically
 
+![System Updater](https://docs.botble.com/assets/upgrade-1.B4DEOp9q.png)
+
 ### Manual Update
 
 For advanced users who need more control:
@@ -46,8 +48,14 @@ Replace these directories and files:
 **Step 3: Post-Upgrade Tasks**
 
 1. **Clear Cache**: Go to **Platform Administration** → **Cache Management** → **Clear all CMS cache**
+
+![Clear Cache](https://docs.botble.com/assets/upgrade-2.D5YGn-Kf.png)
+
 2. **Reactivate Plugins**: Navigate to **Plugins** → **Installed Plugins**, deactivate then reactivate all plugins
+
 3. **Update Translations**: Visit **Settings** → **Localization** → **Other Translations** and click the refresh link
+
+![Update Translations](https://docs.botble.com/assets/upgrade-3.UlbtPutw.png)
 
 ## Handling Customization Code
 
