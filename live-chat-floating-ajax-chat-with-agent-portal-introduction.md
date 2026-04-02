@@ -44,7 +44,13 @@ This is probably the biggest differentiator. Support agents get their own portal
 
 Each agent can toggle their availability, set notification preferences (email, browser, sound), and manage their own profile. Admins never need to share admin panel access with support staff.
 
-![Agent Portal dashboard](https://landing.botble.com/live-chat/public/images/live-chat-agent-dashboard.png)
+![Agent Portal login](https://landing.botble.com/live-chat/images/live-chat-agent-login.png)
+
+![Agent Portal dashboard](https://landing.botble.com/live-chat/images/live-chat-agent-dashboard.png)
+
+![Agent Portal messenger](https://landing.botble.com/live-chat/images/live-chat-agent-messenger.png)
+
+![Agent Portal profile](https://landing.botble.com/live-chat/images/live-chat-agent-profile.png)
 
 ### Auto-Assign (Round-Robin)
 
@@ -56,7 +62,7 @@ You can turn this off if you prefer manual assignment. Agents can also self-assi
 
 The admin panel gets a messenger-style interface — three-panel layout with conversation list, chat area, and visitor info sidebar. Filter by All/Open/Closed, see unread badges, and get the full picture on each visitor: name, email, phone, IP, current page, browser, device, and timeline.
 
-![Admin messenger interface](https://landing.botble.com/live-chat/public/images/live-chat-conversations.png)
+![Admin messenger interface](https://landing.botble.com/live-chat/images/live-chat-conversations.png)
 
 ### Webhook Integrations
 
@@ -64,7 +70,9 @@ Connect Live Chat to Slack, Discord, Telegram, n8n, Zapier, Make, or any custom 
 
 All payloads are signed with HMAC-SHA256. Each webhook has a test button so you can verify the connection before going live.
 
-![Webhook management](https://landing.botble.com/live-chat/public/images/live-chat-webhooks.png)
+![Webhook management](https://landing.botble.com/live-chat/images/live-chat-webhooks.png)
+
+![Create webhook endpoint](https://landing.botble.com/live-chat/images/live-chat-webhook-create.png)
 
 ### Working Hours
 
@@ -73,6 +81,10 @@ Set your support schedule — start time, end time, working days — and the wid
 ### Widget Customization
 
 Make it match your brand. Primary color, hover color, custom avatar, position (4 corners), offset from screen edge, mobile visibility toggle. Customize the title, welcome message, and which visitor form fields to show (name, email, phone) with individual required toggles.
+
+![Live Chat floating widget](https://landing.botble.com/live-chat/images/live-chat-widget.png)
+
+![Live Chat settings](https://landing.botble.com/live-chat/images/live-chat-settings.png)
 
 ### Visual Effects
 
@@ -86,7 +98,7 @@ Email alerts when new conversations start. Configure recipient emails, customize
 
 Create and manage agents from Admin > Live Chat > Agents. Set them as active/inactive, available/unavailable. Deactivated agents can't log in, unavailable ones don't get auto-assigned. Simple CRUD — nothing fancy, just what you need.
 
-![Agent management](https://landing.botble.com/live-chat/public/images/live-chat-admin-agents.png)
+![Agent management](https://landing.botble.com/live-chat/images/live-chat-admin-agents.png)
 
 ## Technical Specifications
 
