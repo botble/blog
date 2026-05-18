@@ -11,7 +11,7 @@ tags:
   - botble
   - productivity
   - tools
-image: news/get-started-with-laravel-6-400x277.png
+image: news/claude-code-skills.jpg
 status: published
 is_featured: true
 ---
