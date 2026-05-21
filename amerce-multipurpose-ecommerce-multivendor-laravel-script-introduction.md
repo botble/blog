@@ -54,6 +54,8 @@ To celebrate the launch, Amerce is available at **$39 (regular $59)** until **Ma
 - **SEO-optimized out of the box** — clean markup, fast load, structured data
 - **Lifetime free updates** — buy once, receive every future version at no extra cost
 
+Want to see how Amerce compares against MartFury, FleetCart, Shofy, and other Envato bestsellers? Read our roundup of the [top Laravel ecommerce scripts compared](https://botble.com/best-laravel-ecommerce-scripts-2026).
+
 ## 20 Niche Home Presets
 
 One purchase covers twenty market-ready storefronts. Pick the one closest to your business, import the demo with one click, and launch.

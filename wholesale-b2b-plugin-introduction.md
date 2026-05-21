@@ -18,7 +18,7 @@ is_featured: true
 
 # Wholesale (B2B) - Tiered Pricing & Customer Groups for Botble Ecommerce
 
-If you're running an e-commerce store and want to start selling wholesale — or you already have B2B customers but you're managing pricing through spreadsheets and manual discounts — this one's for you.
+If you're running an e-commerce store and want to start selling wholesale — or you already have B2B customers but you're managing pricing through spreadsheets and manual discounts — this one's for you. Works as a drop-in plugin on any [Laravel ecommerce platform](https://botble.com/best-laravel-ecommerce-scripts-2026) built on Botble CMS.
 
 We've just released **Wholesale (B2B)**, a plugin that transforms your Botble e-commerce store into a full B2B wholesale platform. Create customer groups, set tiered quantity-based pricing, enforce minimum order quantities, and control which products wholesale buyers can see. All from a single storefront that handles both retail and wholesale customers.
 
