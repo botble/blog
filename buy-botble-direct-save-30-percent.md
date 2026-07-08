@@ -17,6 +17,8 @@ status: published
 is_featured: true
 ---
 
+![Buy Botble products direct and save 30%](https://botble.com/storage/news/buy-botble-direct-save-30-percent-hero.jpg)
+
 # Buy Botble Products Direct and Save 30%
 
 I'm Sang from Botble. Quick point I wanted to make: if you buy our themes and plugins straight from us at [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio), you pay 30% less than the marketplace price. Same files, same license, same support.
