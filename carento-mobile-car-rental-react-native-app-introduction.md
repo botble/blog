@@ -28,7 +28,7 @@ Let me start with the part people usually find out too late: **this app is not s
 
 With that out of the way, here's what's actually in it.
 
-**[View on CodeCanyon](https://codecanyon.net/item/carento-mobile-car-rental-dealer-react-native-app/64277973)** · **[Watch the demo video](https://youtu.be/1S6liILg5ls)** · **[Download the Android APK](https://drive.google.com/file/d/1XC5ANX_23LyYE_mh3_WhgFz415RoU9vJ/view)**
+**[View on CodeCanyon](https://codecanyon.net/item/carento-mobile-car-rental-dealer-react-native-expo-app/64277973)** · **[Watch the demo video](https://youtu.be/1S6liILg5ls)** · **[Download the Android APK](https://drive.google.com/file/d/1XC5ANX_23LyYE_mh3_WhgFz415RoU9vJ/view)**
 
 ## Rent or buy, in one app
 
@@ -206,7 +206,7 @@ The docs include full store checklists for both Apple and Google — icon sizes,
 
 ## Links
 
-- **[Buy on CodeCanyon](https://codecanyon.net/item/carento-mobile-car-rental-dealer-react-native-app/64277973)**
+- **[Buy on CodeCanyon](https://codecanyon.net/item/carento-mobile-car-rental-dealer-react-native-expo-app/64277973)**
 - **[Documentation](https://docs.botble.com/carento-react-native)**
 - **[Demo video](https://youtu.be/1S6liILg5ls)**
 - **[Android demo APK](https://drive.google.com/file/d/1XC5ANX_23LyYE_mh3_WhgFz415RoU9vJ/view)**
