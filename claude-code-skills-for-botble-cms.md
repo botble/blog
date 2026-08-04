@@ -11,7 +11,7 @@ tags:
   - botble
   - productivity
   - tools
-image: news/claude-code-skills.jpg
+image: news/claude-code-og-image.jpg
 status: published
 is_featured: true
 ---

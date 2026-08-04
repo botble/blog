@@ -1,6 +1,6 @@
 ---
 title: "Amerce Is Now on Codester — Plus Buy Direct via PayPal, Wise, or Bank Transfer"
-description: "Amerce, the multipurpose eCommerce & multivendor marketplace Laravel script, is now available on Codester. Buy it there, or purchase directly via PayPal, Wise, or Bank Transfer — still $39 intro price (reg. $59) until June 7, 2026."
+description: "Amerce, the multipurpose eCommerce & multivendor marketplace Laravel script, is now available on Codester. Buy it there, or purchase directly via PayPal, Wise, or Bank Transfer — still $39 intro price (reg. $59) until August 15, 2026."
 categories:
   - Announcements
   - Ecommerce
@@ -21,7 +21,7 @@ is_featured: false
 
 Good news for anyone shopping for a Laravel eCommerce script: **[Amerce](https://marketplace.botble.com/amerce)** — our multipurpose eCommerce & multivendor marketplace script — is now listed on **Codester**.
 
-That means you now have **more ways to buy**, at the same **$39 intro price** (regular $59) — now extended through **June 7, 2026**. Pick whichever checkout is easiest for you.
+That means you now have **more ways to buy**, at the same **$39 intro price** (regular $59) — now extended through **August 15, 2026**. Pick whichever checkout is easiest for you.
 
 [**Get Amerce on Codester →**](https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script)
 
@@ -56,7 +56,7 @@ No matter which channel you choose, you get the exact same package:
 |------|--------|
 | **Intro Price** | **$39** (one-time) |
 | Regular Price | $59 |
-| Offer Ends | **June 7, 2026** |
+| Offer Ends | **August 15, 2026** |
 | License | One production domain, lifetime updates |
 | Support | 6 months included (renewable at $19/year) |
 | Updates | **Lifetime free version updates** |
@@ -74,7 +74,7 @@ Amerce is a **Laravel 13 eCommerce script** powered by [Botble CMS](https://botb
 - **7+ payment gateways** — PayPal, Stripe, Paystack, Razorpay, Mollie, SSLCommerz, COD
 - **Abandoned-cart recovery**, live search, quick view, sticky add-to-cart, and more
 
-New to Amerce? Read the full [Amerce introduction](https://botble.com/amerce-multipurpose-ecommerce-multivendor-laravel-script-introduction) or compare it against other options in our [best Laravel ecommerce scripts 2026](https://botble.com/best-laravel-ecommerce-scripts-2026) roundup.
+New to Amerce? Read the full [Amerce introduction](https://botble.com/amerce-multipurpose-ecommerce-multivendor-marketplace-laravel-script-39-intro-price) or compare it against other options in our [best Laravel ecommerce scripts 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) roundup.
 
 ## Demo & Support
 
@@ -83,9 +83,9 @@ New to Amerce? Read the full [Amerce introduction](https://botble.com/amerce-mul
 - **Documentation:** [https://docs.botble.com/amerce](https://docs.botble.com/amerce)
 - **Support Center:** [https://botble.ticksy.com](https://botble.ticksy.com)
 
-## Get Amerce at $39 Before June 7, 2026
+## Get Amerce at $39 Before August 15, 2026
 
-Whichever way you pay, the intro price is **$39** (regular $59) until **June 7, 2026**. After that it goes back to $59. Choose your checkout:
+Whichever way you pay, the intro price is **$39** (regular $59) until **August 15, 2026**. After that it goes back to $59. Choose your checkout:
 
 [**Buy on Codester →**](https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script)
 

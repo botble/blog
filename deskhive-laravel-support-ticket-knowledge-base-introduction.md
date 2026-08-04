@@ -54,25 +54,25 @@ The support workflow is simple:
 
 Multi-channel support tickets with priority levels, status tracking, auto-assignment rules, and SLA deadline enforcement. Organize tickets with departments, categories, labels, and custom fields. Full activity logs provide an audit trail of every ticket event.
 
-![DeskHive ticket management with SLA tracking and agent assignment](https://landing.botble.com/desk-hive/public/images/tickets.png)
+![DeskHive ticket management with SLA tracking and agent assignment](https://landing.botble.com/desk-hive/images/tickets.png)
 
 ### Knowledge Base
 
 Self-service articles organized by category with rich-text editing, full-text search, and helpful/not-helpful voting. Reduce ticket volume by empowering customers to find answers on their own before submitting a ticket.
 
-![DeskHive knowledge base with categorized articles and search](https://landing.botble.com/desk-hive/public/images/knowledge-base.png)
+![DeskHive knowledge base with categorized articles and search](https://landing.botble.com/desk-hive/images/knowledge-base.png)
 
 ### Agent Portal
 
 Dedicated agent dashboard with personal ticket queue, performance metrics, canned response library, and collaboration tools. Internal notes keep team discussions private from customers. Agents can reset forgotten passwords via email.
 
-![DeskHive agent portal with ticket queue and performance metrics](https://landing.botble.com/desk-hive/public/images/agent-dashboard.png)
+![DeskHive agent portal with ticket queue and performance metrics](https://landing.botble.com/desk-hive/images/agent-dashboard.png)
 
 ### Customer Portal
 
 Self-service portal where customers can submit tickets, track status, browse the knowledge base, and manage their account. Supports social login with Google, Facebook, GitHub, LinkedIn, X, and Envato.
 
-![DeskHive customer portal with ticket submission and KB access](https://landing.botble.com/desk-hive/public/images/customer-portal.png)
+![DeskHive customer portal with ticket submission and KB access](https://landing.botble.com/desk-hive/images/customer-portal.png)
 
 ### Email-to-Ticket
 
@@ -98,19 +98,19 @@ Associate tickets with products and require Envato purchase code or License Mana
 
 Ticket volume trends, response times, resolution rates, and agent performance dashboards. Understand where your support team excels and where improvements are needed.
 
-![DeskHive reporting dashboard with ticket analytics](https://landing.botble.com/desk-hive/public/images/reporting.png)
+![DeskHive reporting dashboard with ticket analytics](https://landing.botble.com/desk-hive/images/reporting.png)
 
 ### Dark Mode
 
 Full dark mode support across customer and agent portals. Reduce eye strain and offer a modern look for night-time support sessions.
 
-![DeskHive dark mode dashboard](https://landing.botble.com/desk-hive/public/images/dark-mode-dashboard.png)
+![DeskHive dark mode dashboard](https://landing.botble.com/desk-hive/images/dark-mode-dashboard.png)
 
 ### RTL Support
 
 Full right-to-left layout for Arabic, Hebrew, Persian, and other RTL languages with automatic detection. Customers and agents can set their preferred interface language.
 
-![DeskHive RTL support for Arabic and other right-to-left languages](https://landing.botble.com/desk-hive/public/images/rtl-dashboard.png)
+![DeskHive RTL support for Arabic and other right-to-left languages](https://landing.botble.com/desk-hive/images/rtl-dashboard.png)
 
 ### Reply Reactions
 

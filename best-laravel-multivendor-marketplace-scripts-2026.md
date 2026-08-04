@@ -23,7 +23,7 @@ Picking a **Laravel Multi-Vendor Marketplace Script** in 2026 isn't picking a st
 
 CodeCanyon lists 50+ Laravel multivendor scripts. Most are clones, half dormant. Buy the wrong one and you'll patch it for years.
 
-Short on time? **MartFury** wins for all-round commission flexibility, **Active eCommerce CMS** for high-volume, **6amMart** for food and grocery delivery, **Bagisto + Marketplace** if open-source matters. For the broader roundup including single-vendor scripts, see our [full Laravel ecommerce scripts comparison](https://botble.com/best-laravel-ecommerce-scripts-2026). Skip to the [comparison table](#comparison-table), or read on.
+Short on time? **MartFury** wins for all-round commission flexibility, **Active eCommerce CMS** for high-volume, **6amMart** for food and grocery delivery, **Bagisto + Marketplace** if open-source matters. For the broader roundup including single-vendor scripts, see our [full Laravel ecommerce scripts comparison](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared). Skip to the [comparison table](#comparison-table), or read on.
 
 ## What Is a Laravel Multi-Vendor Marketplace Script?
 
@@ -303,7 +303,7 @@ MVP timeline: **1–2 weeks** for Shofy, MartFury, GeniusCart; **2–3 weeks** f
 
 Six scripts, six marketplace shapes. The mistake isn't picking the "wrong" one — it's picking before you've matched commission flexibility, payout method, and KYC reality to your operations.
 
-For the deepest commission engine and cleanest admin to grow into, MartFury is the safest default. Try the [MartFury vendor demo](https://martfury.botble.com) (admin / 12345678), run a full onboarding cycle, then cross-check against [Best Laravel Ecommerce Scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-2026) before you commit.
+For the deepest commission engine and cleanest admin to grow into, MartFury is the safest default. Try the [MartFury vendor demo](https://martfury.botble.com) (admin / 12345678), run a full onboarding cycle, then cross-check against [Best Laravel Ecommerce Scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) before you commit.
 
 <script type="application/ld+json">
 {

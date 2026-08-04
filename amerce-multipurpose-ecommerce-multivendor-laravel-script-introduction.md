@@ -1,6 +1,6 @@
 ---
 title: "Amerce - Multipurpose eCommerce & Multivendor Marketplace Laravel Script ($39 Intro Price)"
-description: "Launch a full-featured eCommerce or multivendor marketplace in minutes with Amerce — a Laravel 13 script built on Botble CMS with 20 niche home presets, 14 headers, 9 footers, abandoned-cart recovery, and 7+ payment gateways. Intro price $39 (reg. $59) — ends June 7, 2026."
+description: "Launch a full-featured eCommerce or multivendor marketplace in minutes with Amerce — a Laravel 13 script built on Botble CMS with 20 niche home presets, 14 headers, 9 footers, abandoned-cart recovery, and 7+ payment gateways. Intro price $39 (reg. $59) — ends August 15, 2026."
 categories:
   - Announcements
   - Ecommerce
@@ -25,7 +25,7 @@ Most online-store scripts force you to pick: a single-vendor shop *or* a multive
 
 It's a Laravel 13 eCommerce script powered by [Botble CMS](https://botble.com) with **20 niche home presets**, **14 header styles**, **9 footer styles**, and a built-in multivendor marketplace — all in a single codebase. Buy once, install, and start selling. No subscriptions, no per-vendor fees, no add-ons hidden behind a paywall.
 
-To celebrate the launch, Amerce is available at **$39 (regular $59)** until **June 7, 2026**.
+To celebrate the launch, Amerce is available at **$39 (regular $59)** until **August 15, 2026**.
 
 ![Amerce — Multipurpose eCommerce & Multivendor Marketplace Laravel Script](https://marketplace.botble.com/themes/elite/images/amerce/overview.jpg)
 
@@ -35,7 +35,7 @@ To celebrate the launch, Amerce is available at **$39 (regular $59)** until **Ju
 |------|--------|
 | **Intro Price** | **$39** (one-time) |
 | Regular Price | $59 |
-| Offer Ends | **June 7, 2026** |
+| Offer Ends | **August 15, 2026** |
 | License | One production domain, lifetime updates |
 | Support | 6 months included (renewable at $19/year) |
 | Installation | Free on cPanel / DirectAdmin hosting |
@@ -54,7 +54,7 @@ To celebrate the launch, Amerce is available at **$39 (regular $59)** until **Ju
 - **SEO-optimized out of the box** — clean markup, fast load, structured data
 - **Lifetime free updates** — buy once, receive every future version at no extra cost
 
-Want to see how Amerce compares against MartFury, FleetCart, Shofy, and other Envato bestsellers? Read our roundup of the [top Laravel ecommerce scripts compared](https://botble.com/best-laravel-ecommerce-scripts-2026).
+Want to see how Amerce compares against MartFury, FleetCart, Shofy, and other Envato bestsellers? Read our roundup of the [top Laravel ecommerce scripts compared](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared).
 
 ## 20 Niche Home Presets
 
@@ -182,9 +182,9 @@ Amerce inherits the full Botble eCommerce platform — battle-tested by thousand
 - **Support Center:** [https://botble.ticksy.com](https://botble.ticksy.com)
 - **Sales Contact:** [email protected]
 
-## Lock in the $39 Intro Price Before June 7, 2026
+## Lock in the $39 Intro Price Before August 15, 2026
 
-Amerce is the most complete bundle Botble has shipped to date — a multipurpose eCommerce script *and* a multivendor marketplace, with twenty production-ready niches, on Laravel 13. After **June 7, 2026** the price goes back to **$59**.
+Amerce is the most complete bundle Botble has shipped to date — a multipurpose eCommerce script *and* a multivendor marketplace, with twenty production-ready niches, on Laravel 13. After **August 15, 2026** the price goes back to **$59**.
 
 **[Buy Amerce at $39 →](https://marketplace.botble.com/amerce)**
 

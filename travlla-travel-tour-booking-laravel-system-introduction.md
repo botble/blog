@@ -1,6 +1,6 @@
 ---
 title: "Travlla - Travel & Tour Booking Laravel System for Tour Operators & Marketplaces"
-description: "Launch a complete travel & tour booking website with Travlla — a Laravel 12 system built on Botble CMS featuring multi-vendor tour operators, online booking & checkout, itineraries, departures, multi-currency, 5 homepages, and 40+ ready pages."
+description: "Launch a complete travel & tour booking website with Travlla — a Laravel 13 system built on Botble CMS featuring multi-vendor tour operators, online booking & checkout, itineraries, departures, multi-currency, 5 homepages, and 40+ ready pages."
 categories:
   - Announcements
   - Booking System

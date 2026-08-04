@@ -44,7 +44,7 @@ According to [Envato's Standard License](https://codecanyon.net/licenses/standar
 
 The only limitations without activation are:
 - **System Updater** - automatic updates from admin panel
-- **Marketplace access** - installing new plugins from [marketplace.botble.com](https://marketplace.botble.com/products)
+- **Marketplace access** - installing new plugins from [marketplace.botble.com](https://marketplace.botble.com/plugins)
 
 This allows you to freely develop and test before activating on your production site.
 
@@ -100,5 +100,5 @@ For full details, see [Envato Standard License Terms](https://codecanyon.net/lic
 ## Resources
 
 - [Envato Standard License Terms](https://codecanyon.net/licenses/standard)
-- [Botble Marketplace](https://marketplace.botble.com/products)
+- [Botble Marketplace](https://marketplace.botble.com/plugins)
 - [Multiple License FAQ](https://help.market.envato.com/hc/en-us/articles/115005597526-I-want-to-make-multiple-end-products-with-the-same-item-how-many-licenses-do-I-need-to-buy)

@@ -41,7 +41,7 @@ Botble CMS uses a modular Laravel structure organized in the `/platform` directo
 
 ### Tech Stack
 
-- **Backend**: Laravel 12+, PHP 8.2+
+- **Backend**: Laravel 13+, PHP 8.3+
 - **Frontend**: Vue.js 3, Bootstrap 5, jQuery
 - **Build Tools**: Laravel Mix, npm workspaces
 - **Database**: MySQL (SQLite for tests)
