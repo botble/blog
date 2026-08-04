@@ -53,32 +53,28 @@ Here are some of the more popular products at the direct price:
 | [Loyalty Points](https://marketplace.botble.com/portfolio/loyalty-points) | Rewards plugin | ~~$39~~ | **$27.30** |
 | [Product Gifts](https://marketplace.botble.com/portfolio/product-gifts) | Gifts and promo plugin | ~~$29~~ | **$20.30** |
 
-That's just a sample. There are more than 30 themes and plugins on the storefront, and the 30% covers all of them. You can see the full list at [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio).
+That's just a sample. There are 47 themes and plugins on the storefront, and the 30% covers all of them. You can see the full list at [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio).
 
 ## How to buy
 
 1. Open the storefront at [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio).
 2. Open a product and try its live demo. Every product has one.
-3. Click Buy and leave your name and email. You don't need to create an account.
-4. We reply with the payment details and the final price.
+3. Click Buy. A secure checkout opens right on the page.
+4. Pay with Visa, Mastercard or PayPal.
 
-## How to pay
-
-Use whatever is easiest for you:
-
-- PayPal, which most buyers outside Vietnam find simplest.
-- Wise, if you prefer a bank transfer with good rates.
-- Local bank transfer or VietQR if you're in Vietnam.
-
-We send the exact details once you submit the form. Pay the amount, then reply so we know.
+No account, no form, no waiting. Your download link and license key arrive straight away. Full details in [Instant Checkout Is Live on Botble Marketplace](https://botble.com/instant-checkout-live-on-botble-marketplace).
 
 ## After you pay
 
-As soon as the money arrives, you get your license key from license.botble.com, the download link for the latest version, and a short install guide in English or Vietnamese. If you'd rather not do the install yourself, we'll do it for you. Most orders go out the same day.
+Your license key from license.botble.com and the download link for the latest version arrive immediately, along with an invoice that has the tax for your country already handled. If you'd rather not do the install yourself, we'll do it for you.
+
+## Buying more than one
+
+Two or more products together is still a manual quote so we can bundle the price properly. [Email the list](mailto:sang@botble.com) and we'll come back with a number.
 
 ## Is it safe to buy this way?
 
-Yes. You're buying from the people who actually build the product. The storefront is our own site, the license is genuine, and you always get the newest files. If anything is unclear, reply to the delivery email and it comes straight to me.
+Yes. You're buying from the people who actually build the product. The storefront is our own site, payment is handled by a processor used by thousands of software businesses, the license is genuine, and you always get the newest files. If anything is unclear, reply to the receipt email and it comes straight to me.
 
 ## Go take a look
 
