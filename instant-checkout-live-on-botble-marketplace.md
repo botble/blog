@@ -12,12 +12,12 @@ tags:
   - laravel
   - paypal
   - checkout
-image: https://botble.com/storage/envato/buy-direct-banner-optimized.jpg
+image: https://botble.com/storage/news/instant-checkout-live-on-botble-marketplace-hero.jpg
 status: published
 is_featured: true
 ---
 
-![Buy direct on marketplace.botble.com and save 30%](https://botble.com/storage/envato/buy-direct-banner-optimized.jpg)
+![Instant checkout on Botble Marketplace - pay by card or PayPal](https://botble.com/storage/news/instant-checkout-live-on-botble-marketplace-hero.jpg)
 
 # Instant Checkout Is Live on Botble Marketplace
 
@@ -32,16 +32,16 @@ That's finished. On [marketplace.botble.com/portfolio](https://marketplace.botbl
 3. Pay with Visa, Mastercard or PayPal.
 4. Your download link and license key arrive straight away.
 
-No account to create, no form to fill in, no waiting on me.
+You don't need an account, and you're not waiting on me anymore.
 
 ## What you get
 
 The same thing you always got, just faster:
 
-- The full source files, latest version, identical to the marketplace build.
-- A real license key issued on license.botble.com, valid for one domain.
-- Lifetime updates and six months of support.
-- Free installation if you'd rather we set it up.
+- The full source files. Same version as the marketplace build, updated at the same time.
+- A real license key from license.botble.com, good for one domain.
+- Lifetime updates. Support for six months.
+- Free installation, if you'd rather not do it yourself.
 
 ## Still 30% cheaper
 
@@ -61,9 +61,9 @@ That's a sample. There are 47 themes and plugins on the storefront and the 30% c
 
 ## Invoices and VAT
 
-Checkout runs through Lemon Squeezy, which acts as merchant of record. In practice that means your invoice is generated automatically and the tax for your country is calculated and handled correctly - VAT in the EU and UK, GST in India, sales tax in the US, and so on.
+Checkout runs through Lemon Squeezy, who act as merchant of record. The short version: your invoice is generated for you, with the right tax already worked out for wherever you are. VAT if you're in the EU or UK, GST in India, sales tax in the US.
 
-If you're buying through a company and need a proper invoice for your accounts, this part now takes care of itself. Add your company details and VAT number at checkout and they appear on the invoice.
+This one mattered more than I expected. A lot of buyers are companies, and "can you send a proper invoice with our VAT number on it" used to be a separate email every time. Now you type your company details into the checkout and they're on the invoice.
 
 ## Buying more than one
 
@@ -71,13 +71,13 @@ If you want two or more products together, that's still a manual quote so I can 
 
 ## Is it safe?
 
-You're buying from the people who build the product. The storefront is our own site, payment is handled by a processor used by thousands of software businesses, and the license comes from license.botble.com the moment the payment clears.
+You're buying from the people who build the product. The storefront is our own site. Payment goes through Lemon Squeezy, who handle checkout for thousands of software businesses, so your card details never touch our servers.
 
 If something doesn't arrive or doesn't work, reply to the receipt email and it lands in my inbox.
 
 ## Try it
 
-Head to [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio), pick what you need, and click Buy. Two minutes later you'll have the files and your license key.
+Head to [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio) and find what you need. Clicking Buy now gets you the files and the license key, not an email from me promising them.
 
 Have a question before you buy? Send it over. I read every message.
 
