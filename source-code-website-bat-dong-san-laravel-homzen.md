@@ -11,9 +11,12 @@ tags:
   - source-code
   - tieng-viet
   - direct-purchase
+image: https://botble.com/storage/news/source-code-website-bat-dong-san-laravel-homzen-hero.jpg
 status: published
 is_featured: false
 ---
+
+![Homzen - website bất động sản Laravel có sẵn tiếng Việt, mua trực tiếp $34.30](https://botble.com/storage/news/source-code-website-bat-dong-san-laravel-homzen-hero.jpg)
 
 # Source code website bất động sản Laravel: Homzen
 

@@ -1,0 +1,85 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Be Vietnam Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(140deg,#06342e 0%,#0a4f43 48%,#0d6b56 100%);
+           overflow:hidden; }
+
+  /* đốm sáng nền, lệch tâm cho tự nhiên */
+  .blob { position:absolute; border-radius:50%; filter:blur(2px); }
+  .b1 { width:440px; height:440px; right:-120px; top:-160px; background:rgba(52,211,153,.16); }
+  .b2 { width:320px; height:320px; left:-140px; bottom:-150px; background:rgba(52,211,153,.13); }
+
+  /* đường lưới mờ gợi bản vẽ mặt bằng */
+  .grid { position:absolute; inset:0; opacity:.06;
+          background-image:linear-gradient(rgba(255,255,255,.9) 1px,transparent 1px),
+                           linear-gradient(90deg,rgba(255,255,255,.9) 1px,transparent 1px);
+          background-size:60px 60px; }
+
+  .content { position:relative; padding:92px 68px 60px; height:100%; }
+
+  .brand { display:flex; align-items:center; gap:14px; margin-bottom:38px; }
+  .brand img { width:40px; height:40px; border-radius:9px; display:block; }
+  .brand span { color:#fff; font-size:25px; font-weight:700; letter-spacing:-.01em; }
+
+  .kicker { display:inline-block; font-size:15px; font-weight:700; letter-spacing:.16em;
+            color:#6ee7b7; text-transform:uppercase; margin-bottom:18px; }
+
+  h1 { font-size:62px; line-height:1.06; font-weight:900; letter-spacing:-.03em; color:#fff; max-width:700px; }
+  h1 .g { color:#fbbf24; }
+
+  .sub { margin-top:22px; font-size:22px; line-height:1.45; color:#a7d9cb; font-weight:400; max-width:620px; }
+
+  .chips { margin-top:34px; display:flex; gap:12px; }
+  .chip { background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.18);
+          padding:11px 20px; border-radius:999px; color:#fff; font-size:17px; font-weight:600; }
+
+  /* thẻ giá bên phải */
+  .card { position:absolute; right:70px; top:214px; width:262px;
+          background:#fff; border-radius:20px; padding:26px 24px;
+          box-shadow:0 26px 60px rgba(0,0,0,.36); text-align:center; }
+  .card .lbl { font-size:13px; font-weight:700; letter-spacing:.13em; color:#0a7a5f; text-transform:uppercase; }
+  .card .old { margin-top:14px; font-size:22px; color:#94a3b8; text-decoration:line-through; font-weight:600; }
+  .card .new { margin-top:2px; font-size:52px; line-height:1; font-weight:900; color:#0f172a; letter-spacing:-.03em; }
+  .card .vnd { margin-top:10px; font-size:19px; font-weight:800; color:#0a7a5f; }
+  .card .note { margin-top:14px; padding-top:14px; border-top:1px solid #e2e8f0;
+                font-size:14px; line-height:1.4; color:#64748b; font-weight:500; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="grid"></div>
+
+  <div class="content">
+    <div class="brand">
+      <img src="https://botble.com/storage/general/logo.png" alt="">
+      <span>Botble</span>
+    </div>
+
+    <span class="kicker">Homzen &middot; Laravel</span>
+
+    <h1>Website bất động sản<br><span class="g">có sẵn tiếng Việt</span></h1>
+
+    <div class="sub">Mã nguồn đầy đủ, demo tiếng Việt, hiển thị giá bằng VND.</div>
+
+    <div class="chips">
+      <span class="chip">🇻🇳 Giao diện Việt</span>
+      <span class="chip">₫ VND</span>
+      <span class="chip">Chuyển khoản</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="lbl">Mua trực tiếp</div>
+    <div class="old">$49</div>
+    <div class="new">$34.30</div>
+    <div class="vnd">≈ 900.000&#8363;</div>
+    <div class="note">Rẻ hơn 30% so với CodeCanyon</div>
+  </div>
+</div>
+</body></html>
