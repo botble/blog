@@ -1,0 +1,89 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(135deg,#152a63 0%,#1b3a86 45%,#24499e 100%);
+           overflow:hidden; }
+
+  /* đốm sáng nền, lệch tâm cho tự nhiên */
+  .blob { position:absolute; border-radius:50%; filter:blur(2px); }
+  .b1 { width:420px; height:420px; right:-90px; top:-140px; background:rgba(90,130,235,.20); }
+  .b2 { width:300px; height:300px; left:-120px; bottom:-130px; background:rgba(90,130,235,.16); }
+  .b3 { width:170px; height:170px; right:300px; bottom:-70px; background:rgba(120,160,255,.10); }
+
+  /* lưới mờ */
+  .grid { position:absolute; inset:0; opacity:.055;
+          background-image:linear-gradient(rgba(255,255,255,.9) 1px,transparent 1px),
+                           linear-gradient(90deg,rgba(255,255,255,.9) 1px,transparent 1px);
+          background-size:56px 56px; }
+
+  .content { position:relative; padding:64px 70px; height:100%; }
+
+  .brand { display:flex; align-items:center; gap:14px; margin-bottom:46px; }
+  .brand img { width:40px; height:40px; border-radius:9px; display:block; }
+  .brand span { color:#fff; font-size:26px; font-weight:700; letter-spacing:-.01em; }
+
+  /* max-width keeps the second line clear of the badge on the right. */
+  h1 { font-size:62px; line-height:1.06; font-weight:900; letter-spacing:-.035em; color:#fff; max-width:700px; }
+  h1 .y { color:#ffc93c; }
+
+  .sub { margin-top:22px; font-size:23px; line-height:1.45; color:#c3d0ee; font-weight:400; max-width:620px; }
+
+  /* hàng giá - ba gói, đọc được ngay trên thumbnail */
+  .tiers { margin-top:30px; display:flex; gap:12px; }
+  .tier { background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16);
+          padding:12px 20px; border-radius:14px; }
+  .tier .amt { color:#fff; font-size:22px; font-weight:800; letter-spacing:-.01em; }
+  .tier .lbl { margin-top:3px; color:#a9bbe4; font-size:12.5px; font-weight:700; letter-spacing:.13em; }
+
+  .pill { margin-top:30px; display:inline-flex; align-items:center; gap:11px;
+          background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16);
+          padding:13px 24px; border-radius:999px; }
+  .pill .arrow { color:#ffc93c; font-size:19px; font-weight:700; }
+  .pill .url { color:#fff; font-size:19px; font-weight:600; }
+
+  /* huy hiệu tròn bên phải */
+  .badge { position:absolute; right:78px; top:178px; width:238px; height:238px; border-radius:50%;
+           background:radial-gradient(circle at 34% 28%,#ffe07a 0%,#ffc93c 46%,#f0ac10 100%);
+           box-shadow:0 26px 60px rgba(0,0,0,.34), inset 0 -7px 22px rgba(180,120,0,.28);
+           display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .badge .bolt { font-size:62px; line-height:1; margin-bottom:4px; }
+  .badge .t1 { font-size:30px; font-weight:900; color:#2a1c00; letter-spacing:.02em; line-height:1; }
+  .badge .t2 { margin-top:7px; font-size:13px; font-weight:800; color:#4a3200; letter-spacing:.15em; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="grid"></div>
+
+  <div class="content">
+    <div class="brand">
+      <img src="https://botble.com/storage/general/logo.png" alt="">
+      <span>Botble</span>
+    </div>
+
+    <h1>Need it customized?<br><span class="y">Hire the team<br>that built it.</span></h1>
+
+    <div class="sub">Custom features, theme work, migrations and upgrades<br>&mdash; fixed quote within 1 business day.</div>
+
+    <div class="tiers">
+      <div class="tier"><div class="amt">$99</div><div class="lbl">QUICK FIX</div></div>
+      <div class="tier"><div class="amt">$399+</div><div class="lbl">FEATURE BUILD</div></div>
+      <div class="tier"><div class="amt">$1,500+</div><div class="lbl">FULL PROJECT</div></div>
+    </div>
+
+    <div class="pill"><span class="arrow">&rarr;</span><span class="url">marketplace.botble.com/customize</span></div>
+  </div>
+
+  <div class="badge">
+    <div class="bolt">&#128295;</div>
+    <div class="t1">CUSTOM</div>
+    <div class="t2">DEVELOPMENT</div>
+  </div>
+</div>
+</body></html>
