@@ -29,12 +29,12 @@ Nine real choices below, what each one costs in 2026, and where each one falls a
 
 ## TL;DR: pick by your situation
 
-- **You want a finished admin panel today, at the lowest price** → [Botble CMS](#botble-cms) ($29 one-time, per site)
-- **Editorial UX matters more than budget** → [Statamic](#statamic) ($349/yr per site)
-- **You want the biggest Laravel CMS community** → [October CMS](#october-cms) (free tier, $39/yr for updates)
-- **You want 100% free and MIT, forever** → [Winter CMS](#winter-cms) or [Twill](#twill)
-- **You want to define your own content models, not use someone's** → [Twill](#twill) or [Filament](#filament)
-- **Content must feed a mobile app or a non-Laravel frontend** → [Strapi](#strapi), [ButterCMS](#buttercms), or [Hygraph](#hygraph)
+- **You want a finished admin panel today, at the lowest price** → [Botble CMS](#1-botble-cms-the-most-finished-admin-panel-per-dollar) ($29 one-time, per site)
+- **Editorial UX matters more than budget** → [Statamic](#2-statamic-the-best-editing-experience-if-you-can-fund-it) ($349/yr per site)
+- **You want the biggest Laravel CMS community** → [October CMS](#3-october-cms-the-biggest-community) (free tier, $39/yr for updates)
+- **You want 100% free and MIT, forever** → [Winter CMS](#4-winter-cms-october-free-forever) or [Twill](#5-twill-a-cms-toolkit-not-a-cms)
+- **You want to define your own content models, not use someone's** → [Twill](#5-twill-a-cms-toolkit-not-a-cms) or [Filament](#6-filament-the-build-it-yourself-option)
+- **Content must feed a mobile app or a non-Laravel frontend** → [Strapi](#7-strapi-the-open-source-headless-default), [ButterCMS](#8-buttercms-the-headless-option-that-actually-ships-a-php-sdk), or [Hygraph](#9-hygraph-graphql-native-for-content-spread-across-systems)
 - **You're building a store, marketplace, booking site, or job board** → a Laravel CMS with a ready-made vertical on top, which in practice means [Botble](https://marketplace.botble.com/portfolio)
 
 ## What actually counts as a "Laravel CMS"
@@ -57,8 +57,7 @@ Five questions, in the order that narrows the field fastest:
 4. **One-time or recurring?** A per-site license you buy once behaves very differently on a 20-client agency spreadsheet than $349/year per site does.
 5. **How much is already built?** This is the one people skip. If your project is a shop, a property portal, or a booking site, the CMS is maybe 30% of the work. Look for one that ships the other 70%.
 
-## Comparison table {#comparison-table}
-
+## Comparison table
 | CMS | Type | Storage | Laravel / PHP | Pricing (2026) | License |
 |---|---|---|---|---|---|
 | **Botble CMS** | Laravel-native | Database (MySQL/MariaDB) | Laravel 13 / PHP 8.3+ | **$29 one-time, per site** ($20.30 direct) | Commercial (Envato), full source |
@@ -75,8 +74,7 @@ Prices verified September 2026. Check the linked pricing pages before you buy; t
 
 ---
 
-## 1. Botble CMS — the most finished admin panel per dollar {#botble-cms}
-
+## 1. Botble CMS — the most finished admin panel per dollar
 ![Botble CMS admin dashboard](https://landing.botble.com/botble/images/admin-dashboard.png)
 
 *Disclosure: we make this one.*
@@ -121,7 +119,7 @@ One more thing that separates Botble from everything else on this list: it isn't
 - REST API with Sanctum tokens under `/api/v1`, optional `X-API-KEY` layer
 - In-app system updater, backup and restore, request log, cache management
 
-### Best for
+### Who Botble CMS is for
 
 Laravel developers and agencies who want a finished admin panel today and full unencrypted source they can extend; founders who want to launch a vertical (store, marketplace, portal, booking site) without building it from scratch; anyone whose budget doesn't stretch to a per-site annual subscription.
 
@@ -129,7 +127,7 @@ Laravel developers and agencies who want a finished admin panel today and full u
 
 $29 one-time for a CodeCanyon Regular license, one website per license, lifetime updates and six months of support. Extended license if you charge your end users. Direct from [marketplace.botble.com](https://marketplace.botble.com/portfolio/botble) it's **$20.30**, 30% off, and it's the same package. Nothing recurring.
 
-### Trade-offs
+### Botble CMS trade-offs
 
 - MySQL and MariaDB only. [PostgreSQL is not officially supported](https://botble.com/does-botble-cms-support-postgresql). The app layer is pure Eloquent, but we don't test against Postgres and won't support it.
 - Commercial, not open source. You get every line of source, unencrypted, but it's an Envato license per site, not MIT.
@@ -140,8 +138,7 @@ $29 one-time for a CodeCanyon Regular license, one website per license, lifetime
 
 ---
 
-## 2. Statamic — the best editing experience, if you can fund it {#statamic}
-
+## 2. Statamic — the best editing experience, if you can fund it
 [Statamic](https://statamic.com) is the most polished CMS on this list, and it isn't close. Content can live as flat markdown files versioned in Git, or in a database when write volume demands it. The Bard block editor, live preview, and blueprint system are a pleasure for editors. Laravel (the company) runs its own sites on it; so do Honda, Der Spiegel, and Forbes.
 
 Current release is v6.31.0 (1 September 2026), on Laravel 12–13 and PHP 8.3+.
@@ -155,7 +152,7 @@ Current release is v6.31.0 (1 September 2026), on Laravel 12–13 and PHP 8.3+.
 - Blueprints: define content models without writing migrations
 - Antlers templating, with full Blade support if you'd rather
 
-### Best for
+### Who Statamic is for
 
 Content-first teams, publishers, and agencies where editorial UX is the deciding factor and the client will fund an annual license.
 
@@ -163,14 +160,13 @@ Content-first teams, publishers, and agencies where editorial UX is the deciding
 
 Core is free forever, including for commercial use, but production sites need Pro: **$349/year per site**, dropping to $99/year after the first. Non-profit discounts and regional pricing available. [Pricing](https://statamic.com/pricing)
 
-### Trade-offs
+### Statamic trade-offs
 
 The recurring per-site cost is the whole conversation. At three client sites that's over $1,000 a year before you've hosted anything. Flat-file storage is lovely for a marketing site and wrong for anything with heavy writes. The blueprint and Antlers layer is a real learning curve (you're learning Statamic, not just Laravel), and the third-party addon ecosystem is smaller than October's.
 
 ---
 
-## 3. October CMS — the biggest community {#october-cms}
-
+## 3. October CMS — the biggest community
 [October CMS](https://octobercms.com) has been the default answer to "Laravel CMS" for years, with 11.1k GitHub stars, 300k+ installations, and 300+ marketplace extensions. Version 4.x modernized the admin (Vue 3, ESM) and added Tailor, a system for user-submitted content. Current release is v4.4.2 on Laravel 12 / PHP 8.2+.
 
 Its model is a page-and-component one: you build pages in the CMS and drop components into them, which is a comfortable shape if you came from a traditional CMS background.
@@ -184,7 +180,7 @@ Its model is a page-and-component one: you build pages in the CMS and drop compo
 - Twig-based templating with CMS components
 - Very large community, long tail of tutorials and Stack Overflow answers
 
-### Best for
+### Who October CMS is for
 
 Laravel developers who want a mature, self-hosted CMS with the deepest extension marketplace and the most existing answers to their questions.
 
@@ -192,14 +188,13 @@ Laravel developers who want a mature, self-hosted CMS with the deepest extension
 
 A free tier includes one year of system updates. After that: **$39/year** for a single project, or **$312/year** for unlimited projects (annual billing; $360 monthly). [Pricing](https://octobercms.com/pricing)
 
-### Trade-offs
+### October CMS trade-offs
 
 The "free" label is a little generous: updates cost money from year two, which matters for security patches. The admin panel is functional rather than delightful, noticeably behind Statamic. The v3 → v4 jump was a real migration. And Twig means one more templating language in a Blade codebase.
 
 ---
 
-## 4. Winter CMS — October, free, forever {#winter-cms}
-
+## 4. Winter CMS — October, free, forever
 [Winter CMS](https://wintercms.com) is a community fork of October CMS v3, maintained by the Frostbyte Foundation. Same architecture, same plugin shape, MIT licensed, no paid tier, no update fee. v1.2.14 runs on Laravel 9+ / PHP 8.1+.
 
 It exists because people wanted October's design without October's commercial layer, and it has stayed maintained, with last activity on 31 August 2026.
@@ -213,7 +208,7 @@ It exists because people wanted October's design without October's commercial la
 - Full source transparency
 - Self-hosted, no vendor anything
 
-### Best for
+### Who Winter CMS is for
 
 Budget-constrained projects, non-profits, and teams with a hard requirement for an OSI-approved license.
 
@@ -221,14 +216,13 @@ Budget-constrained projects, non-profits, and teams with a hard requirement for 
 
 Free. MIT. [wintercms.com](https://wintercms.com)
 
-### Trade-offs
+### Winter CMS trade-offs
 
 Small community, 1.5k stars against October's 11.1k, and it shows up as fewer plugins, thinner documentation, and fewer people to ask. Releases land once or twice a year rather than continuously. It still targets Laravel 9 as its floor, so it trails the framework. Fine for a stable brochure site; think harder before betting a five-year product on it.
 
 ---
 
-## 5. Twill — a CMS toolkit, not a CMS {#twill}
-
+## 5. Twill — a CMS toolkit, not a CMS
 [Twill](https://twillcms.com) comes from AREA 17, a design studio, and it shows. It's an open-source toolkit that wraps a very good editorial interface around content models *you* define. There's no default blog waiting for you; you describe your modules and Twill builds the admin around them. v3.5.3 supports Laravel 9–12 on PHP 8.0+.
 
 It also works headless: same admin, content served over an API to whatever frontend you like.
@@ -242,7 +236,7 @@ It also works headless: same admin, content served over an API to whatever front
 - Headless or headed, your choice
 - Plain Laravel database tables, so no lock-in
 
-### Best for
+### Who Twill is for
 
 Editorial teams with a developer attached, and projects whose content shape is genuinely custom (a museum catalog, a magazine with unusual article types) and a stock blog model would just be in the way.
 
@@ -250,14 +244,13 @@ Editorial teams with a developer attached, and projects whose content shape is g
 
 Free. MIT. [twillcms.com](https://twillcms.com)
 
-### Trade-offs
+### Twill trade-offs
 
 You do more setup than with any other CMS here, because nothing is pre-built: no blog, no pages, no menu builder until you define them. It's maintained by a design studio rather than a company selling licenses, so long-term resourcing is a real question. 3.9k stars, modest ecosystem.
 
 ---
 
-## 6. Filament — the build-it-yourself option {#filament}
-
+## 6. Filament — the build-it-yourself option
 [Filament](https://filamentphp.com) is not a CMS, and it's on this list because half the people searching "Laravel CMS" actually want it. It's a TALL-stack (Tailwind, Alpine, Livewire, Laravel) framework for building admin panels over your own Eloquent models. At 32k stars it's the most popular admin tool in the Laravel ecosystem by a distance. v5.7.8 shipped 1 September 2026.
 
 You get tables, forms, infolists, widgets, notifications, and actions. You do not get posts, pages, a media library with categories, SEO meta boxes, menus, or a sitemap. Those are yours to write.
@@ -271,7 +264,7 @@ You get tables, forms, infolists, widgets, notifications, and actions. You do no
 - Multi-panel support for separate admin and customer areas
 - Enormous community and plugin ecosystem
 
-### Best for
+### Who Filament is for
 
 Custom applications where the "content" is your own domain model: a SaaS back office, an internal tool, a booking engine. A generic CMS would only fight you.
 
@@ -279,14 +272,13 @@ Custom applications where the "content" is your own domain model: a SaaS back of
 
 Free. MIT. Some official plugins are paid. [filamentphp.com](https://filamentphp.com)
 
-### Trade-offs
+### Filament trade-offs
 
 You're signing up to build the CMS parts yourself. Budget weeks, not hours, for media handling, SEO, menus, and multilingual content, then to maintain them. If you catch yourself installing a fourth Filament package to recreate a blog, you wanted a CMS.
 
 ---
 
-## 7. Strapi — the open-source headless default {#strapi}
-
+## 7. Strapi — the open-source headless default
 [Strapi](https://strapi.io) is the most established open-source headless CMS: MIT, Node.js, with REST and GraphQL APIs auto-generated from content types you define in a visual builder. Self-host it for free or use Strapi Cloud.
 
 ### Key features of Strapi
@@ -298,7 +290,7 @@ You're signing up to build the CMS parts yourself. Budget weeks, not hours, for 
 - Media library, i18n, and role-based access control
 - Strapi AI content tooling, GA in 2026
 
-### Best for
+### Who Strapi is for
 
 Teams delivering the same content to a Laravel site plus native mobile apps, who want to own the CMS rather than rent it.
 
@@ -306,14 +298,13 @@ Teams delivering the same content to a Laravel site plus native mobile apps, who
 
 Self-hosted Community edition is free (MIT). Cloud starts at **$35/month** per project (100k API requests, 50GB storage), $90/month Pro, $450/month Business. [Pricing](https://strapi.io/pricing)
 
-### Trade-offs
+### Strapi trade-offs
 
 It's a Node.js application. You're now running and updating two runtimes, two deploy pipelines, and two sets of security patches. There's no official PHP SDK, so you'll use Guzzle plus one of several community packages of varying maintenance quality. And there's no Blade integration: content arrives as JSON, so anything editors expect to preview must be rebuilt on your side.
 
 ---
 
-## 8. ButterCMS — the headless option that actually ships a PHP SDK {#buttercms}
-
+## 8. ButterCMS — the headless option that actually ships a PHP SDK
 [ButterCMS](https://buttercms.com) is SaaS-only and REST-first, and it's the one headless CMS here with **official Laravel support**: a maintained PHP SDK on Packagist plus a Laravel starter project. If you've decided on headless and your stack is PHP, this is the shortest path.
 
 ```bash
@@ -329,7 +320,7 @@ composer require buttercms/buttercms-php
 - Roles, teams, and multi-locale content
 - Webhooks and an in-dashboard API explorer
 
-### Best for
+### Who ButterCMS is for
 
 Laravel teams that want managed, zero-ops content with no server to patch, and whose content volume fits inside the tiers.
 
@@ -337,14 +328,13 @@ Laravel teams that want managed, zero-ops content with no server to patch, and w
 
 Free tier: 50k API calls/month, 5 pages, 50 posts. **Basic $71/month**, Advanced $224/month, Professional $359/month. [Pricing](https://buttercms.com/pricing)
 
-### Trade-offs
+### ButterCMS trade-offs
 
 The free tier's page and post caps are low enough that a real site outgrows them quickly, and $71/month is $852/year, for one site, forever, against a one-time license elsewhere. REST only, no GraphQL. SaaS-only means no self-hosting escape hatch, and your content lives in someone else's database.
 
 ---
 
-## 9. Hygraph — GraphQL-native, for content spread across systems {#hygraph}
-
+## 9. Hygraph — GraphQL-native, for content spread across systems
 [Hygraph](https://hygraph.com) is a GraphQL-first SaaS headless CMS. Its distinguishing feature is content federation: it merges remote REST and GraphQL sources (a PIM, a DAM, an existing WordPress) into one schema your frontend queries. That's a hard problem, and it solves it well.
 
 ### Key features of Hygraph
@@ -356,7 +346,7 @@ The free tier's page and post caps are low enough that a real site outgrows them
 - Version history and scheduled publishing
 - Role-based access control; multi-tenancy on Enterprise
 
-### Best for
+### Who Hygraph is for
 
 Larger organizations with content already scattered across several systems, and teams fluent in GraphQL.
 
@@ -364,7 +354,7 @@ Larger organizations with content already scattered across several systems, and 
 
 Hobby free (1,000 entries, 500k API calls/month). **Growth $199/month.** Enterprise custom. [Pricing](https://hygraph.com/pricing)
 
-### Trade-offs
+### Hygraph trade-offs
 
 GraphQL only, no REST fallback, and no PHP SDK, so it's Guzzle plus hand-written queries. The jump from Hobby to $199/month Growth is steep for a single site. And federation, the actual reason to choose Hygraph, is irrelevant if all your content already lives in one Laravel database.
 
@@ -380,8 +370,7 @@ Three projects still rank well for "Laravel CMS" and shouldn't. If you find them
 
 Winter CMS and Twill cover the same ground and are still maintained.
 
-## Laravel-native or headless? {#native-vs-headless}
-
+## Laravel-native or headless?
 Four questions settle it, and only the first really matters:
 
 **Does the content need to reach anything other than your Laravel app?** Native mobile apps, a separate Nuxt frontend, digital signage, a partner's site? If yes, headless earns its complexity. If it only ever renders in Blade, headless is paying money and running a second runtime to solve a problem you don't have.
