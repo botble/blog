@@ -74,7 +74,7 @@ Prices verified September 2026. Check the linked pricing pages before you buy; t
 
 ---
 
-## 1. Botble CMS — the most finished admin panel per dollar
+## 1. Botble CMS - the most finished admin panel per dollar
 ![Botble CMS admin dashboard](https://landing.botble.com/botble/images/admin-dashboard.png)
 
 *Disclosure: we make this one.*
@@ -89,7 +89,8 @@ The part that doesn't show up in feature lists: because everything follows the s
 
 ```bash
 # Scaffold a plugin, then a full CRUD module inside it:
-# model, migration, form, table, controller, routes, requests, permissions
+# model, migration, form, table, controller,
+# routes, requests, permissions
 php artisan cms:plugin:create my-plugin
 php artisan cms:plugin:make:crud my-plugin my-module
 ```
@@ -97,10 +98,19 @@ php artisan cms:plugin:make:crud my-plugin my-module
 Forms and tables are declarative PHP classes rather than Blade soup:
 
 ```php
-$this->setupModel(new MyModel)
+$this
+    ->model(new MyModel)
     ->setValidatorClass(MyRequest::class)
-    ->add('name', TextField::class, NameFieldOption::make()->colspan(8)->required()->toArray())
-    ->add('status', SelectField::class, StatusFieldOption::make()->colspan(4)->toArray());
+    ->add(
+        'name',
+        TextField::class,
+        NameFieldOption::make()->colspan(8)->required()
+    )
+    ->add(
+        'status',
+        SelectField::class,
+        StatusFieldOption::make()->colspan(4)
+    );
 ```
 
 There's a WordPress-style action and filter system too, so plugins extend each other without anyone touching core, which is what makes updates survivable after you've customized things.
@@ -138,7 +148,7 @@ $29 one-time for a CodeCanyon Regular license, one website per license, lifetime
 
 ---
 
-## 2. Statamic — the best editing experience, if you can fund it
+## 2. Statamic - the best editing experience, if you can fund it
 [Statamic](https://statamic.com) is the most polished CMS on this list, and it isn't close. Content can live as flat markdown files versioned in Git, or in a database when write volume demands it. The Bard block editor, live preview, and blueprint system are a pleasure for editors. Laravel (the company) runs its own sites on it; so do Honda, Der Spiegel, and Forbes.
 
 Current release is v6.31.0 (1 September 2026), on Laravel 12–13 and PHP 8.3+.
@@ -166,7 +176,7 @@ The recurring per-site cost is the whole conversation. At three client sites tha
 
 ---
 
-## 3. October CMS — the biggest community
+## 3. October CMS - the biggest community
 [October CMS](https://octobercms.com) has been the default answer to "Laravel CMS" for years, with 11.1k GitHub stars, 300k+ installations, and 300+ marketplace extensions. Version 4.x modernized the admin (Vue 3, ESM) and added Tailor, a system for user-submitted content. Current release is v4.4.2 on Laravel 12 / PHP 8.2+.
 
 Its model is a page-and-component one: you build pages in the CMS and drop components into them, which is a comfortable shape if you came from a traditional CMS background.
@@ -194,7 +204,7 @@ The "free" label is a little generous: updates cost money from year two, which m
 
 ---
 
-## 4. Winter CMS — October, free, forever
+## 4. Winter CMS - October, free, forever
 [Winter CMS](https://wintercms.com) is a community fork of October CMS v3, maintained by the Frostbyte Foundation. Same architecture, same plugin shape, MIT licensed, no paid tier, no update fee. v1.2.14 runs on Laravel 9+ / PHP 8.1+.
 
 It exists because people wanted October's design without October's commercial layer, and it has stayed maintained, with last activity on 31 August 2026.
@@ -222,7 +232,7 @@ Small community, 1.5k stars against October's 11.1k, and it shows up as fewer pl
 
 ---
 
-## 5. Twill — a CMS toolkit, not a CMS
+## 5. Twill - a CMS toolkit, not a CMS
 [Twill](https://twillcms.com) comes from AREA 17, a design studio, and it shows. It's an open-source toolkit that wraps a very good editorial interface around content models *you* define. There's no default blog waiting for you; you describe your modules and Twill builds the admin around them. v3.5.3 supports Laravel 9–12 on PHP 8.0+.
 
 It also works headless: same admin, content served over an API to whatever frontend you like.
@@ -250,7 +260,7 @@ You do more setup than with any other CMS here, because nothing is pre-built: no
 
 ---
 
-## 6. Filament — the build-it-yourself option
+## 6. Filament - the build-it-yourself option
 [Filament](https://filamentphp.com) is not a CMS, and it's on this list because half the people searching "Laravel CMS" actually want it. It's a TALL-stack (Tailwind, Alpine, Livewire, Laravel) framework for building admin panels over your own Eloquent models. At 32k stars it's the most popular admin tool in the Laravel ecosystem by a distance. v5.7.8 shipped 1 September 2026.
 
 You get tables, forms, infolists, widgets, notifications, and actions. You do not get posts, pages, a media library with categories, SEO meta boxes, menus, or a sitemap. Those are yours to write.
@@ -278,7 +288,7 @@ You're signing up to build the CMS parts yourself. Budget weeks, not hours, for 
 
 ---
 
-## 7. Strapi — the open-source headless default
+## 7. Strapi - the open-source headless default
 [Strapi](https://strapi.io) is the most established open-source headless CMS: MIT, Node.js, with REST and GraphQL APIs auto-generated from content types you define in a visual builder. Self-host it for free or use Strapi Cloud.
 
 ### Key features of Strapi
@@ -304,7 +314,7 @@ It's a Node.js application. You're now running and updating two runtimes, two de
 
 ---
 
-## 8. ButterCMS — the headless option that actually ships a PHP SDK
+## 8. ButterCMS - the headless option that actually ships a PHP SDK
 [ButterCMS](https://buttercms.com) is SaaS-only and REST-first, and it's the one headless CMS here with **official Laravel support**: a maintained PHP SDK on Packagist plus a Laravel starter project. If you've decided on headless and your stack is PHP, this is the shortest path.
 
 ```bash
@@ -334,7 +344,7 @@ The free tier's page and post caps are low enough that a real site outgrows them
 
 ---
 
-## 9. Hygraph — GraphQL-native, for content spread across systems
+## 9. Hygraph - GraphQL-native, for content spread across systems
 [Hygraph](https://hygraph.com) is a GraphQL-first SaaS headless CMS. Its distinguishing feature is content federation: it merges remote REST and GraphQL sources (a PIM, a DAM, an existing WordPress) into one schema your frontend queries. That's a hard problem, and it solves it well.
 
 ### Key features of Hygraph
