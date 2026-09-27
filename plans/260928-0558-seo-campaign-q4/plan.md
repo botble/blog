@@ -28,8 +28,8 @@ products that are selling.
 
 | # | Post | Target keyword | Sells | Status |
 |---|------|----------------|-------|--------|
-| 0 | Fix wrong specs in the existing SaaS post | — | — | pending |
-| 1 | [Build your own Shopify alternative](briefs/01-shopify-alternative.md) | shopify alternative self hosted | Ecommerce SaaS | pending |
+| 0 | Fix wrong specs in the existing SaaS post | — | — | ✅ done 28/09 |
+| 1 | Build your own Shopify alternative | shopify alternative self hosted | Ecommerce SaaS | ✅ [published 28/09](https://botble.com/build-your-own-shopify-alternative-a-self-hosted-multi-tenant-store-platform-on-laravel) |
 | 2 | Add Ecommerce SaaS to `best-laravel-ecommerce-scripts-2026` | (refresh, already ranks) | Ecommerce SaaS | pending |
 | 3 | Laravel multi-tenancy: database per tenant vs single database | laravel multi tenancy database per tenant | Ecommerce SaaS | pending |
 | 4 | Best Laravel car rental scripts 2026 | laravel car rental script | Carento + Carento Mobile | pending |
@@ -68,7 +68,10 @@ so fix it before adding links:
   exists because that rule was broken once already.
 - **Length**: comparison posts 2,500–4,000 words (that is what the two ranking ones do); technical
   and FAQ posts 900–1,500.
-- **Publish**: `php artisan cms:blog:create-post-from-markdown path/to/post.md` from the site repo.
+- **Publish** (VPS `root@108.160.138.161:2504`, site at `/home/nginx/domains/botble.com`):
+  1. Upload the hero through the **media manager** at `https://botble.com/homeadm/media`, inside the `news` folder — that is what creates the media record and the `-150x150` / `-370x230` thumbnails. Do this first.
+  2. The import command uses `file_exists()`, so it **cannot take a URL**: `curl` the raw GitHub markdown to `/tmp` on the server.
+  3. `sudo -u nginx php artisan cms:blog:create-post-from-markdown /tmp/post.md --no-interaction` — it prints the live URL, whose slug comes from the title, not the filename.
 
 ## Success criteria
 
@@ -84,7 +87,4 @@ so fix it before adding links:
 
 ## Open questions
 
-1. Who publishes — do I run `cms:blog:create-post-from-markdown` against production, or hand over the
-   markdown for you to publish?
-2. Vietnamese posts: keep them on `botble.com/blog` mixed with English, or is there a separate
-   destination?
+1. Vietnamese posts: keep them on `botble.com/blog` mixed with English, or a separate destination?
