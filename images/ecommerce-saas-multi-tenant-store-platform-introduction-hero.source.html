@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden; font-family:'Inter',-apple-system,sans-serif; }
+
+  /* Palette matches the Ecommerce SaaS central site: paper, ink, olive, terracotta */
+  .stage { position:relative; width:1200px; height:630px; overflow:hidden;
+           background:radial-gradient(circle at 85% 20%,#efe9dc 0%,#f6f2ea 40%,#fbfaf8 75%); }
+  .dots { position:absolute; inset:0; opacity:.35;
+          background-image:radial-gradient(#d9d0bf 1.2px,transparent 1.2px); background-size:26px 26px; }
+
+  .content { position:absolute; left:64px; top:70px; width:560px; }
+  .brand { display:flex; align-items:center; gap:12px; margin-bottom:44px; }
+  .brand img { width:36px; height:36px; border-radius:8px; display:block; }
+  .brand span { color:#30281d; font-size:22px; font-weight:700; letter-spacing:-.01em; }
+
+  .eyebrow { font-size:14px; font-weight:700; letter-spacing:.2em; color:#9d4527; margin-bottom:18px; }
+  h1 { font-family:'Playfair Display',Georgia,serif; font-size:58px; line-height:1.08;
+       font-weight:800; letter-spacing:-.015em; color:#30281d; }
+  h1 em { font-style:normal; color:#374a21; }
+  .sub { margin-top:22px; font-size:21px; line-height:1.5; color:#5d5446; max-width:470px; }
+
+  .pill { margin-top:34px; display:inline-flex; align-items:center; gap:10px;
+          background:#374a21; padding:13px 24px; border-radius:999px; }
+  .pill .dot { width:9px; height:9px; border-radius:50%; background:#a3c585; }
+  .pill .url { color:#fff; font-size:18px; font-weight:600; }
+
+  /* Screenshot cards: operator console behind, two storefronts in front */
+  .card { position:absolute; background:#fff; border-radius:12px; overflow:hidden;
+          box-shadow:0 24px 60px rgba(48,40,29,.22), 0 2px 6px rgba(48,40,29,.08); }
+  .bar { height:26px; background:#f1ede5; display:flex; align-items:center; gap:6px; padding:0 11px; }
+  .bar i { width:8px; height:8px; border-radius:50%; background:#d6cdbd; display:block; }
+  .bar b { margin-left:10px; font-size:11px; font-weight:500; color:#8a8070; }
+  .card img { display:block; width:100%; }
+
+  .c1 { left:640px; top:58px; width:530px; transform:rotate(-1.5deg); }
+  .c2 { left:660px; top:300px; width:320px; transform:rotate(1.5deg); }
+  .c3 { left:910px; top:350px; width:280px; transform:rotate(-2deg); }
+  .c1 img { height:315px; object-fit:cover; object-position:top; }
+  .c2 img, .c3 img { height:190px; object-fit:cover; object-position:top; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="dots"></div>
+
+  <div class="content">
+    <div class="brand">
+      <img src="https://botble.com/storage/general/logo.png" alt="">
+      <span>Botble</span>
+    </div>
+    <div class="eyebrow">ECOMMERCE SAAS</div>
+    <h1>Host online stores<br>for <em>other people.</em></h1>
+    <div class="sub">One install, unlimited stores, each on its own database. You sell the plans.</div>
+    <div class="pill"><span class="dot"></span><span class="url">Live demo: saas.botble.com</span></div>
+  </div>
+
+  <div class="card c1">
+    <div class="bar"><i></i><i></i><i></i><b>saas.botble.com/saas-admin/operator</b></div>
+    <img src="https://landing.botble.com/ecommerce-saas/images/operator-dashboard.png" alt="">
+  </div>
+  <div class="card c2">
+    <div class="bar"><i></i><i></i><i></i><b>demo1.saas.botble.com</b></div>
+    <img src="https://landing.botble.com/ecommerce-saas/images/tenant-storefront-demo1.png" alt="">
+  </div>
+  <div class="card c3">
+    <div class="bar"><i></i><i></i><i></i><b>demo2.saas.botble.com</b></div>
+    <img src="https://landing.botble.com/ecommerce-saas/images/tenant-storefront-demo2.png" alt="">
+  </div>
+</div>
+</body></html>

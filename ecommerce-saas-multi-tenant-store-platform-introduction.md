@@ -1,6 +1,6 @@
 ---
 title: "Ecommerce SaaS: Run Your Own Store-Hosting Platform on Botble CMS"
-description: "Ecommerce SaaS is a self-hosted, multi-tenant store platform built on Botble CMS and Laravel 13. Customers sign up, choose one of 20 storefront designs and get their own store on its own MySQL database in about a minute. You sell the plans. Stripe or bank transfer billing, custom domains, a REST API with 38 endpoints and 27 signed webhook events."
+description: "Ecommerce SaaS is a self-hosted, multi-tenant store platform built on Botble CMS and Laravel 13. Customers sign up, choose one of 20 storefront designs and get their own store on its own MySQL database in seconds. You sell the plans. Stripe or bank transfer billing, custom domains, a REST API with 39 endpoints and 27 signed webhook events."
 categories:
   - Announcements
   - Ecommerce
@@ -14,20 +14,22 @@ tags:
   - stancl-tenancy
   - botble
   - codecanyon
-image: https://landing.botble.com/ecommerce-saas/images/tenant-storefront-demo1.png
+image: https://botble.com/storage/news/ecommerce-saas-multi-tenant-store-platform-introduction-hero.jpg
 status: published
 is_featured: true
 ---
 
 # Ecommerce SaaS: Run Your Own Store-Hosting Platform on Botble CMS
 
+![Ecommerce SaaS: host online stores for other people](https://botble.com/storage/news/ecommerce-saas-multi-tenant-store-platform-introduction-hero.jpg)
+
 **Ecommerce SaaS** is for people who want to host online stores for other people: a small Shopify for your country, your city or your niche.
 
-You install it once on your own server. Your customers visit your marketing site, pick a plan and a design, choose a subdomain, and about a minute later they have a working online store with its own admin panel. You charge them monthly. The storefront, checkout, orders and products are the same Botble ecommerce that already runs thousands of shops.
+You install it once on your own server. Your customers visit your marketing site, pick a plan and a design, choose a subdomain, and seconds later they have a working online store with its own admin panel. You charge them monthly. The storefront, checkout, orders and products are the same Botble ecommerce that already runs thousands of shops.
 
 ![Demo store 1 on the platform, running the Amerce fashion preset](https://landing.botble.com/ecommerce-saas/images/tenant-storefront-demo1.png)
 
-Before going further, here's who this is **not** for. It needs a VPS. It won't run on shared hosting, and we explain why near the end of this post. If you only need one shop, buy [Amerce](https://marketplace.botble.com/amerce) or another Botble ecommerce theme instead. It's cheaper and simpler.
+Before going further, here's who this is **not** for. It needs a VPS. It won't run on shared hosting, and we explain why near the end of this post. If you only need one shop, buy [Amerce](https://marketplace.botble.com/amerce) or another Botble ecommerce theme instead. It's cheaper and simpler, and our [comparison of Laravel ecommerce scripts](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) can help you pick one.
 
 ## Each store gets its own database
 
@@ -62,7 +64,7 @@ Custom domains come with instructions. The store owner types their domain and ge
 
 ## 20 storefront designs from one theme
 
-The package includes Amerce with its 20 homepage presets: fashion, sneakers, sport, electronics, furniture, cosmetics, organic food, pet care, jewelry and more. They're all presets of one theme. When we ship an Amerce update, every store gets it, and you're not maintaining 20 codebases.
+The package includes [Amerce](https://botble.com/amerce-multipurpose-ecommerce-multivendor-marketplace-laravel-script-39-intro-price) with its 20 homepage presets: fashion, sneakers, sport, electronics, furniture, cosmetics, organic food, pet care, jewelry and more. They're all presets of one theme. When we ship an Amerce update, every store gets it, and you're not maintaining 20 codebases.
 
 ![The demo marketing site: the preset gallery, with the plans below it](https://landing.botble.com/ecommerce-saas/images/marketing-home-hero.png)
 
@@ -118,7 +120,7 @@ When a store owner writes "my checkout looks broken", you don't need their passw
 
 ## API and webhooks
 
-If you already run a CRM, a billing system or a Zapier flow, the platform has a REST API at `/api/platform/v1` with 38 endpoints. It covers creating stores, changing plans, suspending, attaching domains, turning apps on and off, and reading usage. You create API keys in the console with `read` or `write` scope, and each key is rate-limited.
+If you already run a CRM, a billing system or a Zapier flow, the platform has a REST API at `/api/platform/v1` with 39 endpoints. It covers creating stores, changing plans, suspending, attaching domains, turning apps on and off, and reading usage. You create API keys in the console with `read` or `write` scope, and each key is rate-limited.
 
 ```bash
 curl -X POST https://your-platform.com/api/platform/v1/stores \
@@ -143,7 +145,7 @@ This API manages the platform. It isn't a headless storefront API. Shoppers use 
 
 ## Languages
 
-Everything a store owner, shopper or operator sees is translated into 43 languages, including right-to-left ones like Arabic. Your marketing site can run in several languages at once, with `/fr/pricing`-style URLs, a language switcher, `hreflang` tags and one sitemap for all of them.
+The operator console and the signup flow are translated into 43 languages, and the storefront your customers' shoppers see ships with 23, including right-to-left ones like Arabic. Your marketing site can run in several languages at once, with `/fr/pricing`-style URLs, a language switcher, `hreflang` tags and one sitemap for all of them.
 
 ## Server requirements
 
@@ -177,7 +179,7 @@ Which license you need depends on whether you charge for stores:
 | Regular | $69 | $48.30 ([buy now](https://marketplace.botble.com/portfolio/ecommerce-saas), card or PayPal) |
 | Extended | $199 | $139.30 (email [contact@botble.com](mailto:contact@botble.com)) |
 
-Both include the full, unencrypted Laravel source, lifetime updates and 6 months of support. More detail is in the [license guide](https://docs.botble.com/ecommerce-saas/license.html).
+Both include the full, unencrypted Laravel source, lifetime updates and 6 months of support. More detail is in the [license guide](https://docs.botble.com/ecommerce-saas/license.html). If you're wondering why buying direct costs less, [this post explains it](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon).
 
 ## Try the demo
 
@@ -205,7 +207,7 @@ The best way to judge it is to sign up for a store on [saas.botble.com](https://
 | Cache | file, database, Redis or Memcached |
 | Storefront | Amerce theme, 20 presets |
 | Languages | 43, RTL supported |
-| API | 38 REST endpoints, 27 webhook events |
+| API | 39 REST endpoints, 27 webhook events |
 
 ## Links
 
