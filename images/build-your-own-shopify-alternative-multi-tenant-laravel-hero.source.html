@@ -1,0 +1,76 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(135deg,#0b1220 0%,#132347 48%,#1b2f63 100%);
+           overflow:hidden; }
+
+  /* soft light blooms */
+  .bloom { position:absolute; border-radius:50%; filter:blur(90px); opacity:.55; }
+  .bloom.a { width:520px; height:520px; background:#2563eb; top:-190px; right:-120px; }
+  .bloom.b { width:420px; height:420px; background:#0ea5e9; bottom:-200px; left:-120px; opacity:.4; }
+
+  .content { position:relative; padding:62px 64px 0; }
+
+  .eyebrow { display:inline-flex; align-items:center; gap:9px;
+             font-size:13px; font-weight:700; letter-spacing:2.2px; text-transform:uppercase;
+             color:#93c5fd; background:rgba(37,99,235,.16); border:1px solid rgba(147,197,253,.28);
+             padding:7px 14px; border-radius:999px; }
+  .dot { width:7px; height:7px; border-radius:50%; background:#60a5fa; }
+
+  h1 { margin-top:26px; font-size:60px; line-height:1.06; font-weight:900; color:#fff;
+       letter-spacing:-1.6px; max-width:760px; }
+  h1 .accent { color:#7dd3fc; }
+
+  p.sub { margin-top:20px; font-size:21px; line-height:1.45; color:#c7d2fe; max-width:620px; font-weight:400; }
+
+  .chips { position:absolute; left:64px; bottom:56px; display:flex; gap:10px; }
+  .chip { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#dbeafe;
+          background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14);
+          padding:9px 14px; border-radius:10px; }
+
+  /* stacked store cards on the right */
+  .stores { position:absolute; right:-40px; top:96px; width:520px; height:420px; }
+  .card { position:absolute; width:360px; border-radius:14px; overflow:hidden;
+          box-shadow:0 26px 60px rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.12); }
+  .card .bar { height:26px; background:#0f172a; display:flex; align-items:center; gap:5px; padding:0 10px; }
+  .card .bar i { width:7px; height:7px; border-radius:50%; background:#334155; display:block; }
+  .card .body { height:150px; }
+  .card.one { left:0; top:0; transform:rotate(-3deg); }
+  .card.one .body { background:linear-gradient(135deg,#c2703f 0%,#e08a4e 100%); }
+  .card.two { left:120px; top:186px; transform:rotate(2.5deg); }
+  .card.two .body { background:linear-gradient(135deg,#1e6f8f 0%,#3fa7c9 100%); }
+  .card .tag { position:absolute; bottom:10px; left:12px; font-size:12px; font-weight:700;
+               color:#fff; background:rgba(15,23,42,.55); padding:5px 10px; border-radius:7px;
+               backdrop-filter:blur(3px); }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div>
+    <div class="bloom b"></div>
+
+    <div class="content">
+      <span class="eyebrow"><span class="dot"></span>Self-hosted · Laravel 13</span>
+      <h1>Build your own<br><span class="accent">Shopify alternative</span></h1>
+      <p class="sub">Multi-tenant stores, subscription billing and custom domains — on a codebase you own.</p>
+    </div>
+
+    <div class="stores">
+      <div class="card one"><div class="bar"><i></i><i></i><i></i></div><div class="body"></div><span class="tag">store-one.yours.com</span></div>
+      <div class="card two"><div class="bar"><i></i><i></i><i></i></div><div class="body"></div><span class="tag">store-two.yours.com</span></div>
+    </div>
+
+    <div class="chips">
+      <span class="chip">1 DB per store</span>
+      <span class="chip">20 designs</span>
+      <span class="chip">39 API endpoints</span>
+      <span class="chip">27 webhooks</span>
+    </div>
+  </div>
+</body></html>
