@@ -33,7 +33,7 @@ That means you now have **more ways to buy**, at the same **$39 intro price** (r
 
 If you prefer a marketplace checkout with card payment, grab Amerce on Codester:
 
-[**https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script**](https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script)
+[**https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script](https://www.codester.com/items/65661/amerce-multipurpose-ecommerce-laravel-script)
 
 ### 2. Buy Direct — PayPal, Wise, or Bank Transfer
 

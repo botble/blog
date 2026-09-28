@@ -62,7 +62,7 @@ That's just a sample. There are 47 themes and plugins on the storefront, and the
 3. Click Buy. A secure checkout opens right on the page.
 4. Pay with Visa, Mastercard or PayPal.
 
-No account, no form, no waiting. Your download link and license key arrive straight away. Full details in [Instant Checkout Is Live on Botble Marketplace](https://botble.com/instant-checkout-live-on-botble-marketplace).
+No account, no form, no waiting. Your download link and license key arrive straight away. Full details in [Instant Checkout Is Live on Botble Marketplace](https://botble.com/instant-checkout-is-live-pay-by-card-or-paypal-on-botble-marketplace).
 
 ## After you pay
 
