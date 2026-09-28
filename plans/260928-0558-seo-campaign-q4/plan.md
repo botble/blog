@@ -105,6 +105,25 @@ Sang's note, 28/09: the first draft read like AI. It was clean, symmetrical and 
 - Paid promotion, newsletters, social posts (the Acelle campaign is a separate plan).
 - Rewriting the 28 product-introduction posts.
 
-## Open questions
+## Decided 28/09
 
-1. Vietnamese posts: keep them on `botble.com/blog` mixed with English, or a separate destination?
+- **Vietnamese posts go on the same blog**, mixed in with the English ones. No separate destination.
+- **The voice pass on the 10 AI-ish posts runs alongside the new posts**, starting with the two
+  comparison posts because they rank and the rest of the blog links to them.
+
+## Voice pass — the 10 worst (em dashes per 1k words vs human markers per 1k)
+
+| Post | em/1k | human/1k | Status |
+|---|---:|---:|---|
+| best-laravel-multivendor-marketplace-scripts-2026 | 28.4 | 4.5 | pending |
+| travlla-introduction | 23.2 | 0.0 | pending |
+| snapcart-introduction | 23.0 | 0.9 | pending |
+| license-manager-introduction | 21.4 | 2.6 | pending |
+| amerce-now-available-on-codester | 21.0 | 1.9 | pending |
+| deskhive-introduction | 20.0 | 1.1 | pending |
+| amerce-introduction | 16.6 | 1.7 | pending |
+| claude-code-skills-for-botble-cms | 15.8 | 3.2 | pending |
+| best-laravel-ecommerce-scripts-2026 | 14.8 | 8.6 | pending (do together with post #2, same file) |
+| live-chat-introduction | 14.7 | 2.3 | pending |
+
+Reference: post #1 after its rewrite sits at 2.9 / 11.7.
