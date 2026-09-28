@@ -30,7 +30,7 @@ products that are selling.
 |---|------|----------------|-------|--------|
 | 0 | Fix wrong specs in the existing SaaS post | — | — | ✅ done 28/09 |
 | 1 | Build your own Shopify alternative | shopify alternative self hosted | Ecommerce SaaS | ✅ [published 28/09](https://botble.com/build-your-own-shopify-alternative-a-self-hosted-multi-tenant-store-platform-on-laravel) |
-| 2 | Add Ecommerce SaaS to `best-laravel-ecommerce-scripts-2026` | (refresh, already ranks) | Ecommerce SaaS | pending |
+| 2 | Add Ecommerce SaaS to `best-laravel-ecommerce-scripts-2026` | (refresh, already ranks) | Ecommerce SaaS | ✅ done 28/09, together with its voice pass |
 | 3 | Laravel multi-tenancy: database per tenant vs single database | laravel multi tenancy database per tenant | Ecommerce SaaS | pending |
 | 4 | Best Laravel car rental scripts 2026 | laravel car rental script | Carento + Carento Mobile | pending |
 | 5 | Best Laravel real estate scripts 2026 | laravel real estate script | Homzen, Flex Home | pending |
@@ -93,6 +93,23 @@ Sang's note, 28/09: the first draft read like AI. It was clean, symmetrical and 
   2. The import command uses `file_exists()`, so it **cannot take a URL**: `curl` the raw GitHub markdown to `/tmp` on the server.
   3. `sudo -u nginx php artisan cms:blog:create-post-from-markdown /tmp/post.md --no-interaction` — it prints the live URL, whose slug comes from the title, not the filename.
 
+⚠️ **The command cannot update a post whose title contains `&`.** It matches on the raw `posts.name`
+column, which stores `&amp;`, while the markdown title carries a literal `&` — no match, so it
+silently creates a **duplicate** with the same slug (hit on `best-laravel-ecommerce-scripts-2026`,
+28/09; the duplicate was force-deleted). For those posts, update in place instead:
+
+```php
+$service = app(\Botble\MarkdownBlog\Services\MarkdownPostService::class);
+$parsed = $service->parseMarkdownFile('/tmp/post.md');
+$post = \Botble\Blog\Models\Post::find(<id>);
+$service->updatePost($post, $parsed['front_matter'], $parsed['content']);
+$service->syncCategories($post, $parsed['front_matter']['categories'] ?? []);
+$service->syncTags($post, $parsed['front_matter']['tags'] ?? []);
+```
+
+Run it as `sudo -u nginx env HOME=/tmp php artisan tinker /tmp/script.php` (psysh cannot write to
+the nginx user's home). The real fix belongs in the plugin: match on the decoded name, or on slug.
+
 ## Success criteria
 
 - [ ] Each post published with a hero image and correct front matter
@@ -123,7 +140,7 @@ Sang's note, 28/09: the first draft read like AI. It was clean, symmetrical and 
 | deskhive-introduction | 20.0 | 1.1 | pending |
 | amerce-introduction | 16.6 | 1.7 | pending |
 | claude-code-skills-for-botble-cms | 15.8 | 3.2 | pending |
-| best-laravel-ecommerce-scripts-2026 | 14.8 | 8.6 | pending (do together with post #2, same file) |
+| best-laravel-ecommerce-scripts-2026 | 14.8 → **0.6** | 8.6 | ✅ 28/09 |
 | live-chat-introduction | 14.7 | 2.3 | pending |
 
 Reference: post #1 after its rewrite sits at 2.9 / 11.7.
