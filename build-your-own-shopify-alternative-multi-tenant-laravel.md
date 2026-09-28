@@ -1,6 +1,6 @@
 ---
 title: "Build Your Own Shopify Alternative: A Self-Hosted Multi-Tenant Store Platform on Laravel"
-description: "What it really takes to run your own Shopify: tenant isolation, provisioning, subscription billing, custom domains and themes. A build-vs-buy checklist, the infrastructure you need, and a self-hosted Laravel platform that already does it."
+description: "Want to host stores for other people instead of building them one by one? Here's the honest list of what you have to build first — tenant isolation, provisioning, billing, domains — and what it costs to skip that work."
 categories:
   - Ecommerce
   - Buyer Guides
@@ -22,148 +22,146 @@ is_featured: true
 
 ![Two stores running on one self-hosted platform, each with its own design](https://botble.com/storage/news/build-your-own-shopify-alternative-multi-tenant-laravel-hero.jpg)
 
-"Shopify alternative" means two very different things depending on who is asking.
+When someone says "Shopify alternative", they usually mean one of two things.
 
-A merchant means *another place to put my shop*. A developer or an agency usually means something else: **I want to be Shopify.** I want merchants signing up on my domain, paying me monthly, running stores I host — a small Shopify for my country, my language or my niche.
+A shop owner means: somewhere else to put my shop. A developer or an agency usually means something bigger. They want to *be* Shopify. Merchants sign up on their domain, pay them monthly, and run stores they host.
 
-This post is about the second one. What you actually have to build, what it costs to skip the building, and where the honest limits are.
+This post is for the second group. I'll go through what you actually have to build, and be honest about the parts that will annoy you.
 
-## Why people want to host stores instead of selling one
+## Why hosting beats building
 
-The maths is not complicated. A store you build once and hand over earns you once. A store you host earns every month, and the work of adding the hundredth store is the same as the tenth — because the platform does it, not you.
+I've watched a lot of agencies figure this out the slow way. You build a store for a client, you get paid once, and six months later you're negotiating the next project. Build a platform instead and the same store pays you every month. Better still, store number one hundred costs you almost nothing, because the platform does the work, not you.
 
-There are three routes:
+So you have three options:
 
-| Route | You own | Monthly economics | Where it hurts |
-|---|---|---|---|
-| Resell a hosted SaaS | nothing | thin reseller margin | you cannot change the product, and the platform owns your customers |
-| Build multi-tenancy from scratch | everything | all of it | 6–12 months before the first paying store |
-| Self-host a multi-tenant platform | everything | all of it | server operations are now your job |
+**Resell someone else's SaaS.** Fast to start, thin margin, and the platform owns your customers. When they raise prices, you find out at the same time your merchants do.
 
-The third one is the reason this post exists — but only if you understand the checklist below, because that is what you are buying (or building).
+**Build multi-tenancy yourself.** You own everything. You also spend the better part of a year before the first paying store, and most of that year goes on plumbing nobody will ever thank you for.
 
-## The real checklist: what "multi-tenant ecommerce" actually requires
+**Self-host a multi-tenant platform.** You own the code, you keep the revenue, and you inherit the server operations. That last part is a real cost, not a footnote.
 
-Most people underestimate this because the shopfront is the visible part, and the shopfront is the easy part. Here is what sits under it.
+The third one is what this post is about, but only after you've looked at the list below, because that list is what you're buying.
 
-### 1. Tenant isolation
+## What "multi-tenant ecommerce" actually means
 
-Every store needs its data separated from every other store. Three approaches exist: one shared database with a `tenant_id` column everywhere, a separate schema per tenant, or **a separate database per tenant**.
+People underestimate this because the storefront is the visible part, and the storefront is the easy part. Here's what sits underneath.
 
-The shared-column approach is the cheapest to build and the easiest to get catastrophically wrong: one forgotten `where tenant_id = ?` in one query and store A sees store B's orders. The per-database approach costs more in connection handling and migrations, but a missed filter cannot leak data across stores, and you can export, back up or delete one customer's entire shop by touching one database.
+### Tenant isolation
 
-Isolation is not just the database either — uploaded files, cache keys and queued jobs all need scoping. A cache key collision between two stores is a silent bug that shows one merchant another merchant's dashboard numbers.
+Every store's data has to be separated from every other store's. You can do it with a `tenant_id` column everywhere, a schema per tenant, or a whole database per tenant.
 
-### 2. Provisioning
+The column approach is cheapest to build and the easiest one to get badly wrong. Forget a single `where tenant_id = ?` in one query and store A is looking at store B's orders. I'd rather pay the cost of a database per tenant, because a missed filter can't leak anything, and deleting a customer means dropping one database instead of hunting rows across forty tables.
 
-When someone signs up, something has to create the database, run every migration, seed demo content, create the admin user, attach the subdomain and send the welcome email — reliably, and without the signup request hanging for two minutes.
+And it isn't only the database. Uploaded files, cache keys, queued jobs — all of it needs scoping. A cache key collision between two stores is the kind of bug that shows a merchant someone else's revenue numbers, and you won't hear about it from your logs. You'll hear about it from them.
 
-Then handle the failures: half-created stores, a migration that dies mid-run, a duplicate subdomain claimed at the same second by two people.
+### Provisioning
 
-### 3. Subscription billing
+Someone signs up. Now something has to create a database, run every migration, seed demo content, make the admin user, attach the subdomain and send the welcome email. Reliably. Without making the signup request sit there for two minutes.
 
-Plans, trials, upgrades, downgrades, proration, failed payments, dunning emails, grace periods, and what happens to a store when the card finally stops working. You need a *state machine* for the store lifecycle — trialing, active, past due, suspended, cancelled — not just a Stripe integration.
+Then there's the unhappy path: a migration that dies halfway, a half-created store, two people claiming the same subdomain in the same second.
 
-And if you sell in a country where cards are not the default, you need an offline path: bank transfer, an invoice, manual activation.
+### Subscription billing
 
-### 4. Custom domains
+Plans, trials, upgrades, downgrades, proration, failed cards, dunning, grace periods. What you're really building is a state machine for the store's life: trialing, active, past due, suspended, cancelled. Not just a Stripe integration.
 
-Merchants outgrow `their-shop.yourplatform.com` fast. Custom domains mean verifying the domain belongs to them, issuing TLS certificates, and routing requests for a domain you have never seen before to the right tenant.
+And if you sell anywhere cards aren't the norm, you need the boring offline path too: bank transfer, an invoice, someone flipping a switch by hand. In Vietnam, that's most of our own sales.
 
-### 5. Themes and design
+### Custom domains
 
-Merchants will not accept one look. You need multiple designs, a way to preview and switch them, and switching must not destroy their products, pages or settings.
+Merchants get tired of `their-shop.yourplatform.com` faster than you'd expect. So: verify they own the domain, get a certificate, and route a domain you've never seen before to the right tenant.
 
-### 6. The operator side
+### Themes
 
-You are now the platform. You need a console that answers: how many stores, how many live, what is my MRR, who is past due, whose domain is stuck unverified, which store is failing to provision — and a way to log into a merchant's admin to help them without asking for their password.
+Nobody accepts one look. You need several designs, a preview, and a switch that doesn't wipe their products and pages when they change their mind.
 
-### 7. Integrations
+### The operator side
 
-A REST API and webhooks, because you will eventually want your CRM, your accounting or an automation tool to know when a store is created or a subscription lapses.
+You're the platform now. You need a console that tells you how many stores are live, what your MRR is, who's past due, whose domain is stuck unverified, which store failed to provision. And a way to log into a merchant's admin to help them, without asking for their password.
 
-Seven areas. Each is weeks of work, and none of them is the ecommerce itself — products, cart, checkout, shipping, tax, payments, orders, refunds. That part you still need, and it is the part merchants judge you on.
+### Integrations
 
-## Buying the checklist instead: Ecommerce SaaS
+An API and webhooks, because sooner or later your CRM or your accounting needs to know when a store is created or a subscription lapses.
 
-[Ecommerce SaaS](https://marketplace.botble.com/ecommerce-saas) is that checklist, implemented, on Laravel 13 and PHP 8.3+, using `stancl/tenancy` v3 for the tenancy layer and Botble's ecommerce for the storefront itself.
+That's seven areas. Each one is weeks. And none of them is the ecommerce itself — products, cart, checkout, shipping, tax, payments, refunds — which you still need, and which is the only part your merchants will actually judge you on.
 
-Mapping it back to the seven items:
+## Or you buy the list
 
-**Isolation** — one MySQL database per store, plus per-tenant file storage under `storage/tenants/{id}` and prefixed cache keys. Deleting a customer means dropping their database, not hunting rows.
+[Ecommerce SaaS](https://marketplace.botble.com/ecommerce-saas) is that list, already built, on Laravel 13 and PHP 8.3+, with `stancl/tenancy` handling the tenancy layer and Botble's ecommerce as the storefront.
 
-**Provisioning** — queued by default, so signup returns immediately while the store is built. On a single small server you can set `TENANCY_PROVISION_SYNC=true` and provisioning runs inline during the signup request in about one to two seconds, with no queue worker to babysit.
+Going back through the seven:
 
-**Billing** — Stripe Checkout and the Stripe Billing Portal through Cashier for cards, plus offline orders, invoices and comped accounts for bank transfers and manual sales. Plans, trials and coupons are managed in the operator console, and the store lifecycle (trialing → active → past due → suspended) is enforced, not just recorded.
+**Isolation.** One MySQL database per store, per-tenant file storage under `storage/tenants/{id}`, prefixed cache keys.
 
-**Custom domains** — merchants add their own domain and verify ownership from their store admin; the operator sees every domain on the platform and which ones are still awaiting verification. A scheduled command re-checks them.
+**Provisioning.** Queued by default so signup returns straight away. On a small single server, set `TENANCY_PROVISION_SYNC=true` and it runs inline during the signup request in a second or two, no worker to look after.
 
-**Themes** — 20 storefront designs ship with it, switchable after signup without touching the merchant's catalogue. They are presets of one bundled theme, which matters — see the limits section.
+**Billing.** Stripe Checkout and the Stripe Billing Portal through Cashier. Plus offline orders, invoices and comped accounts, which is how you handle bank transfers. Plans, trials and coupons live in the operator console, and the lifecycle is enforced rather than just logged.
 
-**Operator console** — stores, plans, coupons, subscriptions, plan orders, bank transfers, domains, API keys, webhooks, plus MRR snapshots and usage metering. There is a single-use, 60-second impersonation token for logging into a merchant's admin.
+**Custom domains.** Merchants add and verify their own from their store admin. You see every domain on the platform and which ones are still waiting. A scheduled command re-checks them.
 
-**Integrations** — a control-plane REST API with 39 endpoints and 27 signed webhook events. Separately, each *store* also exposes the bundled Botble ecommerce REST API, so a merchant's shop can be driven headlessly or from a mobile app.
+**Themes.** 20 storefront designs, switchable after signup without touching the merchant's catalogue. Read the limits section before you get excited about that number.
 
-The storefront underneath is ordinary Botble ecommerce: products with variations, cart, checkout, coupons, shipping, tax, order management, plus eight payment gateways available to the stores themselves and a multi-vendor marketplace module if a merchant wants vendors inside their own shop.
+**Operator console.** Stores, plans, coupons, subscriptions, plan orders, bank transfers, domains, API keys, webhooks, MRR snapshots, usage metering. There's a 60-second single-use token for impersonating a merchant's admin.
 
-## The infrastructure you need
+**Integrations.** A control-plane API with 39 endpoints and 27 signed webhook events. Separately, each store exposes the normal Botble ecommerce REST API, so a merchant can go headless or build a mobile app on their own shop.
 
-This is the part that decides whether the project is realistic for you, so it goes before the pricing, not after.
+Underneath, the storefront is ordinary Botble ecommerce: variations, cart, checkout, coupons, shipping, tax, orders, eight payment gateways available to the stores, and a multi-vendor module if one of your merchants wants vendors of their own.
 
-| Requirement | Why | Shared hosting? |
+## The server bit, before the price
+
+This is the part that decides whether the whole idea works for you, so it goes first.
+
+| What you need | Why | On shared hosting? |
 |---|---|---|
-| MySQL 8 user with global `CREATE`/`DROP DATABASE` | every store is a database | almost never granted |
-| Wildcard DNS (`*.yourdomain.com`) + wildcard TLS | every store gets a subdomain, instantly | rarely available |
-| A queue worker, or inline provisioning | store creation is real work | no long-running processes |
-| Cron running 9 scheduled commands | billing, usage, lifecycle emails, domain checks, webhook retries | usually one cron only |
-| Redis (optional) | cache and queues at volume | optional |
+| MySQL 8 user with global `CREATE`/`DROP DATABASE` | every store is a database | almost never |
+| Wildcard DNS and wildcard TLS | every store gets a subdomain, immediately | rarely |
+| A queue worker, or inline provisioning | creating a store is real work | no long-running processes |
+| Cron running 9 scheduled commands | billing, usage, lifecycle emails, domain checks, webhook retries | usually one cron |
+| Redis | nice at volume | optional |
 
-A small VPS is the practical minimum. If your plan was "upload it to cPanel", this is the wrong product, and that is better to learn now than after the purchase.
+A small VPS is the realistic floor. If the plan was to upload this to cPanel, it's the wrong product, and I'd rather you find that out here than after paying.
 
-## What it is not
+## Where it will annoy you
 
-Honesty here saves everyone a refund.
+- **It's one theme.** The 20 designs are curated presets of the bundled Amerce theme, not 20 separate themes. Merchants get a genuinely different look. They don't get a different codebase.
+- **Operator admins are all-powerful.** There's no role system on the operator side yet, so you can't give a support person access to stores but not billing. If you need that, you're writing it.
+- **You're the host now.** Uptime, backups, upgrades, and the merchant emailing you at 11pm because their checkout looks wrong on their phone. That's the trade for keeping the whole subscription.
+- **It won't find you merchants.** No software does.
 
-- **One storefront theme.** The 20 designs are curated presets of the bundled Amerce theme, not 20 independent themes. Merchants get a genuinely different look, not a different codebase.
-- **No role-based permissions on the operator side.** Operator admins are admins. If you need a support agent who can see stores but not billing, that is yours to add.
-- **You are the host.** Uptime, backups, upgrades and merchant support are now your responsibility. That is the trade for keeping 100% of the subscription revenue.
-- **It is a platform, not a business.** Nothing in the box brings you merchants.
+## The price
 
-## What it costs
+$69 on the marketplace, or **$48.30 buying direct** — same product, 30% off, because going direct skips the marketplace's cut. One payment, full Laravel source, lifetime updates, six months of support, one production domain.
 
-Ecommerce SaaS is **$69** on the marketplace, or **$48.30 buying direct** — the same product, 30% cheaper, because buying direct skips the marketplace's cut. One payment, full Laravel source, lifetime updates, six months of support, one production domain per license.
+Compare that to the list above at any freelance rate you like. This was never a $69 decision versus a $0 one. It's a $69 decision versus three months of your life, and the version you'd build in those three months would do less.
 
-Put that against the alternative: at a freelance rate of $30/hour, the seven-item checklist above is not a $69 problem. It is a several-thousand-dollar problem, and the version you build in three months will do less than the one you can install this afternoon.
+Poke at it first: there's a [live platform](https://saas.botble.com) with the operator console open, and the [documentation](https://docs.botble.com/ecommerce-saas/) covers installation, billing and the API properly.
 
-If you want to see it before deciding, there is a [live demo platform](https://saas.botble.com) with the operator console open, and the [product documentation](https://docs.botble.com/ecommerce-saas/) covers installation, billing and the API in full.
-
-## Frequently asked questions
+## Questions we get asked
 
 **Is this a Shopify clone?**
-No. It is a platform for hosting stores, the way Shopify hosts stores. The merchant-facing storefront is Botble ecommerce, not a Shopify reimplementation.
+No. It's a platform for hosting stores, the way Shopify hosts stores. What your merchants get is Botble ecommerce, not a Shopify reimplementation.
 
 **Can each store use its own domain?**
-Yes, with ownership verification. Whether a given plan allows it is up to you — the sample plans ship with custom domains turned off on the cheapest tier, which you can change.
+Yes, with ownership verification. Whether a particular plan allows it is your call — the sample plans have it off on the cheapest tier, which you can change in a minute.
 
-**Do I need a queue worker?**
-Not necessarily. Set `TENANCY_PROVISION_SYNC=true` and stores are provisioned inline during signup, in about one to two seconds. A worker is the better choice once you have real volume.
+**Do I really need a queue worker?**
+No. `TENANCY_PROVISION_SYNC=true` provisions inline during signup, in a second or two. Once you have real volume, run the worker.
 
 **How do merchants pay me?**
-Stripe Checkout for cards, with the Stripe Billing Portal for self-service. For markets where cards are awkward, there are offline orders, invoices and manual activation — a bank transfer flow, essentially.
+Stripe Checkout for cards, with the Billing Portal so they can manage it themselves. For markets where cards are awkward, there's an offline path: invoice, bank transfer, manual activation.
 
-**Can I charge in my own currency, with my own plans?**
-Yes. Plans, prices, trial lengths, limits and coupons are yours to define in the operator console.
+**Can I set my own plans and currency?**
+Yes. Prices, trial lengths, limits and coupons are all yours.
 
-**What happens when a subscription fails?**
-The store moves through the lifecycle — past due, then suspended — with lifecycle emails sent by a scheduled command. Data is not deleted on suspension.
+**What happens when a card fails?**
+The store moves to past due, then suspended, with lifecycle emails along the way. Nothing is deleted when a store is suspended.
 
 **Is there an API?**
-Two, in fact. A control-plane API with 39 endpoints and 27 signed webhook events for running the platform, and the per-store ecommerce API for anything a merchant wants to build on their own shop.
+Two. The control-plane one (39 endpoints, 27 signed webhook events) for running the platform, and the per-store ecommerce API for whatever a merchant wants to build.
 
-## Where to go next
+## Where to next
 
-- [Ecommerce SaaS — full product introduction](https://botble.com/ecommerce-saas-run-your-own-store-hosting-platform-on-botble-cms), with screenshots of the operator console and the signup flow
-- [Best Laravel ecommerce scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared), if you need one store rather than a platform
-- [Buy direct and save 30%](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon), on why the direct price is lower
+- [The full Ecommerce SaaS write-up](https://botble.com/ecommerce-saas-run-your-own-store-hosting-platform-on-botble-cms), with screenshots of the operator console and the signup flow
+- [Best Laravel ecommerce scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared), if it turns out you want one store and not a platform
+- [Why buying direct is cheaper](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon)
 
-If you are weighing this against building it yourself, work through the seven-item checklist and put an honest number of days next to each line. That number is the real comparison, not $69 against $0.
+If you're still weighing this against building it yourself, do one thing first: take the seven items above and write an honest number of days next to each. That total is the real comparison.

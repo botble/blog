@@ -54,6 +54,26 @@ so fix it before adding links:
 
 27 webhook events and 20 designs are correct.
 
+## Voice — write like a person, not a content mill
+
+Sang's note, 28/09: the first draft read like AI. It was clean, symmetrical and lifeless. Rules:
+
+- **First person.** "I'd rather pay for a database per tenant" beats "the per-database approach is
+  preferable". You are a developer who ships this stuff, so sound like one.
+- **Use contractions.** isn't, you'll, we've. Formal register is the biggest tell.
+- **Break the symmetry.** AI writes lists where every item is the same length and shape, and pairs
+  everything ("not X, but Y"). Let some sections be a paragraph and others a bullet. Vary sentence
+  length hard: a long one, then four words.
+- **Ration the em dashes.** One or two per post. Commas and full stops do the same job.
+- **Have opinions and say the unpleasant part.** "Where it will annoy you" is a better heading than
+  "Limitations", and it earns trust that no feature table earns.
+- **Anchor in real experience** — our own bank-transfer customers, the merchant who emails at 11pm.
+  Real detail is the thing a generator cannot fake.
+- **Cut the throat-clearing.** No "In today's fast-paced world", no "It's important to note that",
+  no closing paragraph that summarises what the reader just read.
+- **Keep internal financials out.** Order counts and revenue inform *which* post to write, they do
+  not go in the post.
+
 ## House rules for every post
 
 - **Front matter** per `README.md`: title, description (the SEO snippet — write it last, make it a
