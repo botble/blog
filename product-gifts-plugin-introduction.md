@@ -17,7 +17,7 @@ is_featured: true
 
 # Introducing Product Gifts: Boost Sales with Free Gifts for Botble Ecommerce
 
-Product Gifts is a premium plugin for Botble CMS that transforms your promotional strategy with intelligent gift automation. Automatically offer free gift products when customers meet purchase conditions, increasing average order value and customer satisfaction. The plugin works on top of any [Laravel ecommerce script](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) built on Botble CMS — including MartFury, Shofy, SnapCart, and Amerce.
+Product Gifts is a premium plugin for Botble CMS that transforms your promotional strategy with intelligent gift automation. Automatically offer free gift products when customers meet purchase conditions, increasing average order value and customer satisfaction. The plugin works on top of any [Laravel ecommerce script](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) built on Botble CMS, including MartFury, Shofy, SnapCart, and Amerce.
 
 Whether you're running seasonal promotions, clearing slow-moving inventory, or rewarding loyal customers, Product Gifts provides all the tools you need to create compelling gift offers that drive sales.
 
@@ -69,7 +69,7 @@ Gifts appear automatically when customers qualify with stunning visual display:
 - Interactive gift selector on product pages
 - Real-time updates based on cart contents
 - Gift summary in shopping cart
-- Seamless checkout experience
+- Smooth checkout experience
 
 ![Cart with Gifts](https://landing.botble.com/product-gifts/images/cart-with-gifts.png)
 

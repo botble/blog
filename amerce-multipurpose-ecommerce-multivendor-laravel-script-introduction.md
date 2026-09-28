@@ -21,13 +21,15 @@ is_featured: true
 
 # Amerce - Multipurpose eCommerce & Multivendor Marketplace Laravel Script
 
-Most online-store scripts force you to pick: a single-vendor shop *or* a multivendor marketplace, a fashion theme *or* an electronics theme, fast loading *or* rich features. **Amerce** is built so you don't have to choose.
+Buyers ask us the same question every week: can I start as one shop and add vendors later, without rebuilding? The honest answer with most scripts is no, you pick a lane on day one and pay for it later.
 
-It's a Laravel 13 eCommerce script powered by [Botble CMS](https://botble.com) with **20 niche home presets**, **14 header styles**, **9 footer styles**, and a built-in multivendor marketplace — all in a single codebase. Buy once, install, and start selling. No subscriptions, no per-vendor fees, no add-ons hidden behind a paywall.
+**Amerce** is our answer to that question.
+
+It's a Laravel 13 eCommerce script powered by [Botble CMS](https://botble.com) with **20 niche home presets**, **14 header styles**, **9 footer styles**, and a built-in multivendor marketplace, all in a single codebase. Buy once, install, and start selling. No subscriptions, no per-vendor fees, no add-ons hidden behind a paywall.
 
 To celebrate the launch, Amerce is available at **$39 (regular $59)** until **August 15, 2026**.
 
-![Amerce — Multipurpose eCommerce & Multivendor Marketplace Laravel Script](https://marketplace.botble.com/themes/elite/images/amerce/overview.jpg)
+![Amerce, Multipurpose eCommerce & Multivendor Marketplace Laravel Script](https://marketplace.botble.com/themes/elite/images/amerce/overview.jpg)
 
 ## Intro Launch Offer
 
@@ -44,15 +46,15 @@ To celebrate the launch, Amerce is available at **$39 (regular $59)** until **Au
 
 ## Why Amerce?
 
-- **Elite Author script** — built by Botble, an 8-year Envato Elite Author with thousands of customers
-- **20 niche home presets** in one package — switch verticals without buying a new theme
-- **Multivendor marketplace included** — no separate plugin, no extra license fee
-- **Laravel 13 + Botble CMS** — modern, secure, actively maintained stack
-- **99% performance score** — A-grade on PageSpeed for both desktop and mobile
-- **Mobile-first storefront** — sticky add-to-cart, bottom navigation, AJAX cart, popup cart
-- **47 drag-and-drop shortcodes** — build pages without touching Blade or PHP
-- **SEO-optimized out of the box** — clean markup, fast load, structured data
-- **Lifetime free updates** — buy once, receive every future version at no extra cost
+- **Elite Author script**: built by Botble, an 8-year Envato Elite Author with thousands of customers
+- **20 niche home presets** in one package: switch verticals without buying a new theme
+- **Multivendor marketplace included**: no separate plugin, no extra license fee
+- **Laravel 13 + Botble CMS**: modern, secure, actively maintained stack
+- **99% performance score**: A-grade on PageSpeed for both desktop and mobile
+- **Mobile-first storefront**: sticky add-to-cart, bottom navigation, AJAX cart, popup cart
+- **47 drag-and-drop shortcodes**: build pages without touching Blade or PHP
+- **SEO-optimized out of the box**: clean markup, fast load, structured data
+- **Lifetime free updates**: buy once, receive every future version at no extra cost
 
 Want to see how Amerce compares against MartFury, FleetCart, Shofy, and other Envato bestsellers? Read our roundup of the [top Laravel ecommerce scripts compared](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared).
 
@@ -83,11 +85,11 @@ One purchase covers twenty market-ready storefronts. Pick the one closest to you
 | 19 | Sport | [amerce-sport.botble.com](https://amerce-sport.botble.com) |
 | 20 | Office | [amerce-office.botble.com](https://amerce-office.botble.com) |
 
-Plus a Sneaker preset at [amerce-sneaker.botble.com](https://amerce-sneaker.botble.com) — 21 total live demos.
+Plus a Sneaker preset at [amerce-sneaker.botble.com](https://amerce-sneaker.botble.com), 21 total live demos.
 
 ## Built-in Multivendor Marketplace
 
-Run a single-vendor store today and flip the switch to a multivendor marketplace tomorrow — no migration, no extra purchase. Amerce ships with the same battle-tested multivendor engine that powers Botble's best-selling marketplace scripts — **Shofy**, **MartFury**, **Farmart**, and **Nest**:
+Run a single-vendor store today and flip the switch to a multivendor marketplace tomorrow, no migration, no extra purchase. Amerce ships with the same battle-tested multivendor engine that powers Botble's best-selling marketplace scripts, **Shofy**, **MartFury**, **Farmart**, and **Nest**:
 
 - Vendor registration and approval workflow
 - Vendor dashboard with order, product, and payout management
@@ -112,7 +114,7 @@ Visual variation swatches, "Frequently Bought Together" bundles, and tiered quan
 
 ### Before & After, Promotional Banners, Countdown Timers
 
-Highlight transformations with before/after sliders, push promos with banner sliders and scrolling text, and create urgency with countdown timers — all configured from the admin panel.
+Highlight transformations with before/after sliders, push promos with banner sliders and scrolling text, and create urgency with countdown timers, all configured from the admin panel.
 
 ### Mobile-First Experience
 
@@ -125,13 +127,13 @@ Automatically email shoppers who left items in their cart. Recover sales you wou
 ## Pages You Get Out of the Box
 
 - **20+ home pages** (one per niche preset)
-- **80+ sub pages** — shop list/grid, product detail, cart, checkout, account, blog, contact, 404
-- **14 header styles + 9 footer styles** — mix and match per preset
-- **Admin dashboard** — products, orders, customers, vendors, settings, reports
+- **80+ sub pages**: shop list/grid, product detail, cart, checkout, account, blog, contact, 404
+- **14 header styles + 9 footer styles**: mix and match per preset
+- **Admin dashboard**: products, orders, customers, vendors, settings, reports
 
 ## Full eCommerce Feature Set
 
-Amerce inherits the full Botble eCommerce platform — battle-tested by thousands of stores:
+Amerce inherits the full Botble eCommerce platform, battle-tested by thousands of stores:
 
 - Product management with variations, options, specifications, digital downloads
 - Order management, invoices, shipment tracking
@@ -184,7 +186,7 @@ Amerce inherits the full Botble eCommerce platform — battle-tested by thousand
 
 ## Lock in the $39 Intro Price Before August 15, 2026
 
-Amerce is the most complete bundle Botble has shipped to date — a multipurpose eCommerce script *and* a multivendor marketplace, with twenty production-ready niches, on Laravel 13. After **August 15, 2026** the price goes back to **$59**.
+Amerce is the most complete bundle Botble has shipped to date, a multipurpose eCommerce script *and* a multivendor marketplace, with twenty production-ready niches, on Laravel 13. After **August 15, 2026** the price goes back to **$59**.
 
 **[Buy Amerce at $39 →](https://marketplace.botble.com/amerce)**
 

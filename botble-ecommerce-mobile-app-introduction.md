@@ -17,9 +17,9 @@ is_featured: true
 
 # Introducing Botble Ecommerce Mobile App: Build Your Mobile Store in Minutes
 
-Botble Ecommerce React Native is a feature-rich mobile application built with React Native and Expo, designed to work seamlessly with Botble E-commerce backend. It provides a complete mobile shopping experience with modern UI, social login integration, push notifications, product comparison, and comprehensive e-commerce features. Pair it with any of the [top Laravel ecommerce scripts](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) on Botble CMS — MartFury, Shofy, SnapCart, Amerce — to ship a complete web + mobile commerce stack.
+Botble Ecommerce React Native is a feature-rich mobile application built with React Native and Expo, designed to work cleanly with Botble E-commerce backend. It provides a complete mobile shopping experience with modern UI, social login integration, push notifications, product comparison, and comprehensive e-commerce features. Pair it with any of the [top Laravel ecommerce scripts](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared) on Botble CMS, MartFury, Shofy, SnapCart, Amerce, to ship a complete web + mobile commerce stack.
 
-Built with React Native (Expo SDK 54), TypeScript, and React Query for optimal performance and developer experience. It delivers native performance on both Android and iOS platforms with a single codebase while leveraging modern React patterns and best practices.
+Built with React Native (Expo SDK 54), TypeScript, and React Query for optimal performance and developer experience. It delivers native performance on both Android and iOS platforms with a single codebase while using modern React patterns and best practices.
 
 ![Botble Ecommerce Mobile App](https://landing.botble.com/ecommerce-mobile-app/images/app-home-light-mode.png)
 
@@ -54,7 +54,7 @@ Want to test it yourself? Download the demo APK:
 No more forgotten passwords. Your customers can sign in instantly:
 
 - **Google Sign-In:** One-tap authentication with Google accounts
-- **Facebook Login:** Seamless login with Facebook integration
+- **Facebook Login:** Smooth login with Facebook integration
 - **Apple Sign-In:** Native Apple authentication for iOS users
 - **Traditional Login:** Email/password with secure recovery system
 - **Secure Storage:** Tokens stored securely using Expo SecureStore

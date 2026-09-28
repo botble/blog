@@ -20,9 +20,11 @@ is_featured: true
 
 # DeskHive - Laravel Support Ticket & Knowledge Base System
 
-Running customer support through email threads, shared inboxes, or spreadsheets doesn't scale. You lose tickets, miss deadlines, and can't track which agent handled what. Your customers deserve better — and so does your team.
+Support runs on a shared inbox for longer than anyone admits. It works until two people reply to the same customer, or a question sits unread for four days behind a wall of order notifications, and you find out when someone posts about it publicly.
 
-**DeskHive** is a standalone self-hosted help desk system built with Laravel. Tickets, knowledge base, SLA tracking, agent portal, customer self-service, email-to-ticket, and canned responses — everything your support team needs in one application. No additional products or dependencies required.
+We've been on both sides of that, so DeskHive is the tool we wanted.
+
+**DeskHive** is a standalone self-hosted help desk system built with Laravel. Tickets, knowledge base, SLA tracking, agent portal, customer self-service, email-to-ticket, and canned responses, everything your support team needs in one application. No additional products or dependencies required.
 
 ![DeskHive admin dashboard with ticket overview and support metrics](https://botble.com/storage/envato/botble-desk-hive-hero-section.jpg)
 
@@ -30,23 +32,23 @@ Running customer support through email threads, shared inboxes, or spreadsheets 
 
 The support workflow is simple:
 
-1. **Customer submits ticket** — via the customer portal or email
-2. **Auto-assigned to agent** — based on department, priority, or round-robin rules
-3. **SLA tracked** — response and resolution deadlines are enforced automatically
-4. **Resolved** — agent responds, customer is notified, ticket is closed
+1. **Customer submits ticket**, via the customer portal or email
+2. **Auto-assigned to agent**, based on department, priority, or round-robin rules
+3. **SLA tracked**, response and resolution deadlines are enforced automatically
+4. **Resolved**, agent responds, customer is notified, ticket is closed
 
 ## Why Choose DeskHive?
 
-- **Standalone system** — No CMS, no eCommerce platform required. DeskHive is a complete, self-contained application
-- **Self-hosted** — Your data stays on your server. Full control over privacy and security
-- **Tickets + Knowledge Base** — Reduce ticket volume by letting customers find answers themselves
-- **SLA management** — Set response and resolution time targets with escalation rules and breach alerts
-- **Email-to-Ticket** — Automatically create tickets from inbound emails and thread replies back via subject tag
-- **Agent & Customer portals** — Dedicated interfaces for both sides with separate dashboards and features
-- **39 languages** — Built-in translations with full RTL support for Arabic, Hebrew, and Persian
-- **Dark mode** — Full dark mode support across all portals
-- **REST API** — Internal and external API with scope-based authentication for custom integrations
-- **Free updates forever** — Buy once, receive all future updates at no extra cost
+- **Standalone system**: No CMS, no eCommerce platform required. DeskHive is a complete, self-contained application
+- **Self-hosted**: Your data stays on your server. Full control over privacy and security
+- **Tickets + Knowledge Base**: Reduce ticket volume by letting customers find answers themselves
+- **SLA management**: Set response and resolution time targets with escalation rules and breach alerts
+- **Email-to-Ticket**: Automatically create tickets from inbound emails and thread replies back via subject tag
+- **Agent & Customer portals**: Dedicated interfaces for both sides with separate dashboards and features
+- **39 languages**: Built-in translations with full RTL support for Arabic, Hebrew, and Persian
+- **Dark mode**: Full dark mode support across all portals
+- **REST API**: Internal and external API with scope-based authentication for custom integrations
+- **Free updates forever**: Buy once, receive all future updates at no extra cost
 
 ## Key Features
 
@@ -80,15 +82,15 @@ Automatically create tickets from inbound emails. Replies are threaded back via 
 
 ### Canned Responses
 
-Pre-written reply templates for common questions. Agents can quickly insert and customize responses with keyboard shortcuts — handle repetitive questions in seconds instead of minutes.
+Pre-written reply templates for common questions. Agents can quickly insert and customize responses with keyboard shortcuts, handle repetitive questions in seconds instead of minutes.
 
 ### Departments & Routing
 
-Route tickets to the right team automatically. Create departments for Sales, Technical Support, Billing, or any team structure. Tickets are assigned based on configurable rules — by department, priority, or round-robin.
+Route tickets to the right team automatically. Create departments for Sales, Technical Support, Billing, or any team structure. Tickets are assigned based on configurable rules, by department, priority, or round-robin.
 
 ### Custom Fields
 
-Add extra fields to the ticket submission form to capture the information you need upfront. Text, dropdown, checkbox, and more — reduce back-and-forth by collecting the right data from the start.
+Add extra fields to the ticket submission form to capture the information you need upfront. Text, dropdown, checkbox, and more, reduce back-and-forth by collecting the right data from the start.
 
 ### Product & Purchase Verification
 

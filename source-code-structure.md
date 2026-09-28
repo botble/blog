@@ -87,7 +87,7 @@ Frontend themes are organized in the `platform/themes` directory. Each theme ope
 The modular design provides several key advantages:
 
 1. **Separation of Concerns**: Each module handles distinct features without overlap
-2. **Reusability**: Modules function across different projects seamlessly
+2. **Reusability**: Modules function across different projects cleanly
 3. **Maintainability**: Changes to one module don't cascade to others
 4. **Scalability**: New features integrate as separate modules without modifying existing code
 5. **Testability**: Modules undergo isolated testing for better quality assurance
@@ -119,7 +119,7 @@ When working with Botble CMS source code:
 
 1. **Follow naming conventions**: Use kebab-case for files, PascalCase for classes
 2. **Use the repository pattern**: Access data through repository interfaces
-3. **Leverage hooks**: Use actions and filters for extensibility
+3. **Use hooks**: Use actions and filters for extensibility
 4. **Keep modules independent**: Avoid tight coupling between plugins
 5. **Run Pint**: Format code with `./vendor/bin/pint` before committing
 

@@ -16,9 +16,9 @@ is_featured: true
 
 # License Manager - Self-Hosted License & Update Manager for Your Products
 
-If you're vibe coding and building products to sell on CodeCanyon, SaaS, or your own scripts, you'll probably find this useful.
+If you sell software you wrote, sooner or later you need to answer two boring questions: is this customer's copy legitimate, and how do they get the next version? We ran that on spreadsheets and goodwill for longer than we should have.
 
-Our team has just released **License Manager**. It's a Laravel-based solution for managing licenses, activating/deactivating licenses, and checking updates for your products. The core is still built on Botble CMS, just like our other products.
+**License Manager** is what replaced it here. A Laravel app for issuing licenses, activating and deactivating them, and serving updates to the products you sell. The core is Botble CMS, same as the rest of our work.
 
 Self-hosted, lightweight, and no third-party dependency.
 
@@ -28,7 +28,7 @@ Self-hosted, lightweight, and no third-party dependency.
 
 If you've ever sold a script or plugin, you know the pain: tracking who bought what, handling activations across multiple domains, dealing with piracy, and delivering updates. Most developers end up duct-taping together a mix of spreadsheets, manual emails, and hope.
 
-License Manager gives you a single, clean dashboard to handle all of that — on your own server, under your control.
+License Manager gives you a single, clean dashboard to handle all of that, on your own server, under your control.
 
 ## Key Features
 
@@ -36,18 +36,18 @@ License Manager gives you a single, clean dashboard to handle all of that — on
 
 Create and manage licenses with full flexibility:
 
-- **Multiple license types** — perpetual, subscription, trial, or lifetime
-- **Parallel activation limits** — control how many domains can use the same license at once
-- **Domain & IP whitelisting** — restrict licenses to specific domains or IPs, with wildcard support (e.g. `*.example.com`)
-- **Automatic expiration handling** — set expiry dates for licenses, update support, and support coverage independently
+- **Multiple license types**: perpetual, subscription, trial, or lifetime
+- **Parallel activation limits**: control how many domains can use the same license at once
+- **Domain & IP whitelisting**: restrict licenses to specific domains or IPs, with wildcard support (e.g. `*.example.com`)
+- **Automatic expiration handling**: set expiry dates for licenses, update support, and support coverage independently
 
 ![License Management](https://landing.botble.com/license-manager/images/licenses.png)
 
 ### Activation Tracking
 
-Every activation is logged with full context — domain, IP, timestamp, and user agent. You always know exactly where your licenses are being used.
+Every activation is logged with full context, domain, IP, timestamp, and user agent. You always know exactly where your licenses are being used.
 
-When the activation limit is reached, the system can either reject the new activation or automatically deactivate the oldest one — your choice.
+When the activation limit is reached, the system can either reject the new activation or automatically deactivate the oldest one, your choice.
 
 ![Activation Tracking](https://landing.botble.com/license-manager/images/activations.png)
 
@@ -67,8 +67,8 @@ Your customers check for updates via the API, and the system handles the rest.
 
 A complete REST API powers everything. Two API types are available:
 
-- **External API** — for your client applications to activate, verify, deactivate licenses, and check for updates
-- **Internal API** — for admin/backend operations like creating products, licenses, and managing activations
+- **External API**: for your client applications to activate, verify, deactivate licenses, and check for updates
+- **Internal API**: for admin/backend operations like creating products, licenses, and managing activations
 
 Example endpoints:
 
@@ -98,11 +98,11 @@ The portal supports social login via **Envato**, **Google**, **Facebook**, and *
 
 Get notified in real time when important events happen:
 
-- `license.expiring` — a license is about to expire
-- `license.expired` — a license has expired
-- `update.expired` — update support has ended
+- `license.expiring`: a license is about to expire
+- `license.expired`: a license has expired
+- `update.expired`: update support has ended
 
-All webhook payloads are signed with HMAC-SHA256 for security. You can use these to trigger your own automations — send reminder emails, update your CRM, or sync with other systems.
+All webhook payloads are signed with HMAC-SHA256 for security. You can use these to trigger your own automations, send reminder emails, update your CRM, or sync with other systems.
 
 ### Envato Integration
 
@@ -111,9 +111,9 @@ If you sell on CodeCanyon/Envato, you can verify Envato purchase codes directly.
 ### Security
 
 - **AES-128/256 encryption** for all license data
-- **Auto-blacklisting** — automatically block domains or IPs after too many failed activation attempts
-- **Rate limiting** — configurable per minute, by IP, API key, or both
-- **Failed attempt logging** — track and analyze suspicious activity
+- **Auto-blacklisting**: automatically block domains or IPs after too many failed activation attempts
+- **Rate limiting**: configurable per minute, by IP, API key, or both
+- **Failed attempt logging**: track and analyze suspicious activity
 
 ![Settings](https://landing.botble.com/license-manager/images/settings.png)
 
@@ -141,7 +141,7 @@ if ($result['is_active']) {
 // Verify on each request
 $result = $client->verify(file_get_contents('license.dat'));
 if (!$result['is_active']) {
-    // License invalid — redirect to activation page
+    // License invalid, redirect to activation page
 }
 ```
 
@@ -153,10 +153,10 @@ Want to try it before buying? We built an interactive API playground where you c
 
 Just open [license-app-demo.botble.com](https://license-app-demo.botble.com), enter your API credentials, and start testing:
 
-- **External API** — test license activation, verification, and deactivation
-- **Internal API** — explore products, licenses, and admin operations
-- **Update Manager** — check versions and update availability
-- **Live Responses** — see real JSON responses with syntax highlighting
+- **External API**: test license activation, verification, and deactivation
+- **Internal API**: explore products, licenses, and admin operations
+- **Update Manager**: check versions and update availability
+- **Live Responses**: see real JSON responses with syntax highlighting
 
 You can also log into the [admin panel demo](https://license-manager.botble.com/admin) with credentials `admin` / `12345678` to explore the full dashboard.
 
@@ -166,7 +166,7 @@ We provide ready-to-use client code for the most popular platforms. All examples
 
 ### PHP
 
-A standalone cURL client that works with any PHP application — no framework required.
+A standalone cURL client that works with any PHP application, no framework required.
 
 ```php
 $client = new LicenseClient(
@@ -241,16 +241,16 @@ if (is_license_active()) {
 }
 ```
 
-The WordPress plugin hooks into the native update system, so your customers see updates right in their WordPress dashboard — just like any other plugin.
+The WordPress plugin hooks into the native update system, so your customers see updates right in their WordPress dashboard, just like any other plugin.
 
 Check out the full examples and documentation:
 
-- [GitHub — license-manager-examples](https://github.com/botble/license-manager-examples)
+- [GitHub: license-manager-examples](https://github.com/botble/license-manager-examples)
 - [Integration Documentation](https://docs.botble.com/license-manager/examples.html)
 
 ## Migrating from LicenseBox?
 
-If you're currently using the original LicenseBox, License Manager includes a built-in migration tool. It imports your products, licenses, activations, and versions automatically — and the legacy API endpoints keep working so your existing customers don't need to change anything.
+If you're currently using the original LicenseBox, License Manager includes a built-in migration tool. It imports your products, licenses, activations, and versions automatically, and the legacy API endpoints keep working so your existing customers don't need to change anything.
 
 ## Technical Requirements
 

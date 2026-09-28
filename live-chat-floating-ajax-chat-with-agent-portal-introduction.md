@@ -19,7 +19,7 @@ is_featured: true
 
 # Live Chat - Floating Ajax Live Chat with Agent Portal for Botble CMS
 
-If you're running a Botble CMS site and want to talk to your visitors in real time, you've probably looked at Tawk.to, Crisp, or Intercom. They work — but your conversations live on someone else's server, and the good features are always behind a monthly plan.
+If you're running a Botble CMS site and want to talk to your visitors in real time, you've probably looked at Tawk.to, Crisp, or Intercom. They work, but your conversations live on someone else's server, and the good features are always behind a monthly plan.
 
 We just released **Live Chat**, a plugin that adds a floating chat widget to your site, gives your support agents their own portal, and keeps everything on your server. Built with Laravel and jQuery, no external dependencies, no monthly fees.
 
@@ -29,10 +29,10 @@ We just released **Live Chat**, a plugin that adds a floating chat widget to you
 
 The flow is simple:
 
-1. **Visitor opens the widget** — floating chat button on every page. They enter their name and start typing
-2. **Agent gets notified** — browser notification, email, or sound alert. New conversations auto-assign to available agents
-3. **Agent responds** — from the Agent Portal or admin messenger. Messages appear in real time
-4. **Done** — agent closes the conversation. Full history is preserved
+1. **Visitor opens the widget**, floating chat button on every page. They enter their name and start typing
+2. **Agent gets notified**, browser notification, email, or sound alert. New conversations auto-assign to available agents
+3. **Agent responds**, from the Agent Portal or admin messenger. Messages appear in real time
+4. **Done**, agent closes the conversation. Full history is preserved
 
 No WebSocket server, no Redis, no Pusher. The plugin uses Ajax polling (configurable from 1 to 30 seconds) so it works on any shared hosting.
 
@@ -40,7 +40,7 @@ No WebSocket server, no Redis, no Pusher. The plugin uses Ajax polling (configur
 
 ### Agent Portal
 
-This is probably the biggest differentiator. Support agents get their own portal at `/agent/login` — completely separate from the admin panel. They log in, see their dashboard with open conversations and unread counts, and respond from a messenger-style interface.
+This is probably the biggest differentiator. Support agents get their own portal at `/agent/login`, completely separate from the admin panel. They log in, see their dashboard with open conversations and unread counts, and respond from a messenger-style interface.
 
 Each agent can toggle their availability, set notification preferences (email, browser, sound), and manage their own profile. Admins never need to share admin panel access with support staff.
 
@@ -60,7 +60,7 @@ You can turn this off if you prefer manual assignment. Agents can also self-assi
 
 ### Admin Messenger
 
-The admin panel gets a messenger-style interface — three-panel layout with conversation list, chat area, and visitor info sidebar. Filter by All/Open/Closed, see unread badges, and get the full picture on each visitor: name, email, phone, IP, current page, browser, device, and timeline.
+The admin panel gets a messenger-style interface, three-panel layout with conversation list, chat area, and visitor info sidebar. Filter by All/Open/Closed, see unread badges, and get the full picture on each visitor: name, email, phone, IP, current page, browser, device, and timeline.
 
 ![Admin messenger interface](https://landing.botble.com/live-chat/images/live-chat-conversations.png)
 
@@ -76,7 +76,7 @@ All payloads are signed with HMAC-SHA256. Each webhook has a test button so you 
 
 ### Working Hours
 
-Set your support schedule — start time, end time, working days — and the widget automatically switches between online and offline status. Visitors can still start conversations when you're offline, they just see a visual indicator that response may be delayed.
+Set your support schedule, start time, end time, working days, and the widget automatically switches between online and offline status. Visitors can still start conversations when you're offline, they just see a visual indicator that response may be delayed.
 
 ### Widget Customization
 
@@ -88,7 +88,7 @@ Make it match your brand. Primary color, hover color, custom avatar, position (4
 
 ### Visual Effects
 
-Small touches that make the chat feel polished — link previews for shared URLs, emoji conversion (`:)` becomes a real emoji), pulse animation on the chat button, and backdrop blur behind the chat window. All toggleable from settings.
+Small touches that make the chat feel polished, link previews for shared URLs, emoji conversion (`:)` becomes a real emoji), pulse animation on the chat button, and backdrop blur behind the chat window. All toggleable from settings.
 
 ### Email Notifications
 
@@ -96,7 +96,7 @@ Email alerts when new conversations start. Configure recipient emails, customize
 
 ### Agent Management
 
-Create and manage agents from Admin > Live Chat > Agents. Set them as active/inactive, available/unavailable. Deactivated agents can't log in, unavailable ones don't get auto-assigned. Simple CRUD — nothing fancy, just what you need.
+Create and manage agents from Admin > Live Chat > Agents. Set them as active/inactive, available/unavailable. Deactivated agents can't log in, unavailable ones don't get auto-assigned. Simple CRUD, nothing fancy, just what you need.
 
 ![Agent management](https://landing.botble.com/live-chat/images/live-chat-admin-agents.png)
 
@@ -110,7 +110,7 @@ Create and manage agents from Admin > Live Chat > Agents. Set them as active/ina
 | Languages | 42+ built-in translations with RTL support |
 | Messaging | Ajax polling (1-30s configurable) |
 
-**Important:** This is a plugin, not a standalone application. It requires an existing Botble CMS installation. Works with all Botble scripts — Shofy, MartFury, Ninico, Nest, Farmart, Flex Home, Hasa, Gerow, and more.
+**Important:** This is a plugin, not a standalone application. It requires an existing Botble CMS installation. Works with all Botble scripts, Shofy, MartFury, Ninico, Nest, Farmart, Flex Home, Hasa, Gerow, and more.
 
 ## What's Included
 
@@ -129,7 +129,7 @@ Create and manage agents from Admin > Live Chat > Agents. Set them as active/ina
 
 ## Demo & Support
 
-- **Storefront**: [live-chat.botble.com](https://live-chat.botble.com) — click the chat widget in the bottom right
+- **Storefront**: [live-chat.botble.com](https://live-chat.botble.com), click the chat widget in the bottom right
 - **Admin Panel**: [live-chat.botble.com/admin](https://live-chat.botble.com/admin) (admin / 12345678)
 - **Agent Portal**: [live-chat.botble.com/agent/login](https://live-chat.botble.com/agent/login) (agent@botble.com / 12345678)
 - **Documentation**: [docs.botble.com/live-chat](https://docs.botble.com/live-chat)

@@ -22,24 +22,26 @@ is_featured: true
 
 # Travlla - Travel & Tour Booking Laravel System
 
-Running a travel business online usually means stitching together a booking widget, a payment plugin, a CMS, and a separate vendor system — then paying a developer to keep them all talking to each other. Travlla replaces that whole stack with one product.
+Ask a tour operator what their website costs and you rarely get one number. There's the CMS, the booking widget, the payment plugin, the vendor system, and the developer who keeps the four of them on speaking terms. The developer is usually the expensive part, and the one you cannot stop paying.
+
+Travlla is our attempt at collapsing that into a single product.
 
 Travlla is a **complete travel & tour booking system** built on Laravel 13 and Botble CMS. It ships with everything a tour operator, travel agency, or booking marketplace needs out of the box: tour listings with itineraries and departure dates, online booking and checkout, a full vendor marketplace, multi-currency pricing, 5 ready-made homepages, and 40+ designed pages.
 
-No coding skills needed. Install it, add your tours, and start taking bookings. Travlla handles the rest — from the booking flow and payments to vendor payouts and customer management.
+No coding skills needed. Install it, add your tours, and start taking bookings. Travlla handles the rest, from the booking flow and payments to vendor payouts and customer management.
 
 ![Travlla - Travel & Tour Booking Laravel System homepage](https://landing.botble.com/travlla/screenshots/home-1.png)
 
 ## Why Travlla?
 
-- **A real booking system, not just a theme** — tours, itineraries, departure dates, pricing tiers, availability, coupons, taxes, and a checkout flow are all built in
-- **Built-in vendor marketplace** — let tour operators and guides register, list their own tours, manage bookings, and request payouts while you earn commission on every sale
-- **Launch fast** — 5 homepage layouts and 40+ pages mean you can have a polished travel site live in a day, not a month
-- **Sell worldwide** — multi-currency, unlimited languages, and full RTL support reach customers anywhere
-- **Accept payments globally** — PayPal, Stripe, Razorpay, Paystack, and SSLCommerz are ready to go
-- **Mobile & API ready** — a REST API lets you power mobile apps or integrate with external systems
-- **Free updates forever** — buy once, receive all future updates at no extra cost
-- **Free installation** — our team will install it on your hosting for FREE
+- **A real booking system, not just a theme**: tours, itineraries, departure dates, pricing tiers, availability, coupons, taxes, and a checkout flow are all built in
+- **Built-in vendor marketplace**: let tour operators and guides register, list their own tours, manage bookings, and request payouts while you earn commission on every sale
+- **Launch fast**: 5 homepage layouts and 40+ pages mean you can have a polished travel site live in a day, not a month
+- **Sell worldwide**: multi-currency, unlimited languages, and full RTL support reach customers anywhere
+- **Accept payments globally**: PayPal, Stripe, Razorpay, Paystack, and SSLCommerz are ready to go
+- **Mobile & API ready**: a REST API lets you power mobile apps or integrate with external systems
+- **Free updates forever**: buy once, receive all future updates at no extra cost
+- **Free installation**: our team will install it on your hosting for FREE
 
 ## Key Features
 
@@ -47,19 +49,19 @@ No coding skills needed. Install it, add your tours, and start taking bookings. 
 
 Each tour in Travlla is far more than a title and a price. Build rich, conversion-ready tour pages with:
 
-- **Itineraries** — day-by-day breakdowns of what travelers will do
-- **Departure dates** — schedule fixed departures with availability
-- **Pricing tiers** — different prices by accommodation level (e.g. 3-, 4-, or 5-star hotel rating)
-- **Highlights, amenities & inclusions** — categorized amenity groups so travelers know exactly what's included
-- **Duration, group size & minimum age** — set days/nights, min–max group size, and age requirements
-- **Destinations, categories, types & tags** — organize your catalog and make it filterable
-- **Reviews & ratings** — verified traveler feedback that builds trust right on the tour page
+- **Itineraries**: day-by-day breakdowns of what travelers will do
+- **Departure dates**: schedule fixed departures with availability
+- **Pricing tiers**: different prices by accommodation level (e.g. 3-, 4-, or 5-star hotel rating)
+- **Highlights, amenities & inclusions**: categorized amenity groups so travelers know exactly what's included
+- **Duration, group size & minimum age**: set days/nights, min–max group size, and age requirements
+- **Destinations, categories, types & tags**: organize your catalog and make it filterable
+- **Reviews & ratings**: verified traveler feedback that builds trust right on the tour page
 
 ![Travlla tour detail page with itinerary, pricing, and booking widget](https://landing.botble.com/travlla/screenshots/tour-detail.png)
 
 ### Online Booking & Checkout
 
-Travelers browse tours, pick a departure date, choose how many people are going, apply a coupon, and pay — all in a smooth checkout flow. Bookings generate invoices automatically, taxes and discounts are calculated for you, and each booking gets a unique booking number for tracking.
+Travelers browse tours, pick a departure date, choose how many people are going, apply a coupon, and pay, all in a smooth checkout flow. Bookings generate invoices automatically, taxes and discounts are calculated for you, and each booking gets a unique booking number for tracking.
 
 ![Travlla tour list with search and price filtering](https://landing.botble.com/travlla/screenshots/tours-list.png)
 
@@ -89,13 +91,13 @@ Sell to a global audience. Travlla supports multiple currencies so travelers see
 
 ### Powerful Admin Panel
 
-Everything is managed from a clean, intuitive dashboard — no hardcoding. Manage tours, bookings, vendors, customers, destinations, content, and settings, with analytics displayed right in the panel.
+Everything is managed from a clean, intuitive dashboard, no hardcoding. Manage tours, bookings, vendors, customers, destinations, content, and settings, with analytics displayed right in the panel.
 
 ![Travlla admin dashboard](https://landing.botble.com/travlla/screenshots/admin-dashboard.png)
 
 ## 5 Ready-Made Homepages
 
-Travlla ships with **5 professionally designed homepage layouts**, so you can pick the style that fits your brand and launch immediately. Mix and match sections, swap content, and customize colors — all without touching code.
+Travlla ships with **5 professionally designed homepage layouts**, so you can pick the style that fits your brand and launch immediately. Mix and match sections, swap content, and customize colors, all without touching code.
 
 - [Home 1](https://travlla.botble.com)
 - [Home 2](https://travlla-home-2.botble.com)
@@ -107,12 +109,12 @@ Travlla ships with **5 professionally designed homepage layouts**, so you can pi
 
 Beyond the homepages, Travlla includes a complete set of pages so your site feels finished from day one:
 
-- **Tours** — Tour list (multiple grid & sidebar styles), tour detail, tour packages & package detail
-- **Destinations** — Multiple destination grid layouts and destination detail pages
-- **Discovery** — Compare, FAQ, gallery, pricing plans, services & service detail
-- **People** — Tour guides & guide detail, testimonials & testimonial detail
-- **Content** — Blog grid, blog list, and blog detail for content marketing
-- **Utility** — About us, contact, under maintenance, and coming soon
+- **Tours**: Tour list (multiple grid & sidebar styles), tour detail, tour packages & package detail
+- **Destinations**: Multiple destination grid layouts and destination detail pages
+- **Discovery**: Compare, FAQ, gallery, pricing plans, services & service detail
+- **People**: Tour guides & guide detail, testimonials & testimonial detail
+- **Content**: Blog grid, blog list, and blog detail for content marketing
+- **Utility**: About us, contact, under maintenance, and coming soon
 
 ## Accept Payments Worldwide
 
@@ -134,11 +136,11 @@ Travlla is built on top of **Botble CMS**, a mature Laravel platform used by tho
 - Sliders, galleries, testimonials, teams, and FAQ
 - SEO tools and automatic `sitemap.xml`
 - Google Analytics with stats inside the admin panel
-- Powerful permission system — manage users, teams, and roles by permission
+- Powerful permission system: manage users, teams, and roles by permission
 - Media system with Amazon S3, DigitalOcean Spaces, BunnyCDN, and Wasabi support
 - REST API for mobile apps and integrations
 - Translation tool and unlimited languages with RTL
-- Web installer — no command line needed
+- Web installer: no command line needed
 
 ## Technical Specifications
 
@@ -175,7 +177,7 @@ Travlla is built on top of **Botble CMS**, a mature Laravel platform used by tho
 
 ## Get Started Today
 
-Whether you're a single tour operator or building the next travel marketplace, Travlla gives you a complete booking platform out of the box. Install it, add your tours, and start taking bookings — no development required.
+Whether you're a single tour operator or building the next travel marketplace, Travlla gives you a complete booking platform out of the box. Install it, add your tours, and start taking bookings, no development required.
 
 **[View Live Demo](https://travlla.botble.com)**
 
