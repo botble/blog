@@ -132,15 +132,21 @@ the nginx user's home). The real fix belongs in the plugin: match on the decoded
 
 | Post | em/1k | human/1k | Status |
 |---|---:|---:|---|
-| best-laravel-multivendor-marketplace-scripts-2026 | 28.4 | 4.5 | pending |
-| travlla-introduction | 23.2 | 0.0 | pending |
-| snapcart-introduction | 23.0 | 0.9 | pending |
-| license-manager-introduction | 21.4 | 2.6 | pending |
-| amerce-now-available-on-codester | 21.0 | 1.9 | pending |
-| deskhive-introduction | 20.0 | 1.1 | pending |
-| amerce-introduction | 16.6 | 1.7 | pending |
-| claude-code-skills-for-botble-cms | 15.8 | 3.2 | pending |
+| best-laravel-multivendor-marketplace-scripts-2026 | 28.4 | 4.5 | ✅ 28/09 |
+| travlla-introduction | 23.2 | 0.0 | ✅ 28/09 |
+| snapcart-introduction | 23.0 | 0.9 | ✅ 28/09 |
+| license-manager-introduction | 21.4 | 2.6 | ✅ 28/09 |
+| amerce-now-available-on-codester | 21.0 | 1.9 | ✅ 28/09 |
+| deskhive-introduction | 20.0 | 1.1 | ✅ 28/09 |
+| amerce-introduction | 16.6 | 1.7 | ✅ 28/09 |
+| claude-code-skills-for-botble-cms | 15.8 | 3.2 | ✅ 28/09 |
 | best-laravel-ecommerce-scripts-2026 | 14.8 → **0.6** | 8.6 | ✅ 28/09 |
-| live-chat-introduction | 14.7 | 2.3 | pending |
+| live-chat-introduction | 14.7 | 2.3 | ✅ 28/09 |
 
 Reference: post #1 after its rewrite sits at 2.9 / 11.7.
+
+**Done 28/09.** All ten rewritten: 310 em dashes removed across twelve files (the three extra were
+filler-word cleanups), brochure openings replaced, and every post re-imported. Two discoveries on
+the way: the importer duplicates posts whose title contains `&` (fixed in the plugin, pushed to
+`botble/botble.com`), and the DeskHive post had never actually been published — its markdown sat in
+this repo unused, so it went live for the first time.
