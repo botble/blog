@@ -1,0 +1,77 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(135deg,#0b1220 0%,#121c2e 52%,#17283f 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(110px); }
+  .bloom.a { width:520px; height:520px; background:#0ea5e9; opacity:.26; top:-200px; left:-140px; }
+  .bloom.b { width:440px; height:440px; background:#f59e0b; opacity:.20; bottom:-190px; right:-90px; }
+
+  .content { position:relative; padding:58px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+             letter-spacing:1.7px; color:#7dd3fc; background:rgba(14,165,233,.14);
+             border:1px solid rgba(125,211,252,.32); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:22px; font-size:58px; line-height:1.06; font-weight:900; color:#fff; letter-spacing:-1.5px; max-width:640px; }
+  h1 em { font-style:normal; color:#fbbf24; }
+  p.sub { margin-top:20px; font-size:19px; color:#93a4bb; max-width:540px; line-height:1.55; }
+
+  /* rules panel on the right */
+  .panel { position:absolute; right:64px; top:92px; width:404px;
+           background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.11);
+           border-radius:16px; padding:22px 24px; }
+  .panel h2 { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#cbd5e1;
+              letter-spacing:1.1px; margin-bottom:16px; }
+  .rule { display:flex; align-items:center; gap:12px; padding:9px 0;
+          border-bottom:1px solid rgba(255,255,255,.055); }
+  .rule:last-child { border-bottom:none; }
+  .mark { width:22px; height:22px; border-radius:6px; flex:none;
+          display:flex; align-items:center; justify-content:center;
+          font-size:13px; font-weight:800; font-family:'JetBrains Mono',monospace; }
+  .ok   { background:rgba(34,197,94,.17);  color:#4ade80; border:1px solid rgba(74,222,128,.34); }
+  .warn { background:rgba(245,158,11,.17); color:#fbbf24; border:1px solid rgba(251,191,36,.34); }
+  .no   { background:rgba(239,68,68,.15);  color:#f87171; border:1px solid rgba(248,113,113,.3); }
+  .label { font-size:15px; color:#e2e8f0; font-weight:600; }
+  .note  { margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:11px; color:#64748b; }
+
+  /* price strip */
+  .strip { position:absolute; left:64px; bottom:92px; display:flex; align-items:stretch; gap:14px; }
+  .chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+          border-radius:12px; padding:14px 18px; }
+  .chip .k { font-family:'JetBrains Mono',monospace; font-size:11px; color:#64748b; letter-spacing:.6px; }
+  .chip .v { margin-top:5px; font-size:22px; font-weight:800; color:#fff; letter-spacing:-.4px; }
+  .chip .v small { font-size:13px; font-weight:600; color:#93a4bb; }
+  .vs { align-self:center; font-family:'JetBrains Mono',monospace; font-size:12px; color:#475569; }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div><div class="bloom b"></div>
+    <div class="content">
+      <span class="eyebrow">CAR RENTAL SOFTWARE &middot; 2026</span>
+      <h1>It's a pricing engine,<br><em>not a calendar.</em></h1>
+      <p class="sub">Nine self-hosted scripts compared on real prices, sales and last-update dates.</p>
+    </div>
+
+    <div class="panel">
+      <h2>CAN IT CHARGE LIKE THIS?</h2>
+      <div class="rule"><span class="mark ok">&check;</span><span class="label">Per day</span><span class="note">every product</span></div>
+      <div class="rule"><span class="mark warn">~</span><span class="label">Per hour</span><span class="note">often a label, not billing</span></div>
+      <div class="rule"><span class="mark no">&times;</span><span class="label">Fixed 3h / 12h blocks</span><span class="note">rare</span></div>
+      <div class="rule"><span class="mark no">&times;</span><span class="label">Overtime on late return</span><span class="note">rarer</span></div>
+      <div class="rule"><span class="mark no">&times;</span><span class="label">Deposit held, then released</span><span class="note">custom work</span></div>
+    </div>
+
+    <div class="strip">
+      <div class="chip"><div class="k">OWN THE CODE</div><div class="v">$29&ndash;$85 <small>once</small></div></div>
+      <div class="vs">vs</div>
+      <div class="chip"><div class="k">RENT THE SOFTWARE</div><div class="v">$35&ndash;$250 <small>/ month</small></div></div>
+      <div class="vs">+</div>
+      <div class="chip"><div class="k">SETUP FEE, HOSTED</div><div class="v">$550 <small>one&#8209;time</small></div></div>
+    </div>
+  </div>
+</body></html>
