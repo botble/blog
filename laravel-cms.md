@@ -35,7 +35,7 @@ Nine real choices below, what each one costs in 2026, and where each one falls a
 - **You want 100% free and MIT, forever** → [Winter CMS](#4-winter-cms-october-free-forever) or [Twill](#5-twill-a-cms-toolkit-not-a-cms)
 - **You want to define your own content models, not use someone's** → [Twill](#5-twill-a-cms-toolkit-not-a-cms) or [Filament](#6-filament-the-build-it-yourself-option)
 - **Content must feed a mobile app or a non-Laravel frontend** → [Strapi](#7-strapi-the-open-source-headless-default), [ButterCMS](#8-buttercms-the-headless-option-that-actually-ships-a-php-sdk), or [Hygraph](#9-hygraph-graphql-native-for-content-spread-across-systems)
-- **You're building a store, marketplace, booking site, or job board** → a Laravel CMS with a ready-made vertical on top, which in practice means [Botble](https://marketplace.botble.com/portfolio)
+- **You're building a store, marketplace, booking site, or job board** → a Laravel CMS with a ready-made vertical on top, which in practice means [Botble](https://marketplace.botble.com/portfolio). For vehicle rental specifically, we compared [nine self-hosted options](https://botble.com/car-rental-booking-software-2026)
 
 ## What actually counts as a "Laravel CMS"
 
@@ -454,6 +454,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
 - Full technical deep-dive: [What Is Botble CMS?](https://botble.com/what-is-botble-cms-the-laravel-cms-thats-built-for-vibe-coding)
 - Building a store instead of a site? [Best Laravel Ecommerce Scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared)
 - Building a marketplace? [Best Laravel Multi-Vendor Marketplace Scripts 2026](https://botble.com/best-laravel-multi-vendor-marketplace-scripts-2026-top-6)
+- Renting out vehicles? [Car Rental Booking Software in 2026](https://botble.com/car-rental-booking-software-2026)
 - Free add-ons: [Top 5 Free Botble CMS Plugins](https://botble.com/top-5-free-botble-cms-plugins-released-in-2025-2026)
 
 <script type="application/ld+json">
