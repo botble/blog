@@ -32,7 +32,7 @@ products that are selling.
 | 1 | Build your own Shopify alternative | shopify alternative self hosted | Ecommerce SaaS | ✅ [published 28/09](https://botble.com/build-your-own-shopify-alternative-a-self-hosted-multi-tenant-store-platform-on-laravel) |
 | 2 | Add Ecommerce SaaS to `best-laravel-ecommerce-scripts-2026` | (refresh, already ranks) | Ecommerce SaaS | ✅ done 28/09, together with its voice pass |
 | 3 | Laravel multi-tenancy: database per tenant vs single database | laravel multi tenancy database per tenant | Ecommerce SaaS | ✅ [published 28/09](https://botble.com/laravel-multi-tenancy-database-per-tenant-vs-one-shared-database) |
-| 4 | Best Laravel car rental scripts 2026 | laravel car rental script | Carento + Carento Mobile | pending |
+| 4 | Car rental booking software, 9 self-hosted options | laravel car rental script | Carento + Carento Mobile | ✅ [published 01/10](https://botble.com/car-rental-booking-software-2026) |
 | 5 | Best Laravel real estate scripts 2026 | laravel real estate script | Homzen, Flex Home | pending |
 | 6 | Laravel helpdesk & support ticket scripts | laravel support ticket system | DeskHive | pending |
 | 7 | Add licensing and auto-updates to your Laravel app | laravel license key system | License Manager | pending |

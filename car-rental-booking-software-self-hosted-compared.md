@@ -1,6 +1,6 @@
 ---
 title: "Car Rental Booking Software in 2026: What It Has to Get Right, and 9 Self-Hosted Options Compared"
-slug: car-rental-booking-software
+slug: car-rental-booking-software-2026
 description: "Nine self-hosted car rental scripts compared on real CodeCanyon prices, sales and last-update dates, plus what hosted software costs instead. Written around the pricing rules that break rental software first."
 categories:
   - Buyer Guides
