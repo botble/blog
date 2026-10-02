@@ -455,6 +455,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
 - Building a store instead of a site? [Best Laravel Ecommerce Scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared)
 - Building a marketplace? [Best Laravel Multi-Vendor Marketplace Scripts 2026](https://botble.com/best-laravel-multi-vendor-marketplace-scripts-2026-top-6)
 - Renting out vehicles? [Car Rental Booking Software in 2026](https://botble.com/car-rental-booking-software-2026)
+- Selling or listing property? [Laravel Real Estate Script: 8 options compared](https://botble.com/laravel-real-estate-script-2026)
 - Free add-ons: [Top 5 Free Botble CMS Plugins](https://botble.com/top-5-free-botble-cms-plugins-released-in-2025-2026)
 
 <script type="application/ld+json">

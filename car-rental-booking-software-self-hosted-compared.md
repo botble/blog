@@ -241,6 +241,7 @@ Not to start. Your customers will book on a phone browser long before they insta
 
 - [Carento](https://marketplace.botble.com/portfolio/carento), demo at [carento.botble.com](https://carento.botble.com)
 - [Laravel CMS: the 9 best options in 2026](https://botble.com/laravel-cms-2026), if the rental part is only half your project
+- [Laravel real estate scripts compared](https://botble.com/laravel-real-estate-script-2026), the same exercise for property
 - [Why buying direct is 30% cheaper](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon)
 
 If you're still deciding, do the exercise from the top of this article before you look at another demo. Write down every way you charge a customer, including the late returns and the one-way drops and the weekend rate. Then open the admin panel of whatever you're considering and try to enter it. Fifteen minutes of that beats a week of reading comparison tables, this one included.
