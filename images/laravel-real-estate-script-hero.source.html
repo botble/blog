@@ -1,0 +1,81 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(140deg,#0c1322 0%,#13203a 55%,#15304a 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(110px); }
+  .bloom.a { width:500px; height:500px; background:#10b981; opacity:.22; top:-190px; left:-120px; }
+  .bloom.b { width:460px; height:460px; background:#6366f1; opacity:.28; bottom:-200px; right:-110px; }
+
+  .content { position:relative; padding:56px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+             letter-spacing:1.7px; color:#6ee7b7; background:rgba(16,185,129,.13);
+             border:1px solid rgba(110,231,183,.3); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:22px; font-size:57px; line-height:1.07; font-weight:900; color:#fff; letter-spacing:-1.5px; max-width:600px; }
+  h1 em { font-style:normal; color:#6ee7b7; }
+  p.sub { margin-top:18px; font-size:18px; color:#93a4bb; max-width:500px; line-height:1.55; }
+
+  /* two shapes */
+  .cards { position:absolute; right:64px; top:92px; width:430px; display:flex; flex-direction:column; gap:14px; }
+  .card { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.11);
+          border-radius:14px; padding:18px 20px; }
+  .card h2 { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+             letter-spacing:1px; margin-bottom:12px; }
+  .card.one h2 { color:#6ee7b7; }
+  .card.many h2 { color:#a5b4fc; }
+  .card ul { list-style:none; }
+  .card li { font-size:14px; color:#cbd5e1; padding:4px 0 4px 18px; position:relative; line-height:1.4; }
+  .card li::before { content:'·'; position:absolute; left:4px; color:#64748b; font-weight:800; }
+  .card .tag { margin-top:10px; font-family:'JetBrains Mono',monospace; font-size:11px; color:#64748b; }
+
+  /* bottom strip */
+  .strip { position:absolute; left:64px; bottom:54px; display:flex; align-items:stretch; gap:13px; }
+  .chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+          border-radius:12px; padding:13px 17px; }
+  .chip .k { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#64748b; letter-spacing:.6px; }
+  .chip .v { margin-top:5px; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.4px; }
+  .chip .v small { font-size:12.5px; font-weight:600; color:#93a4bb; }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div><div class="bloom b"></div>
+    <div class="content">
+      <span class="eyebrow">LARAVEL REAL ESTATE SCRIPT &middot; 2026</span>
+      <h1>Who types the<br>listings in?<br><em>Answer that first.</em></h1>
+      <p class="sub">Eight self-hosted options compared on real prices, sales and last-update dates.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card one">
+        <h2>AGENCY SITE &mdash; YOUR OWN STOCK</h2>
+        <ul>
+          <li>You and your staff enter properties</li>
+          <li>Enquiries come to you</li>
+          <li>No accounts for anyone else</li>
+        </ul>
+        <div class="tag">the simpler product</div>
+      </div>
+      <div class="card many">
+        <h2>PORTAL &mdash; OTHER AGENTS LIST</h2>
+        <ul>
+          <li>Agent accounts, approval queue, profiles</li>
+          <li>Enquiry routed to the right agent</li>
+          <li>Packages, limits, expiry, renewals</li>
+        </ul>
+        <div class="tag">a billing system inside a property site</div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="chip"><div class="k">SELF&#8209;HOSTED SCRIPTS</div><div class="v">$48&ndash;$79 <small>once</small></div></div>
+      <div class="chip"><div class="k">WORDPRESS, TOP THEME</div><div class="v">57,272 <small>sales</small></div></div>
+      <div class="chip"><div class="k">GOOGLE MAPS, AFTER 10K/MO</div><div class="v">$7 <small>/ 1,000 loads</small></div></div>
+    </div>
+  </div>
+</body></html>
