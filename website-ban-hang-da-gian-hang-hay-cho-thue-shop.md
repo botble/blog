@@ -115,7 +115,7 @@ Cùng một mã nguồn, cùng một tác giả, cùng giấy phép, cùng cập
 
 Quy đổi VND chỉ để tham khảo, ở tỷ giá 25.000đ/USD. Giá niêm yết là USD.
 
-## FAQ
+## Câu hỏi thường gặp
 
 ### Đa gian hàng và cho thuê shop khác nhau chỗ nào?
 
