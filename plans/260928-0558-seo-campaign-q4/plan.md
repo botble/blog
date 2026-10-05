@@ -35,7 +35,7 @@ products that are selling.
 | 4 | Car rental booking software, 9 self-hosted options | laravel car rental script | Carento + Carento Mobile | ✅ [published 01/10](https://botble.com/car-rental-booking-software-2026) |
 | 5 | Laravel real estate scripts, 8 self-hosted options | laravel real estate script | Homzen, Flex Home | ✅ [published 02/10](https://botble.com/laravel-real-estate-script-2026) |
 | 6 | Laravel helpdesk scripts, self-hosted support desks | laravel support ticket system | DeskHive | ✅ [published 05/10](https://botble.com/laravel-helpdesk-script-2026) |
-| 7 | Add licensing and auto-updates to your Laravel app | laravel license key system | License Manager | pending |
+| 7 | Botble License Manager: a self-hosted license server | botble license manager, license server | License Manager | ✅ [published 05/10](https://botble.com/botble-license-manager-license-server) |
 | 8 | Vietnamese version of #1 | website bán hàng đa gian hàng | Ecommerce SaaS | pending |
 
 One post at a time, each published before the next is started, so the first results inform the rest.
