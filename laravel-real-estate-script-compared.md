@@ -183,24 +183,24 @@ It is on this page because pretending it isn't would be dishonest: in the script
 
 **Trade-offs:** you are adopting CodeIgniter in 2026. If your team is Laravel, every change costs more than it should, and your hiring pool for maintenance is smaller each year. That is a real cost, just not one you pay on day one.
 
-## Questions buyers actually ask
+## Frequently Asked Questions
 
-**Can agents register and pay to list?**
+### Can agents register and pay to list?
 Only if you bought the portal shape. Ask the seller to show you the package, expiry and renewal screens in the admin demo, not the storefront. If those screens don't exist, the feature doesn't.
 
-**Can it import from my MLS or from Rightmove?**
+### Can it import from my MLS or from Rightmove?
 Assume no. Nothing in this price range ships a feed importer for your specific market, and the integration usually costs more than the script. Ask before buying, in writing.
 
-**Will my Google Maps bill really be that high?**
+### Will my Google Maps bill really be that high?
 It depends entirely on traffic, and the mechanism is the thing to understand: you are billed per map load, 10,000 free per month, then $7 per 1,000. Set a budget cap in Google Cloud the day you launch, not the day the bill arrives.
 
-**Can one property have both a sale price and a rent price?**
+### Can one property have both a sale price and a rent price?
 Check the demo. This is a surprisingly common requirement and a surprisingly common gap, and retrofitting it touches the data model, the filters and every template that prints a price.
 
-**What about units inside a development?**
+### What about units inside a development?
 A tower with 40 apartments is one listing or forty, and the two choices produce very different sites. Decide which you need and verify it in the demo before you buy.
 
-**Is there a Vietnamese version?**
+### Is there a Vietnamese version?
 Yes, and it is written up separately: [source code website bất động sản Laravel](https://botble.com/source-code-website-bat-dong-san-laravel-homzen-mua-truc-tiep-bang-chuyen-khoan-vnd), including buying direct by bank transfer in VND.
 
 ## Where to next

@@ -129,33 +129,33 @@ The honest arithmetic: at $39 one-time, the question is not whether it is worth 
 
 Compare that to a licensing SaaS billed monthly, forever, on a server you do not control, holding the keys to your own product's activation.
 
-## Questions people ask
+## Frequently Asked Questions
 
-**What is Botble License Manager?**
+### What is Botble License Manager?
 A self-hosted license server and update manager, built on Laravel 13 and PHP 8.3+. You install it on your own domain and it issues licences, verifies activations, blocks abuse and delivers signed updates for the software you sell.
 
-**Is it a replacement for LicenseBox?**
+### Is it a replacement for LicenseBox?
 It is built to cover the same ground, with the same settings vocabulary, and it is current rather than abandoned. LicenseBox was removed from CodeCanyon, so there is no like-for-like upgrade path and no automatic data import. You migrate by re-issuing licences or pushing them through the API.
 
-**Does it work with Envato purchase codes?**
+### Does it work with Envato purchase codes?
 Yes. There is an Envato integration plugin, and licences carry a verification type of Envato, direct or non-Envato, so you can sell the same product on a marketplace and from your own site without two systems.
 
-**Can it handle Gumroad or Lemon Squeezy sales?**
+### Can it handle Gumroad or Lemon Squeezy sales?
 Yes, both ship as integration plugins.
 
-**Does it deliver updates, or only check licences?**
+### Does it deliver updates, or only check licences?
 Both. It stores product versions with checksums and Ed25519 signatures, and serves them through single-use download tokens authorised against the licence.
 
-**Can one licence be used on several domains?**
+### Can one licence be used on several domains?
 Yes, within a limit you set per licence, with activations recorded individually and a domain-switch notification when a customer moves.
 
-**Is it a subscription?**
+### Is it a subscription?
 No. $39 introductory, $59 regular, paid once.
 
-**What does it need to run?**
+### What does it need to run?
 PHP 8.3 or 8.4, Laravel 13, a database, and cron for the scheduled commands that handle expiry, blacklisting and violation scans. The `sodium` extension is needed for release signing.
 
-**Is there a demo?**
+### Is there a demo?
 Yes, linked from the product page.
 
 ## Links

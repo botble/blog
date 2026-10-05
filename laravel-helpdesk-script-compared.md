@@ -184,24 +184,24 @@ Tickets have four statuses (open, in progress, on hold, closed), four priorities
 
 **Who it's for:** a small team doing email support who wants a current Laravel 13 codebase they can read and change, who does not need SLA timers, and who is comfortable buying something new at $20.
 
-## Questions people actually ask
+## Frequently Asked Questions
 
-**Will my customers' emails become tickets?**
+### Will my customers' emails become tickets?
 Only if the product does IMAP polling with reply-matching and de-duplication. Ask the seller to show you the inbound email settings screen, and ask specifically what happens when a customer replies to a closed ticket.
 
-**Can I use my own domain for outgoing replies?**
+### Can I use my own domain for outgoing replies?
 That is SMTP configuration and every product here does it. Whether those replies land in the inbox rather than spam is SPF, DKIM and DMARC on your domain, and no script can do that for you.
 
-**Is self-hosting really cheaper?**
+### Is self-hosting really cheaper?
 Over a year, for two or more agents, on the published prices above: yes, by a lot. Over a year including your own time to run a server, patch it and restore it when it breaks: that depends entirely on what your hours are worth.
 
-**What about GDPR and data residency?**
+### What about GDPR and data residency?
 This is a genuine reason people self-host that has nothing to do with price. Your tickets contain customer personal data, and self-hosting means it sits in a database you control, in a country you chose.
 
-**Can I migrate off Zendesk?**
+### Can I migrate off Zendesk?
 Export your tickets and import them. No product here ships a Zendesk importer, so assume a script-writing exercise against the API, and test it on a copy first.
 
-**Do any of these do SLA timers?**
+### Do any of these do SLA timers?
 Ours does not. Check each demo rather than taking a feature-list bullet at face value, because "SLA" on a sales page sometimes means a priority dropdown.
 
 ## Where to next

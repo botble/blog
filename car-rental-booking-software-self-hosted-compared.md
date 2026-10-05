@@ -214,27 +214,27 @@ That gap is not a trick. You're buying three real things with the monthly fee: s
 
 What makes it tip the other way is scale and specificity. HQ at 50 vehicles is $250/mo plus $1,500 to start. Booqable charges per location, so three branches is another $58/mo before anyone has rented anything. And neither will add fixed 12-hour blocks because you asked. Own the code and that's a contractor's afternoon instead of a feature request nobody will ever action.
 
-## What buyers actually ask, answered
+## Frequently Asked Questions
 
-**Can I price by the hour?**
+### Can I price by the hour?
 Check whether the product *bills* hourly or just labels a rate as hourly. Ask the seller directly, in writing, with an example: "a 4-hour rental and a 20-hour rental: what does each cost?" The answer tells you more than the feature list.
 
-**What stops two customers booking the same car?**
+### What stops two customers booking the same car?
 Availability has to be enforced in the database, not checked in PHP a moment before insert. Two people hitting checkout in the same second is exactly when a naive check fails, and it's the bug you find on your best day of the year. Ask how it's handled.
 
-**Can I hold a security deposit and release it later?**
+### Can I hold a security deposit and release it later?
 Assume not, in this price bracket. Budget for a manual process or custom work, and check what your payment provider supports in your country before you design around it.
 
-**Multiple pickup and drop-off locations with one-way fees?**
+### Multiple pickup and drop-off locations with one-way fees?
 Multi-location in the feature list usually means "cars belong to a branch". One-way fees priced per location pair is a different feature. Verify in the demo.
 
-**Driver-included rentals?**
+### Driver-included rentals?
 Rare in this bracket. If chauffeur service is half your revenue, say so when you ask for a quote, because retrofitting it is not small.
 
-**Which payment gateways?**
+### Which payment gateways?
 Stripe and PayPal, nearly always. Local methods are the common custom job. If you're in a market where cards are the minority, make the gateway your first question, not your last.
 
-**Do I need the mobile app?**
+### Do I need the mobile app?
 Not to start. Your customers will book on a phone browser long before they install anything. We sell [Carento Mobile](https://botble.com/carento-mobile-a-react-native-car-rental-app-for-your-carento-or-auxero-site) and I'd still tell you to launch the website first and see whether anyone asks for an app.
 
 ## Where to next
