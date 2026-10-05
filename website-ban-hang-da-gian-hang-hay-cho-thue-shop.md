@@ -68,7 +68,7 @@ Chênh lệch giá là thật và nó phản ánh phạm vi: MartFury là bộ m
 
 **Tách dữ liệu giữa các shop.** Shop A tuyệt đối không được thấy đơn hàng của shop B. Một câu truy vấn thiếu điều kiện lọc là rò rỉ dữ liệu. Và không chỉ cơ sở dữ liệu: file tải lên, cache, job trong hàng đợi đều phải tách. Hai shop cùng đặt tên logo là `logo.png` mà không tách thư mục thì đè nhau.
 
-**Khởi tạo shop tự động.** Khách bấm đăng ký, hệ thống phải tạo cơ sở dữ liệu, chạy migration, tạo dữ liệu mẫu, tạo tài khoản quản trị, gắn tên miền phụ, gửi email — đáng tin cậy, và không bắt người ta ngồi chờ hai phút.
+**Khởi tạo shop tự động.** Khách bấm đăng ký, hệ thống phải tạo cơ sở dữ liệu, chạy migration, tạo dữ liệu mẫu, tạo tài khoản quản trị, gắn tên miền phụ, gửi email. Đáng tin cậy, và không bắt người ta ngồi chờ hai phút.
 
 **Thu tiền thuê bao.** Gói cước, dùng thử, nâng hạ gói, thẻ lỗi, nhắc nợ, thời gian ân hạn. Thứ bạn thật sự phải xây là một máy trạng thái cho vòng đời của shop. Và ở Việt Nam, bạn còn cần đường **chuyển khoản ngân hàng**: xuất hoá đơn, đối soát tay, bật shop bằng tay. Phần lớn khách Việt trả theo cách đó.
 
@@ -76,7 +76,7 @@ Chênh lệch giá là thật và nó phản ánh phạm vi: MartFury là bộ m
 
 **Bảng điều khiển của bạn.** Bao nhiêu shop đang sống, doanh thu định kỳ bao nhiêu, ai sắp hết hạn, shop nào tạo lỗi. Và một cách đăng nhập hộ khách để hỗ trợ mà không phải hỏi mật khẩu.
 
-Năm nhóm việc, mỗi nhóm vài tuần. Và chưa nhóm nào là phần thương mại điện tử — sản phẩm, giỏ hàng, thanh toán, vận chuyển, thuế — thứ duy nhất khách hàng của bạn thật sự đánh giá.
+Năm nhóm việc, mỗi nhóm vài tuần. Và chưa nhóm nào là phần thương mại điện tử (sản phẩm, giỏ hàng, thanh toán, vận chuyển, thuế), thứ duy nhất khách hàng của bạn thật sự đánh giá.
 
 ## Ecommerce SaaS: bộ mã nguồn cho mô hình thứ ba
 
@@ -84,7 +84,7 @@ Năm nhóm việc, mỗi nhóm vài tuần. Và chưa nhóm nào là phần thư
 
 **Nói trước phần không đẹp: đây là sản phẩm mới.** Trên CodeCanyon nó mới có **8 lượt bán** và chưa có đánh giá nào. Mua nó là làm khách hàng sớm. Có người thấy chấp nhận được ở mức giá này, có người không, cả hai đều hợp lý. Mình để con số đó ở đây thay vì giấu xuống cuối.
 
-**Giá: $69, mua trực tiếp $48.30** — khoảng 1,2 triệu ở tỷ giá 25.000đ. Trả một lần, không thuê bao.
+**Giá: $69, mua trực tiếp $48.30**, khoảng 1,2 triệu ở tỷ giá 25.000đ. Trả một lần, không thuê bao.
 
 ## Chi phí thật: máy chủ, và nó không phải hosting rẻ tiền
 
@@ -119,7 +119,7 @@ Quy đổi VND chỉ để tham khảo, ở tỷ giá 25.000đ/USD. Giá niêm y
 
 ### Đa gian hàng và cho thuê shop khác nhau chỗ nào?
 
-Chợ đa gian hàng là nhiều người bán trên **một** website, bạn ăn hoa hồng mỗi đơn, khách hàng cuối là của bạn — giống Shopee. Nền tảng cho thuê shop là mỗi người bán có **website riêng** với tên miền riêng, bạn thu tiền thuê bao hàng tháng, khách hàng cuối là của họ — giống Haravan hay Shopify.
+Chợ đa gian hàng là nhiều người bán trên **một** website, bạn ăn hoa hồng mỗi đơn, khách hàng cuối là của bạn, giống Shopee. Nền tảng cho thuê shop là mỗi người bán có **website riêng** với tên miền riêng, bạn thu tiền thuê bao hàng tháng, khách hàng cuối là của họ, giống Haravan hay Shopify.
 
 ### Tôi muốn làm web giống Shopee thì mua gì?
 
