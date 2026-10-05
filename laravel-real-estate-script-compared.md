@@ -208,6 +208,7 @@ Yes, and it is written up separately: [source code website bất động sản L
 - [Flex Home](https://marketplace.botble.com/portfolio/flex-home) and [Homzen](https://marketplace.botble.com/portfolio/homzen)
 - [Laravel CMS: the 9 best options in 2026](https://botble.com/laravel-cms-2026), if the property part is only half your project
 - [Car rental booking software compared](https://botble.com/car-rental-booking-software-2026), the same exercise for a different vertical
+- [Laravel helpdesk scripts compared](https://botble.com/laravel-helpdesk-script-2026), and why the free tier disappearing changes the maths
 - [Why buying direct is 30% cheaper](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon)
 
 If you take one thing from this: write down who will be entering listings in a year's time, and whether they pay you. Then open the admin demo of whatever you are considering and find those screens. That is a fifteen-minute test and it is worth more than any comparison table, this one included.
