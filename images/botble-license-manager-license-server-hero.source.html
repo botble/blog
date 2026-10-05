@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(145deg,#0a0f1c 0%,#131c33 55%,#1b2748 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(115px); }
+  .bloom.a { width:520px; height:520px; background:#6366f1; opacity:.30; top:-200px; left:-130px; }
+  .bloom.b { width:450px; height:450px; background:#22d3ee; opacity:.20; bottom:-200px; right:-100px; }
+
+  .content { position:relative; padding:54px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+             letter-spacing:1.6px; color:#a5b4fc; background:rgba(99,102,241,.15);
+             border:1px solid rgba(165,180,252,.32); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:20px; font-size:54px; line-height:1.08; font-weight:900; color:#fff; letter-spacing:-1.4px; max-width:560px; }
+  h1 em { font-style:normal; color:#a5b4fc; }
+  p.sub { margin-top:16px; font-size:17px; color:#93a4bb; max-width:490px; line-height:1.55; }
+
+  /* flow */
+  .flow { margin-top:26px; display:flex; align-items:center; gap:9px; }
+  .step { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+          border-radius:9px; padding:9px 13px; font-family:'JetBrains Mono',monospace;
+          font-size:12px; font-weight:700; color:#e2e8f0; letter-spacing:.3px; }
+  .arr { color:#475569; font-size:13px; }
+
+  /* evidence panel */
+  .panel { position:absolute; right:60px; top:88px; width:432px;
+           background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.11);
+           border-radius:15px; padding:20px 22px; }
+  .panel h2 { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:#cbd5e1;
+              letter-spacing:1.1px; margin-bottom:15px; }
+  .row { display:flex; align-items:center; gap:10px; padding:9px 0;
+         border-bottom:1px solid rgba(255,255,255,.055); }
+  .row:last-child { border-bottom:none; }
+  .q { font-family:'JetBrains Mono',monospace; font-size:12px; color:#cbd5e1; }
+  .r { margin-left:auto; font-size:12.5px; font-weight:700; color:#f87171; text-align:right; }
+  .r.dim { color:#94a3b8; font-weight:600; }
+  .foot { margin-top:13px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#64748b; line-height:1.5; }
+
+  /* strip */
+  .strip { position:absolute; left:64px; bottom:48px; display:flex; align-items:stretch; gap:12px; }
+  .chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+          border-radius:12px; padding:12px 16px; }
+  .chip .k { font-family:'JetBrains Mono',monospace; font-size:10px; color:#64748b; letter-spacing:.6px; }
+  .chip .v { margin-top:4px; font-size:19px; font-weight:800; color:#fff; letter-spacing:-.3px; }
+  .chip .v small { font-size:12px; font-weight:600; color:#93a4bb; }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div><div class="bloom b"></div>
+    <div class="content">
+      <span class="eyebrow">BOTBLE LICENSE MANAGER</span>
+      <h1>A license server<br><em>you actually own.</em></h1>
+      <p class="sub">Issue licences, verify activations, block abuse, and ship updates nobody can tamper with.</p>
+      <div class="flow">
+        <span class="step">ISSUE</span><span class="arr">&rarr;</span>
+        <span class="step">VERIFY</span><span class="arr">&rarr;</span>
+        <span class="step">SIGN</span><span class="arr">&rarr;</span>
+        <span class="step">DELIVER</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>CODECANYON, SEARCHED 5 OCT 2026</h2>
+      <div class="row"><span class="q">"licensebox"</span><span class="r">0 results</span></div>
+      <div class="row"><span class="q">"license manager"</span><span class="r dim">POS, HR, inventory</span></div>
+      <div class="row"><span class="q">"license server"</span><span class="r dim">email, affiliate, media</span></div>
+      <div class="row"><span class="q">"envato license verify"</span><span class="r dim">3 plugins, 2 from 2020</span></div>
+      <div class="foot">The category that used to serve this<br>need no longer serves it.</div>
+    </div>
+
+    <div class="strip">
+      <div class="chip"><div class="k">ONE&#8209;TIME</div><div class="v">$39 <small>intro, $59 regular</small></div></div>
+      <div class="chip"><div class="k">BUILT ON</div><div class="v">Laravel 13 <small>PHP 8.3+</small></div></div>
+      <div class="chip"><div class="k">UPDATES SIGNED WITH</div><div class="v">Ed25519 <small>+ checksums</small></div></div>
+      <div class="chip"><div class="k">ISSUES LICENCES FROM</div><div class="v">3 <small>marketplaces</small></div></div>
+    </div>
+  </div>
+</body></html>
