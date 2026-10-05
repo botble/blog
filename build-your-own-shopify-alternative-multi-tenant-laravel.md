@@ -163,5 +163,6 @@ Two. The control-plane one (39 endpoints, 27 signed webhook events) for running 
 - [The full Ecommerce SaaS write-up](https://botble.com/ecommerce-saas-run-your-own-store-hosting-platform-on-botble-cms), with screenshots of the operator console and the signup flow
 - [Best Laravel ecommerce scripts in 2026](https://botble.com/best-laravel-ecommerce-scripts-in-2026-top-6-ranked-compared), if it turns out you want one store and not a platform
 - [Why buying direct is cheaper](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon)
+- Vietnamese readers: [đa gian hàng hay cho thuê shop?](https://botble.com/website-ban-hang-da-gian-hang-2026)
 
 If you're still weighing this against building it yourself, do one thing first: take the seven items above and write an honest number of days next to each. That total is the real comparison.

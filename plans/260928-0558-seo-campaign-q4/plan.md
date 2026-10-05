@@ -1,7 +1,7 @@
 ---
 name: SEO content campaign — 7 posts + 1 refresh
 date: 2026-09-28
-status: in progress
+status: complete
 ---
 
 # SEO campaign, Q4 2026
@@ -36,7 +36,7 @@ products that are selling.
 | 5 | Laravel real estate scripts, 8 self-hosted options | laravel real estate script | Homzen, Flex Home | ✅ [published 02/10](https://botble.com/laravel-real-estate-script-2026) |
 | 6 | Laravel helpdesk scripts, self-hosted support desks | laravel support ticket system | DeskHive | ✅ [published 05/10](https://botble.com/laravel-helpdesk-script-2026) |
 | 7 | Botble License Manager: a self-hosted license server | botble license manager, license server | License Manager | ✅ [published 05/10](https://botble.com/botble-license-manager-license-server) |
-| 8 | Vietnamese version of #1 | website bán hàng đa gian hàng | Ecommerce SaaS | pending |
+| 8 | Đa gian hàng vs cho thuê shop (tiếng Việt) | website bán hàng đa gian hàng | Ecommerce SaaS | ✅ [published 05/10](https://botble.com/website-ban-hang-da-gian-hang-2026) |
 
 One post at a time, each published before the next is started, so the first results inform the rest.
 

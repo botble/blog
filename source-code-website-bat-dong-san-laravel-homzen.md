@@ -60,6 +60,10 @@ Bản mới nhất là 1.3.10, ra ngày 31/07/2026. Sản phẩm này đã bán 
 
 Nếu bạn định dựng sàn nhiều môi giới cùng đăng tin, hoặc cần tích hợp thứ gì đó riêng, cứ hỏi trước khi mua. Mình trả lời thật, kể cả khi câu trả lời là sản phẩm này không hợp. Bán một license rồi mất sáu tháng hỗ trợ một thứ không đúng nhu cầu thì mình cũng lỗ.
 
+## Bạn đang tìm mảng khác?
+
+Nếu bạn định làm website bán hàng chứ không phải bất động sản, mình có viết riêng một bài phân biệt [chợ đa gian hàng và nền tảng cho thuê shop](https://botble.com/website-ban-hang-da-gian-hang-2026) — hai thứ hay bị gộp làm một, và chọn nhầm thì phải làm lại từ đầu.
+
 ## Liên hệ
 
 Email **sang@botble.com**. Viết tiếng Việt cũng được.
