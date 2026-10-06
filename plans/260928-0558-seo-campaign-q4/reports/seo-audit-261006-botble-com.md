@@ -116,6 +116,28 @@ Ranked by impact divided by effort.
 
 Items 1 and 2 are the whole first afternoon's value.
 
+## Status, same day
+
+Items 1 to 5 were fixed on 2026-10-06 and verified on the live site.
+
+| # | Item | Status |
+|---|---|---|
+| 1 | www duplicate | **Fixed.** nginx 301s `www.botble.com` to the non-www URL, path preserved. Verified on 4 URLs; the 5 other subdomains are unaffected |
+| 2 | robots.txt sitemap | **Fixed.** `Sitemap: https://botble.com/sitemap.xml` added |
+| 3 | Duplicate H1 | **Fixed.** Removed from 37 markdown files and resynced. **43 of 43 live posts now have exactly one `<h1>`** |
+| 4 | Meta descriptions | **Fixed.** 29 rewritten in markdown, 4 written directly for posts that predate the repo. **43 of 43 live posts are now between 1 and 165 characters** |
+| 5 | Page descriptions | **Fixed earlier the same day.** All 7 CMS pages |
+
+Still open: /blog has no H1, `lang`/hreflang for Vietnamese, long slugs, thin posts, cache headers, HSTS, duplicate security headers, `og:type` on the listing.
+
+### Found while fixing
+
+**Cloudflare sits in front of the whole site.** `cf-cache-status: HIT`, `cache-control: max-age=14400`. This explains why updated pages appeared stale until a cache-busting query string was added — it was never an application bug.
+
+The `CLOUDFLARE_API_TOKEN` in the local env can read zones but **lacks the Cache Purge permission**, so the stale robots.txt had to expire on its own. Granting that permission would let every future publish go live immediately instead of waiting up to four hours.
+
+**The H1 removal needed three passes.** The heading sat in different places across the repo: straight after the front matter, after the hero image, or worded as a shortened version of the title. Each pass required the heading to restate the front-matter title before deleting it, so a real section heading could not be lost. Two files needed naming explicitly.
+
 ## Open questions
 
 1. Is www intentionally served, for an old link profile? If so it still needs the 301; the canonical must not be self-referencing either way.
