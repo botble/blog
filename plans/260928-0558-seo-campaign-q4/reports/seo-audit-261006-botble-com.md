@@ -175,3 +175,28 @@ Each of these needs a decision rather than a fix.
 | **18 long post slugs** | On already-indexed posts. Shortening needs 301s and risks the rankings they have | Leave. Use shorter slugs for new posts only |
 | **8 thin posts** | Short enough to compete poorly | Expand as content work, not as an SEO fix |
 | **`og:type` fix is local to this site** | The cause is upstream: `PageService` types every page as `article`, `BlogService` does the same for archives. Fixed here in the theme | Worth the same fix in Botble core so every customer gets it |
+
+## Round two, same day — the open items
+
+| Item | Status |
+|---|---|
+| Thin tag archives | **Done.** Tag archives now send `noindex, follow`, so the links to the posts still count. `sitemap_blog_tags_enabled` is off, so `blog-tags.xml` is gone from the index and 404s. The 3 tags with no post at all — `Envato`, `Themeforest`, `Freelancer` — were deleted, with their slug rows; **116 tags left, 116 slugs** |
+| Search results indexable | **Done, not on the original list.** `/search` also sends `noindex, follow`; it is generated from whatever a visitor typed |
+| HSTS | **Done.** `Strict-Transport-Security: max-age=31536000`, no `includeSubDomains`, no `preload`. Verified that `docs.botble.com` sends no HSTS, so the other subdomains are untouched, and that `www.botble.com/blog` still 301s to the non-www URL |
+| `og:type` upstream | **Done in `~/workspace/cms` on `develop`, committed but not pushed.** `PageService` now types every page `website`; `BlogService` types category and tag archives `website` and leaves posts `article`. Blog plugin suite 35/35 green |
+| Cloudflare cache rule for blog paths | **Blocked.** No `CLOUDFLARE_API_TOKEN` is present on this machine, in any repo `.env`, in the keychain, or on the VPS, so the rule cannot be created from here. Needs the dashboard, or the token |
+| 18 long slugs, 8 thin posts | Unchanged, as recommended: short slugs for new posts only, expanding the thin ones is content work |
+
+### Verified after the round
+
+- `/tag/laravel` and `/search?q=laravel` → `robots: noindex, follow`; `/laravel`, `/blog`, posts, pages and the homepage → `index, follow`
+- Sitemap index now lists 3 children: `pages.xml` (9), `blog-posts.xml` (43), `blog-categories.xml` (14). `blog-tags.xml` 404s
+- `/tag/envato`, `/tag/themeforest`, `/tag/freelancer` → 404; `/tag/laravel` → 200
+
+Caching note, again: the sitemap index has its own cache with `cache_time_site_map = 3600` **minutes**. A `cache:clear` plus one request is not enough to see the change — the first request after the clear can still serve the warm entry. Fetch it twice.
+
+## Unresolved
+
+- Push `~/workspace/cms` `develop`? The `og:type` fix is committed locally there and not pushed.
+- The theme overrides in `botble.com` become redundant once that site takes the core fix. They are harmless, but their comments will then describe behaviour core no longer has.
+- Core offers only `noindex, nofollow` for the per-model index flag. `noindex, follow` is the more useful pair for an archive; worth raising upstream separately.
