@@ -14,8 +14,6 @@ status: published
 is_featured: true
 ---
 
-# Understanding Botble CMS Source Code Structure
-
 Botble CMS distributes its full source code without encryption, utilizing a modular architecture pattern in Laravel that separates the application into distinct modules, each handling specific functionality.
 
 ## Main Directory Organization

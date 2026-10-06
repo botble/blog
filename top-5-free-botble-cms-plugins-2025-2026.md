@@ -16,8 +16,6 @@ status: published
 is_featured: false
 ---
 
-# Top 5 Free Botble CMS Plugins Released in 2025-2026
-
 Most "best free plugins" lists are really lists of the oldest free plugins. Download counters only go up, so a plugin from 2020 will out-rank a better one from last year forever.
 
 We did it the other way round. We went through all 297 plugins in the [Botble Marketplace](https://marketplace.botble.com/plugins), kept only the free ones first released since 2025, and ranked those.

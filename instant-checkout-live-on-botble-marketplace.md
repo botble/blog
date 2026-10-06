@@ -19,8 +19,6 @@ is_featured: true
 
 ![Instant checkout on Botble Marketplace - pay by card or PayPal](https://botble.com/storage/news/instant-checkout-live-on-botble-marketplace-hero.jpg)
 
-# Instant Checkout Is Live on Botble Marketplace
-
 I'm Sang from Botble. Buying direct from us used to mean sending an email, waiting for me to reply with payment details, paying, then waiting again while I issued your license by hand. On a good day that took an hour. On a bad day, a day.
 
 That's finished. On [marketplace.botble.com/portfolio](https://marketplace.botble.com/portfolio) you can now pay with a card or PayPal and get everything immediately.

@@ -16,8 +16,6 @@ status: published
 is_featured: true
 ---
 
-# How to Build Claude Code Skills for Botble CMS Development
-
 Claude Code is a powerful AI coding assistant, but out of the box it knows nothing specific about Botble CMS, our plugin architecture, form builders, table builders, hook system, or Envato marketplace requirements. It will generate generic Laravel code that doesn't follow Botble conventions.
 
 The solution? **Claude Code Skills**, custom instruction files that teach Claude your project's specific patterns and rules. In this guide, we'll show you how to build skills that transform Claude Code into a Botble CMS expert for your development workflow.

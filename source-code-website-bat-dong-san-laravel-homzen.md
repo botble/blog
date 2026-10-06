@@ -18,8 +18,6 @@ is_featured: false
 
 ![Homzen - website bất động sản Laravel có sẵn tiếng Việt, mua trực tiếp $34.30](https://botble.com/storage/news/source-code-website-bat-dong-san-laravel-homzen-hero.jpg)
 
-# Source code website bất động sản Laravel: Homzen
-
 Mình là Sang, tác giả Homzen. Bài này viết cho người Việt, vì tuần vừa rồi có ba khách Việt mua sản phẩm của tụi mình theo ba đường khác nhau, và người mua qua CodeCanyon trả nhiều tiền hơn hẳn hai người kia. Không ai được lợi từ chuyện đó nên mình viết ra cho rõ.
 
 Homzen là mã nguồn hoàn chỉnh cho website bất động sản: đăng tin bán và cho thuê, hồ sơ môi giới, dự án, tìm kiếm theo khu vực và khoảng giá, khách lưu tin yêu thích, form liên hệ về từng bất động sản. Viết trên Laravel, chạy trên nền Botble CMS.

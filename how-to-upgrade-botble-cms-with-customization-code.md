@@ -13,8 +13,6 @@ status: published
 is_featured: false
 ---
 
-# How to Upgrade Botble CMS with Customization Code
-
 Keeping your Botble CMS up-to-date is essential for security, performance, and new features. This guide covers upgrade methods and best practices for preserving your customizations.
 
 ## Upgrade Methods

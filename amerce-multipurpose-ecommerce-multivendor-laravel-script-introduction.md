@@ -19,8 +19,6 @@ status: published
 is_featured: true
 ---
 
-# Amerce - Multipurpose eCommerce & Multivendor Marketplace Laravel Script
-
 Buyers ask us the same question every week: can I start as one shop and add vendors later, without rebuilding? The honest answer with most scripts is no, you pick a lane on day one and pay for it later.
 
 **Amerce** is our answer to that question.

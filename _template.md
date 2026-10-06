@@ -10,8 +10,6 @@ status: published
 is_featured: false
 ---
 
-# Your Post Title Here
-
 Introduction paragraph goes here.
 
 ## Section One

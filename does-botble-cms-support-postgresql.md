@@ -16,8 +16,6 @@ status: published
 is_featured: false
 ---
 
-# Does Botble CMS Support PostgreSQL?
-
 We get this on product pages constantly, and the answer we give in support is "no, use MySQL". Which is true, but it never ends the conversation, because the follow-up is usually sharper than the original question:
 
 > "But why not? If you used the Eloquent model, then it should work with other databases too. Or did you use plain SQL in the code?"

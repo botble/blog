@@ -17,8 +17,6 @@ status: published
 is_featured: true
 ---
 
-# Live Chat - Floating Ajax Live Chat with Agent Portal for Botble CMS
-
 If you're running a Botble CMS site and want to talk to your visitors in real time, you've probably looked at Tawk.to, Crisp, or Intercom. They work, but your conversations live on someone else's server, and the good features are always behind a monthly plan.
 
 We just released **Live Chat**, a plugin that adds a floating chat widget to your site, gives your support agents their own portal, and keeps everything on your server. Built with Laravel and jQuery, no external dependencies, no monthly fees.

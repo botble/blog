@@ -13,8 +13,6 @@ status: published
 is_featured: false
 ---
 
-# Understanding Botble CMS License: Regular vs Extended
-
 This guide explains how licensing works for Botble CMS products purchased on CodeCanyon.
 
 ## One License = One Website

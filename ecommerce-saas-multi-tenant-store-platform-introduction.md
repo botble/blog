@@ -19,8 +19,6 @@ status: published
 is_featured: true
 ---
 
-# Ecommerce SaaS: Run Your Own Store-Hosting Platform on Botble CMS
-
 ![Ecommerce SaaS: host online stores for other people](https://botble.com/storage/news/ecommerce-saas-multi-tenant-store-platform-introduction-hero.jpg)
 
 **Ecommerce SaaS** is for people who want to host online stores for other people: a small Shopify for your country, your city or your niche.

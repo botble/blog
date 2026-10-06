@@ -18,8 +18,6 @@ status: published
 is_featured: false
 ---
 
-# Laravel Real Estate Script: The 8 Best Options in 2026, Compared
-
 ![Eight self-hosted property listing scripts, compared on price, sales and last update](https://botble.com/storage/news/laravel-real-estate-script-hero.jpg)
 
 Let me start with the number that should shape this whole decision, and that no article selling you a Laravel script will put near the top.

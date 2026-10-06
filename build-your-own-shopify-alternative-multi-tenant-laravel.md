@@ -18,8 +18,6 @@ status: published
 is_featured: true
 ---
 
-# Build Your Own Shopify Alternative: A Self-Hosted Multi-Tenant Store Platform on Laravel
-
 ![Two stores running on one self-hosted platform, each with its own design](https://botble.com/storage/news/build-your-own-shopify-alternative-multi-tenant-laravel-hero.jpg)
 
 When someone says "Shopify alternative", they usually mean one of two things.

@@ -16,8 +16,6 @@ status: published
 is_featured: false
 ---
 
-# Laravel Multi-Tenancy: Database Per Tenant vs One Shared Database
-
 ![One app, many tenant databases](https://botble.com/storage/news/laravel-multi-tenancy-database-per-tenant-vs-single-database-hero.jpg)
 
 Every multi-tenant project starts with the same fork in the road. One database with a `tenant_id` column on everything, or a separate database for each customer.

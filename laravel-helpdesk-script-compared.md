@@ -18,8 +18,6 @@ status: published
 is_featured: false
 ---
 
-# Laravel Helpdesk Script: Self-Hosted Support Desks Compared in 2026
-
 ![Eight self-hosted support desk scripts, compared on price and sales](https://botble.com/storage/news/laravel-helpdesk-script-hero.jpg)
 
 The free helpdesk tier is gone.

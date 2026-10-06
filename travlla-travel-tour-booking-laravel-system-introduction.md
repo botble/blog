@@ -20,8 +20,6 @@ status: published
 is_featured: true
 ---
 
-# Travlla - Travel & Tour Booking Laravel System
-
 Ask a tour operator what their website costs and you rarely get one number. There's the CMS, the booking widget, the payment plugin, the vendor system, and the developer who keeps the four of them on speaking terms. The developer is usually the expensive part, and the one you cannot stop paying.
 
 Travlla is our attempt at collapsing that into a single product.

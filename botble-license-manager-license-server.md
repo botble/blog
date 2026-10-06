@@ -18,8 +18,6 @@ status: published
 is_featured: false
 ---
 
-# Botble License Manager: A Self-Hosted License Server for Laravel Products
-
 ![A self-hosted license server: issue, verify, sign, deliver](https://botble.com/storage/news/botble-license-manager-license-server-hero.jpg)
 
 **Botble License Manager is a self-hosted license server and update manager for software vendors.** You run it on your own domain. It issues licence keys, verifies activations from your customers' installations, limits how many domains a licence may run on, detects and blocks abuse, hosts your release files, and delivers updates signed with an Ed25519 key so a tampered archive cannot pass as yours. It is built on **Laravel 13** and **PHP 8.3+**, it is a one-time purchase at **$39 introductory, $59 regular**, and it ships with ready integrations for **Envato, Gumroad and Lemon Squeezy** so purchases on those platforms issue licences automatically.

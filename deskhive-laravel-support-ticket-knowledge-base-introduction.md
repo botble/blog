@@ -18,8 +18,6 @@ status: published
 is_featured: true
 ---
 
-# DeskHive - Laravel Support Ticket & Knowledge Base System
-
 Support runs on a shared inbox for longer than anyone admits. It works until two people reply to the same customer, or a question sits unread for four days behind a wall of order notifications, and you find out when someone posts about it publicly.
 
 We've been on both sides of that, so DeskHive is the tool we wanted.

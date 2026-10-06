@@ -18,8 +18,6 @@ status: published
 is_featured: false
 ---
 
-# Car Rental Booking Software in 2026: What It Has to Get Right, and 9 Self-Hosted Options Compared
-
 ![Nine self-hosted car rental scripts, compared on price and last update](https://botble.com/storage/news/car-rental-booking-software-hero.jpg)
 
 A few weeks ago someone emailed us about [Carento](https://marketplace.botble.com/portfolio/carento), our car rental script. He didn't want a discount or a demo. He wanted to know whether it could do two specific things: rent a car in fixed blocks of 3 and 12 hours, and charge 10% of the rate per hour when the customer brings it back late. If yes, he'd buy.

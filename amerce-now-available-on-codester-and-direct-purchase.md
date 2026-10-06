@@ -17,8 +17,6 @@ status: published
 is_featured: false
 ---
 
-# Amerce Is Now Available on Codester
-
 Good news for anyone shopping for a Laravel eCommerce script: **[Amerce](https://marketplace.botble.com/amerce)**, our multipurpose eCommerce & multivendor marketplace script, is now listed on **Codester**.
 
 That means you now have **more ways to buy**, at the same **$39 intro price** (regular $59), now extended through **August 15, 2026**. Pick whichever checkout is easiest for you.

@@ -17,8 +17,6 @@ status: published
 is_featured: true
 ---
 
-# What Is Botble CMS? The Laravel CMS That's Built for Vibe Coding
-
 ![Botble CMS admin dashboard](https://landing.botble.com/botble/images/admin-dashboard.png)
 
 Botble CMS is a modular content management system built on Laravel. It hands you a finished admin panel on day one: pages, blog, media library, menus, roles and permissions, SEO, multilingual content, themes and plugins. Underneath it's still a plain Laravel codebase that you own outright and can change however you like.

@@ -19,8 +19,6 @@ is_featured: true
 
 ![Botble products are now on Gumroad, use code DIRECT30 for 30% off](https://botble.com/storage/news/botble-on-gumroad-direct30-hero.jpg)
 
-# Botble Products Are Now on Gumroad - Use Code DIRECT30 for 30% Off
-
 I'm Sang from Botble. Short update: our Laravel themes, CMS, and tools are now on Gumroad, and there's a code that takes 30% off any of them.
 
 The store is at [botble.gumroad.com](https://botble.gumroad.com).

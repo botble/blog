@@ -20,8 +20,6 @@ is_featured: true
 
 ![Carento Mobile - Car Rental & Dealer React Native App](https://landing.botble.com/carento-react-native/images/carento-home-light.webp)
 
-# Carento Mobile: a React Native Car Rental App for Your Carento or Auxero Site
-
 I'm Sang from Botble. We just released Carento Mobile on CodeCanyon — a React Native app for car rental and car dealer businesses. It's the mobile client for a site you already run on [Carento](https://codecanyon.net/item/carento-car-dealer-rental-booking-laravel-system/55782539) or [Auxero](https://codecanyon.net/item/auxero-car-dealer-listing-laravel-system/62730624).
 
 Let me start with the part people usually find out too late: **this app is not standalone.** It has no database and no admin panel of its own. It talks to your Laravel backend over the Car Manager REST API. If you don't have Carento or Auxero, buy one of those first — the app is useless without it.

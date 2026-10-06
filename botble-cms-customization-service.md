@@ -17,8 +17,6 @@ is_featured: true
 
 ![Botble CMS customization service - custom features, themes, setup and upgrades](https://botble.com/storage/news/botble-cms-customization-service-hero.jpg)
 
-# Need Botble Customized? Hire the Team That Built It
-
 I'm Sang from Botble. Every week someone emails me a version of the same question: "your theme is almost exactly what I need, but I need it to do *this* one thing - can you build it?"
 
 Until now the answer was a slow back-and-forth over email while I worked out whether it was a two-hour job or a two-week one. That was a bad experience for both of us, so we've made it a proper service with a page, a form and published prices.

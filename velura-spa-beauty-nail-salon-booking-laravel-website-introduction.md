@@ -21,8 +21,6 @@ is_featured: true
 
 ![Velura - Spa, Beauty & Nail Salon Booking Laravel Website](https://landing.botble.com/velura/images/home-1.png)
 
-# Velura: a Spa, Beauty and Nail Salon Website with Booking Built In
-
 I'm Sang from Botble. We just released Velura, a website script for spas, beauty salons and nail studios, and I want to walk through what it actually does.
 
 The reason we built it: most salon websites are a nice-looking brochure with a phone number on it. The booking lives somewhere else, in a scheduling app the owner pays for every month, on a different domain. Velura puts the booking on your own site. A client opens your treatment menu, picks a service, picks a time, and books.

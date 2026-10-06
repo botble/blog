@@ -14,8 +14,6 @@ status: published
 is_featured: true
 ---
 
-# License Manager - Self-Hosted License & Update Manager for Your Products
-
 If you sell software you wrote, sooner or later you need to answer two boring questions: is this customer's copy legitimate, and how do they get the next version? We ran that on spreadsheets and goodwill for longer than we should have.
 
 **License Manager** is what replaced it here. A Laravel app for issuing licenses, activating and deactivating them, and serving updates to the products you sell. The core is Botble CMS, same as the rest of our work.

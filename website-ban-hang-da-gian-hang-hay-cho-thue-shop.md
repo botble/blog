@@ -18,8 +18,6 @@ status: published
 is_featured: false
 ---
 
-# Website bán hàng đa gian hàng hay nền tảng cho thuê shop?
-
 ![Ba mô hình: một shop, chợ đa gian hàng, và nền tảng cho thuê shop](https://botble.com/storage/news/website-ban-hang-da-gian-hang-hero.jpg)
 
 Mình là Sang, tác giả bộ mã nguồn Botble. Câu hỏi mình nhận nhiều nhất từ khách Việt là *"em muốn làm web bán hàng đa gian hàng"*. Hỏi lại một câu thì ra hai nhóm người hoàn toàn khác nhau, và họ cần hai sản phẩm khác nhau.

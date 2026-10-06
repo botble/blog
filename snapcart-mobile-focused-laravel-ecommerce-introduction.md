@@ -19,8 +19,6 @@ status: published
 is_featured: true
 ---
 
-# SnapCart - Mobile-Focused Laravel eCommerce System
-
 Most ecommerce themes are still designed on a 27-inch monitor and then squeezed down. You see it in the admin: hero sliders, multi-column blocks, banner grids. Settings for a layout most of your customers will never load, because they're on a phone on the bus.
 
 Over 70% of online shopping happens on phones now, so we built SnapCart the other way round.

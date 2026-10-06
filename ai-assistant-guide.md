@@ -15,8 +15,6 @@ status: published
 is_featured: true
 ---
 
-# AI Assistant Guide for Botble CMS Development
-
 This guide provides instructions for configuring AI assistants (Claude, GPT, Copilot, and others) to work effectively with Botble CMS codebases, ensuring consistent and high-quality code generation.
 
 ## Why Use an AI Assistant Guide?
