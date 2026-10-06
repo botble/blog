@@ -1,6 +1,6 @@
 ---
 title: "Velura: a Spa, Beauty and Nail Salon Website with Booking Built In"
-description: "Velura is our new Laravel booking script for spas, beauty salons and nail studios. Appointment booking, a treatment catalog, staff profiles, packages and memberships, 9 homepages, 40+ pages. Here's what's in it."
+description: "Velura is a Laravel booking script for spas, beauty salons and nail studios: appointments, treatment catalogue, staff profiles, packages and 9 homepages."
 categories:
   - Announcements
   - Booking System

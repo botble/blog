@@ -1,6 +1,6 @@
 ---
 title: "Instant Checkout Is Live: Pay by Card or PayPal on Botble Marketplace"
-description: "You can now buy any Botble theme or plugin with a card or PayPal and get the source files and your license key straight away. No emails, no waiting. Still 30% cheaper than the marketplace price."
+description: "Buy any Botble theme or plugin by card or PayPal and get the files and licence key immediately. No emails, no waiting, still 30% below the marketplace."
 categories:
   - Announcements
   - Buyer Guides

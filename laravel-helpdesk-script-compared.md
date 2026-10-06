@@ -1,7 +1,7 @@
 ---
 title: "Laravel Helpdesk Script: Self-Hosted Support Desks Compared in 2026"
 slug: laravel-helpdesk-script-2026
-description: "Zendesk and Freshdesk no longer have a free tier — both start at $19 per agent per month. Here is what self-hosting a support desk costs instead, eight scripts compared on real prices and sales, and what you genuinely give up."
+description: "Zendesk and Freshdesk no longer have a free tier, both start at $19 per agent per month. What self-hosting costs instead, with eight scripts compared."
 categories:
   - Buyer Guides
   - Development

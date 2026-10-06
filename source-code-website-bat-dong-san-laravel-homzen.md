@@ -1,6 +1,6 @@
 ---
 title: "Source code website bất động sản Laravel: Homzen, mua trực tiếp bằng chuyển khoản VND"
-description: "Homzen là mã nguồn website bất động sản viết bằng Laravel, có sẵn giao diện tiếng Việt và VND. Mua trực tiếp từ tác giả rẻ hơn 30% so với CodeCanyon và trả được bằng chuyển khoản ngân hàng, không cần thẻ quốc tế."
+description: "Homzen là mã nguồn website bất động sản Laravel, có sẵn tiếng Việt và VND. Mua trực tiếp rẻ hơn 30% và trả được bằng chuyển khoản, không cần thẻ quốc tế."
 categories:
   - Buyer Guides
   - Real Estate

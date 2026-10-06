@@ -1,6 +1,6 @@
 ---
 title: "Top 5 Free Botble CMS Plugins Released in 2025-2026"
-description: "We read every review on every free plugin released since 2025, not just the star ratings, and ranked the five that users confirm actually work: Expected Delivery Date, FOB LiveChat, WhatsApp Order, Google Merchant Feed and Facebook Catalog Feed."
+description: "We read every review of every free Botble plugin released since 2025 and ranked the five that users confirm actually work, not just the star ratings."
 categories:
   - Buyer Guides
   - Development

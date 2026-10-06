@@ -1,6 +1,6 @@
 ---
 title: "DeskHive - Laravel Support Ticket & Knowledge Base System"
-description: "A standalone self-hosted help desk built with Laravel. Manage support tickets, knowledge base, SLA policies, agent and customer portals, email-to-ticket, canned responses, and Envato purchase verification — all in one system with 39 languages and dark mode."
+description: "A self-hosted Laravel help desk: tickets, knowledge base, agent and customer portals, email-to-ticket, canned responses and Envato purchase checks."
 categories:
   - Announcements
   - Support

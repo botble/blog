@@ -1,6 +1,6 @@
 ---
 title: "Amerce - Multipurpose eCommerce & Multivendor Marketplace Laravel Script ($39 Intro Price)"
-description: "Launch a full-featured eCommerce or multivendor marketplace in minutes with Amerce — a Laravel 13 script built on Botble CMS with 20 niche home presets, 14 headers, 9 footers, abandoned-cart recovery, and 7+ payment gateways. Intro price $39 (reg. $59) — ends August 15, 2026."
+description: "Amerce is a Laravel 13 ecommerce and multivendor marketplace script on Botble CMS: 20 home presets, 14 headers, abandoned-cart recovery. $39 intro price."
 categories:
   - Announcements
   - Ecommerce

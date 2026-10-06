@@ -1,7 +1,7 @@
 ---
 title: "Website bán hàng đa gian hàng hay nền tảng cho thuê shop? Chọn nhầm là làm lại từ đầu"
 slug: website-ban-hang-da-gian-hang-2026
-description: "Làm web giống Shopee và làm web giống Haravan là hai sản phẩm khác nhau, không phải hai mức độ của cùng một thứ. Bài này phân biệt rõ ba mô hình, chi phí thật của từng cái, và mã nguồn Laravel tương ứng, mua trực tiếp bằng chuyển khoản VND."
+description: "Làm web giống Shopee và làm web giống Haravan là hai sản phẩm khác nhau. Bài này phân biệt ba mô hình, chi phí thật, và mã nguồn Laravel tương ứng."
 categories:
   - Buyer Guides
   - Ecommerce

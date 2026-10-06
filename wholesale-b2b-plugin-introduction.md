@@ -1,6 +1,6 @@
 ---
 title: "Wholesale (B2B) - Tiered Pricing & Customer Groups for Botble Ecommerce"
-description: "Turn your Botble e-commerce store into a B2B wholesale platform. Manage customer groups, set tiered quantity-based pricing, enforce minimum order quantities, and control product visibility for wholesale buyers."
+description: "Turn your Botble store into a B2B wholesale platform: customer groups, tiered quantity pricing, minimum order quantities and product visibility rules."
 categories:
   - Announcements
   - Ecommerce

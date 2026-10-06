@@ -1,6 +1,6 @@
 ---
 title: "Build Your Own Shopify Alternative: A Self-Hosted Multi-Tenant Store Platform on Laravel"
-description: "Want to host stores for other people instead of building them one by one? Here's the honest list of what you have to build first — tenant isolation, provisioning, billing, domains — and what it costs to skip that work."
+description: "Want to host stores for other people? The honest list of what you have to build first: tenant isolation, provisioning, billing, domains, and the real cost."
 categories:
   - Ecommerce
   - Buyer Guides

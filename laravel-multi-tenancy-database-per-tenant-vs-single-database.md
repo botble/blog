@@ -1,6 +1,6 @@
 ---
 title: "Laravel Multi-Tenancy: Database Per Tenant vs One Shared Database"
-description: "The trade-off nobody explains properly: what a database per tenant actually costs you in migrations, backups and cleanup, when a shared table with tenant_id is the right call, and the mistakes that only show up after you have real customers."
+description: "What a database per tenant really costs in migrations, backups and cleanup, when a shared tenant_id column is right, and the mistakes that surface late."
 categories:
   - Development
   - Laravel

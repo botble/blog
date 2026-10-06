@@ -1,6 +1,6 @@
 ---
 title: "How to Build Claude Code Skills for Botble CMS Development"
-description: "Learn how to create custom Claude Code skills that teach AI your Botble CMS coding conventions, plugin architecture, and development workflows — turning Claude Code into a Botble expert."
+description: "How to build Claude Code skills that teach AI your Botble CMS conventions, plugin architecture and workflows, turning it into a Botble expert."
 categories:
   - Tutorials
   - Development

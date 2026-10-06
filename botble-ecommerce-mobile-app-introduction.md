@@ -1,6 +1,6 @@
 ---
 title: "Introducing Botble Ecommerce Mobile App: Build Your Mobile Store in Minutes"
-description: "Launch your mobile commerce presence with our premium React Native app. 45+ screens, social login, push notifications, product comparison, dark mode, and RTL support - fully integrated with Botble Ecommerce."
+description: "A React Native app for Botble ecommerce: 45+ screens, social login, push notifications, product comparison, dark mode and full RTL support."
 categories:
   - Announcements
   - Mobile Development

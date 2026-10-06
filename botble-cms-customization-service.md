@@ -1,6 +1,6 @@
 ---
 title: "Need Botble Customized? Hire the Team That Built It"
-description: "Custom features, theme work, installs and migrations, upgrades and bug fixes for Botble CMS - done by the people who wrote it. Quick fixes from $99, feature builds from $399, fixed quote within 1 business day."
+description: "Custom features, theme work, installs, migrations and bug fixes for Botble CMS, by the people who wrote it. Quick fixes from $99, builds from $399."
 categories:
   - Announcements
   - Services

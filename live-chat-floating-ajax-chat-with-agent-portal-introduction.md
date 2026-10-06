@@ -1,6 +1,6 @@
 ---
 title: "Live Chat - Floating Ajax Live Chat with Agent Portal for Botble CMS"
-description: "A real-time chat plugin for Botble CMS with a floating widget, dedicated Agent Portal, auto-assign round-robin, webhook integrations (Slack, Discord, Zapier), working hours, and full customization — self-hosted with no monthly fees."
+description: "A real-time chat plugin for Botble CMS: floating widget, dedicated agent portal, round-robin auto-assign, Slack and Discord webhooks, and working hours."
 categories:
   - Announcements
 tags:

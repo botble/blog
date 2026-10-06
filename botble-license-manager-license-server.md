@@ -1,7 +1,7 @@
 ---
 title: "Botble License Manager: A Self-Hosted License Server for Laravel Products"
 slug: botble-license-manager-license-server
-description: "Botble License Manager is a self-hosted license server built on Laravel 13 that issues licences, verifies activations, blocks domain abuse and delivers signed updates. $39 introductory, $59 regular, one-time. Here is what it does, how a licence check works, and what it does not do."
+description: "Botble License Manager is a self-hosted license server on Laravel 13. It issues licences, verifies activations, blocks domain abuse and signs updates. $39."
 categories:
   - Development
   - Buyer Guides

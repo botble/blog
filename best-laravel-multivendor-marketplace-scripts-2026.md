@@ -1,6 +1,6 @@
 ---
 title: "Best Laravel Multi-Vendor Marketplace Scripts 2026 — Top 6"
-description: "Compared the 6 best Laravel multi-vendor marketplace scripts for 2026 — commission engines, payout systems, vendor dashboards. Top pick: MartFury for all-round; Bagisto if open-source."
+description: "The six best Laravel multi-vendor marketplace scripts for 2026, compared on commission engines, payouts and vendor dashboards. MartFury leads overall."
 categories:
   - Ecommerce
   - Buyer Guides

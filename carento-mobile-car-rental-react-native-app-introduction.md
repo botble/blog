@@ -1,6 +1,6 @@
 ---
 title: "Carento Mobile: a React Native Car Rental App for Your Carento or Auxero Site"
-description: "Carento Mobile is a React Native (Expo SDK 54) app for car rental and car dealer businesses. 35 screens, a 4-step booking flow, hosted checkout, FCM push, biometric unlock, 4 languages with RTL, and .env white-labeling. Works with Carento or Auxero as the backend."
+description: "Carento Mobile is an Expo React Native app for car rental and dealer sites: 35 screens, a 4-step booking flow, hosted checkout, push and biometric unlock."
 categories:
   - Announcements
   - Mobile Development

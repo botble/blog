@@ -1,6 +1,6 @@
 ---
 title: "Amerce Is Now on Codester — Plus Buy Direct via PayPal, Wise, or Bank Transfer"
-description: "Amerce, the multipurpose eCommerce & multivendor marketplace Laravel script, is now available on Codester. Buy it there, or purchase directly via PayPal, Wise, or Bank Transfer — still $39 intro price (reg. $59) until August 15, 2026."
+description: "Amerce, our Laravel ecommerce and multivendor marketplace script, is now on Codester. Or buy direct by PayPal, Wise or bank transfer, still $39."
 categories:
   - Announcements
   - Ecommerce

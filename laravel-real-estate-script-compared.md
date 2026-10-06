@@ -1,7 +1,7 @@
 ---
 title: "Laravel Real Estate Script: The 8 Best Options in 2026, Compared"
 slug: laravel-real-estate-script-2026
-description: "Eight self-hosted property listing scripts compared on real CodeCanyon prices, sales and last-update dates, plus the two questions that decide which one fits, and the running costs that arrive after you buy."
+description: "Eight self-hosted property listing scripts compared on real prices, sales and update dates, plus the two questions that decide which one actually fits."
 categories:
   - Buyer Guides
   - Real Estate

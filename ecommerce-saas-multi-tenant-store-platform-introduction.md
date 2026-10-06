@@ -1,6 +1,6 @@
 ---
 title: "Ecommerce SaaS: Run Your Own Store-Hosting Platform on Botble CMS"
-description: "Ecommerce SaaS is a self-hosted, multi-tenant store platform built on Botble CMS and Laravel 13. Customers sign up, choose one of 20 storefront designs and get their own store on its own MySQL database in seconds. You sell the plans. Stripe or bank transfer billing, custom domains, a REST API with 39 endpoints and 27 signed webhook events."
+description: "A self-hosted multi-tenant store platform on Laravel 13. Customers sign up, pick one of 20 storefront designs, and get their own store on its own database."
 categories:
   - Announcements
   - Ecommerce

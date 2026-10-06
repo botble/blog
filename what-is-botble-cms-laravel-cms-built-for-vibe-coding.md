@@ -1,6 +1,6 @@
 ---
 title: "What Is Botble CMS? The Laravel CMS That's Built for Vibe Coding"
-description: "A complete guide to Botble CMS - a modular Laravel 13 content management system with full source code, 24 bundled plugins, a CRUD generator, and conventions that make AI coding assistants like Claude Code actually productive."
+description: "A guide to Botble CMS: a modular Laravel 13 content system with full source, 24 bundled plugins, a CRUD generator and AI-friendly conventions."
 categories:
   - Documentation
   - Development

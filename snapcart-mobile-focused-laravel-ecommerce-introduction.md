@@ -1,6 +1,6 @@
 ---
 title: "SnapCart - Mobile-Focused Laravel eCommerce System for Fast Checkout Experiences"
-description: "Build your mobile-first online store with SnapCart — a touch-friendly Laravel eCommerce system featuring one-page checkout, AJAX cart, delivery time picker, flash sales, and floating contact buttons. Designed for 70%+ of shoppers who buy on their phones."
+description: "SnapCart is a mobile-first Laravel ecommerce system: one-page checkout, AJAX cart, delivery time picker, flash sales and a floating contact bar."
 categories:
   - Announcements
   - Ecommerce

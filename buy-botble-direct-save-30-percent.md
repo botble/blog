@@ -1,6 +1,6 @@
 ---
 title: "Buy Botble Products Direct and Save 30% (vs CodeCanyon)"
-description: "Buy our Laravel themes and plugins on marketplace.botble.com and pay 30% less than the marketplace price. Same product, same license, same support. Here is how it works and what it costs."
+description: "Buy our Laravel themes and plugins at marketplace.botble.com for 30% less than the marketplace price. Same product, same licence, same support."
 categories:
   - Deals
   - Buyer Guides

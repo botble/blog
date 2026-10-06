@@ -1,6 +1,6 @@
 ---
 title: "Introducing Product Gifts: Boost Sales with Free Gifts for Botble Ecommerce"
-description: "Increase average order value and customer satisfaction by automatically offering free gift products when customers meet purchase conditions. Perfect for promotions, seasonal campaigns, and loyalty rewards."
+description: "Offer free gift products automatically when customers meet purchase conditions. Raises average order value, built for promotions and seasonal campaigns."
 categories:
   - Announcements
   - Ecommerce

@@ -1,6 +1,6 @@
 ---
 title: "Best Laravel Ecommerce Scripts in 2026 — Top 6 Ranked & Compared"
-description: "We compared the 6 best Laravel ecommerce scripts of 2026 — pricing, features, demos, and which to pick. Top overall: MartFury for marketplaces; FleetCart for single-vendor stores."
+description: "The six best Laravel ecommerce scripts of 2026 compared on price, features and demos. MartFury for marketplaces, FleetCart for single-vendor stores."
 categories:
   - Ecommerce
   - Buyer Guides

@@ -1,6 +1,6 @@
 ---
 title: "Does Botble CMS Support PostgreSQL?"
-description: "Officially, no - we test on MySQL and MariaDB. But the app layer is pure Eloquent, so PostgreSQL almost works. We went through the codebase and found every MySQL-only line."
+description: "Officially no, we test on MySQL and MariaDB. But the app layer is pure Eloquent, so PostgreSQL almost works. Here is every MySQL-only line we found."
 categories:
   - Documentation
   - Development
