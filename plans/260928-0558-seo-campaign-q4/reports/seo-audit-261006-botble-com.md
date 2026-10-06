@@ -1,0 +1,123 @@
+---
+name: SEO audit, botble.com
+date: 2026-10-06
+scope: technical, on-page, structured data, content hygiene
+method: live HTTP checks + database audit of all 7 pages and 43 posts
+---
+
+# SEO audit, botble.com
+
+43 posts, 7 pages. Everything below was measured, not assumed.
+
+## 1. Critical: the whole site is duplicated on www
+
+**`https://www.botble.com/` serves the entire site with HTTP 200 and a canonical tag pointing at itself.**
+
+| URL | Status | Canonical it declares |
+|---|---|---|
+| `www.botble.com/` | 200 | `https://www.botble.com` |
+| `www.botble.com/blog` | 200 | `https://www.botble.com/blog` |
+| `www.botble.com/laravel-cms-2026` | 200 | `https://www.botble.com/laravel-cms-2026` |
+| `www.botble.com/contact` | 200 | `https://www.botble.com/contact` |
+| `www.botble.com/about-us` | 200 | `https://www.botble.com/about-us` |
+
+Every page exists twice and each copy tells Google it is the original. This is the same failure as the `/index.php/<slug>` duplicates found on 30/09, except it covers **every URL on the site** rather than a handful.
+
+The `/index.php` version was measurably costing traffic: 10 organic visits landed on the `/index.php` copy of the ecommerce comparison and 0 on the clean URL. There is no reason to think www behaves differently.
+
+**Fix:** one nginx rule, 301 `www.botble.com` to `botble.com`, exactly like the `/index.php` rule added on 30/09. Until then, every link anyone builds to a www URL feeds a copy of the site that should not exist.
+
+## 2. High: every post has two identical H1 tags
+
+**38 of 38 markdown posts.** The theme renders the post title as `<h1 class="post-title">`, and the markdown body opens with `# Title`, which becomes a second `<h1>` with the same text:
+
+```html
+<h1 class="post-title text-center">Laravel CMS: The 9 Best Options in 2026, Compared</h1>
+...
+<h1>Laravel CMS: The 9 Best Options in 2026, Compared</h1>
+```
+
+This is a long-standing convention in the content repo, not a recent mistake, and it affects every post including the eight from this quarter's campaign.
+
+**Fix:** drop the leading `# Title` line from each markdown file. The title already comes from front matter. One pass over the repo, then re-import.
+
+## 3. High: /blog has no H1 at all
+
+The listing page renders zero `<h1>` elements. The page now has a good title and description, but no heading.
+
+## 4. High: robots.txt does not reference the sitemap
+
+```
+User-agent: *
+Disallow:
+```
+
+That is all of it. The sitemap exists and is healthy (43 posts, including all eight campaign posts, plus pages, categories and tags), but robots.txt never points at it.
+
+**Fix:** add `Sitemap: https://botble.com/sitemap.xml`.
+
+## 5. High: meta descriptions
+
+| Problem | Count |
+|---|---|
+| Longer than 165 characters, so truncated in results | **28 posts** |
+| No description at all | 4 posts |
+| Shorter than 70 characters | 1 post |
+
+The worst are 207 to 276 characters. No duplicates were found, which is the harder problem to fix, so this is purely a trimming job.
+
+Posts with no description: `install-our-cms-in-a-subfolder`, `the-best-way-to-install-our-script-on-a-shared-hosting`, `rename-theme-in-botble-cms`, `how-to-add-pdf-viewer-in-botble-cms`.
+
+## 6. Medium: language signals are wrong for Vietnamese content
+
+The Vietnamese post renders `<html lang="en">` and the site emits **no hreflang anywhere**. Google is told a Vietnamese article is English.
+
+With only two Vietnamese posts this is small, but it caps how well they can rank in Vietnam, which is the market where direct bank-transfer sales keep 100% of the revenue.
+
+## 7. Medium: smaller items
+
+- **18 slugs longer than 60 characters**, up to 83. The importer derives slugs from titles and ignores the `slug:` front-matter key, so every new post needs manual shortening. Already documented in the campaign plan.
+- **8 posts under 300 words**, mostly old install guides (102 to 247 words).
+- **`cache-control: no-cache, private`** on article pages. Content that changes rarely is being served as uncacheable.
+- **No HSTS header.**
+- **Duplicate security headers**: `x-content-type-options` and `x-xss-protection` are each sent twice, so nginx and the application are both adding them.
+- **`og:type` is `article` on the blog listing**, where `website` is correct.
+
+## What is already healthy
+
+Worth recording, so nobody re-investigates:
+
+- `http://` redirects 301 to `https://`
+- `/index.php/<slug>` redirects 301 to the clean URL — the 30/09 fix is holding
+- `/blog/` with a trailing slash canonicalises correctly to `/blog`
+- 404s return a real 404
+- gzip is active: 86,742 bytes uncompressed, 12,812 compressed
+- An article page is 26.8 KB gzipped and responds in 0.41s
+- The sitemap index covers pages, posts, categories and tags, and all eight campaign posts are in it
+- Every post has a featured image
+- **Every image on every page checked has alt text** — 66 images on the homepage, none missing
+- No duplicate titles and no duplicate meta descriptions across 43 posts
+- Structured data is emitted and valid: BreadcrumbList, WebSite, NewsArticle, plus FAQPage on five posts and SoftwareApplication on three product posts
+- All 7 CMS pages now have hand-written meta descriptions within length limits
+
+## Suggested order
+
+Ranked by impact divided by effort.
+
+| # | Action | Effort |
+|---|---|---|
+| 1 | 301 www to non-www in nginx | 10 minutes |
+| 2 | Add `Sitemap:` to robots.txt | 2 minutes |
+| 3 | Remove the duplicate `# Title` H1 from 38 markdown posts, re-import | 1 hour |
+| 4 | Trim 28 over-long meta descriptions, write 4 missing ones | 2 hours |
+| 5 | Add an H1 to /blog | theme change |
+| 6 | `lang` and hreflang for Vietnamese posts | theme + importer |
+| 7 | Cache headers, HSTS, duplicate headers, og:type | nginx + theme |
+
+Items 1 and 2 are the whole first afternoon's value.
+
+## Open questions
+
+1. Is www intentionally served, for an old link profile? If so it still needs the 301; the canonical must not be self-referencing either way.
+2. Should the 8 thin install guides be expanded, merged into one setup page, or left alone? They are old support content, not ranking targets.
+3. Does anything depend on article pages being uncacheable, or can they get a short `max-age`?
