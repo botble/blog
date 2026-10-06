@@ -143,3 +143,35 @@ The `CLOUDFLARE_API_TOKEN` in the local env can read zones but **lacks the Cache
 1. Is www intentionally served, for an old link profile? If so it still needs the 301; the canonical must not be self-referencing either way.
 2. Should the 8 thin install guides be expanded, merged into one setup page, or left alone? They are old support content, not ranking targets.
 3. Does anything depend on article pages being uncacheable, or can they get a short `max-age`?
+| 6 | `/blog` had no H1 | **Fixed.** The breadcrumb title is now the `h1` on the blog index, and the page's SEO description renders as a lead paragraph under it |
+| 7 | Vietnamese posts declared `lang="en"` | **Fixed.** The two Vietnamese posts serve `<html lang="vi">`; English posts are unchanged |
+| 8 | `og:type=article` on everything | **Fixed.** Pages and all archives now send `website`; only posts send `article` |
+| 9 | Duplicate security headers | **Fixed.** nginx was adding `X-Content-Type-Options` and `X-XSS-Protection` that Laravel already sends. Removed from nginx |
+| 10 | CMS version leaked on every response | **Fixed.** `cms-version`, `authorization-at` and `activated-license` are now hidden with `fastcgi_hide_header` |
+
+### Found while fixing the above
+
+| Item | Status |
+|---|---|
+| Category, tag and search archives had **no H1 at all** — their only heading was the breadcrumb `h2` | **Fixed.** The breadcrumb heading tag is now chosen by the view, so archives get the `h1` |
+| `/about-us`, `/contact`, `/privacy-policy`, `/terms-of-service`, `/cookie-policy` had **no H1 at all**, same cause | **Fixed** by the same change |
+| None of the 14 category archives had a title or description of their own, so each went to Google as a bare word (`Laravel`, `Ecommerce`) | **Fixed.** All 14 now have a hand-written title (14–39 chars) and description (114–152 chars) |
+| `pages.xml` looked like it contained a single URL | **Not a defect.** `rtk` was truncating piped `curl` output. It has all 9. Read sitemaps from a saved file, not a pipe |
+
+Verified after deploy on `/blog`, 4 category archives, `/tag/laravel`, `/search`, all 7 CMS pages, the homepage, `/laravel-cms`, `/customize` and 2 posts: **exactly one `h1` each, `og:type` correct on each.**
+
+Note on verifying deploys: opcache and the view cache take roughly **25 seconds** to pick up a theme change. Checking immediately after `cmd_deploy` reports the old markup — poll until it flips rather than concluding the fix failed.
+
+## Still open
+
+Each of these needs a decision rather than a fix.
+
+| Item | Detail | Recommendation |
+|---|---|---|
+| **86 thin tag archives** | 119 tags: 3 have no published post at all, 83 have exactly one, so **72% are one-post pages** that duplicate the post they list. `/laravel` (category) and `/tag/laravel` also overlap | `noindex, follow` on tag archives and drop them from the sitemap, keeping the 14 categories indexable. Removes 119 URLs from the index, so it is a call to make deliberately. Delete the 3 empty tags outright |
+| **HSTS** | Not sent. The site is HTTPS-only behind Cloudflare already | `max-age=31536000`, no `includeSubDomains`, no `preload`. Reversible by sending `max-age=0`, but only as visitors return, so worth deciding rather than assuming |
+| **`cache-control: no-cache, private` on HTML** | Cloudflare therefore never caches a page; every hit reaches PHP. Botble sets this because a page can carry a logged-in state | A Cloudflare cache rule on blog paths with a bypass-on-cookie, rather than changing the app header |
+| **Cloudflare API token is read-only** | `CLOUDFLARE_API_TOKEN` has no `Cache Purge`, so published changes can sit behind a stale edge copy. Does not affect articles, which are `no-cache` | Grant `Cache Purge` if the cache rule above goes in |
+| **18 long post slugs** | On already-indexed posts. Shortening needs 301s and risks the rankings they have | Leave. Use shorter slugs for new posts only |
+| **8 thin posts** | Short enough to compete poorly | Expand as content work, not as an SEO fix |
+| **`og:type` fix is local to this site** | The cause is upstream: `PageService` types every page as `article`, `BlogService` does the same for archives. Fixed here in the theme | Worth the same fix in Botble core so every customer gets it |
