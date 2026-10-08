@@ -1,7 +1,7 @@
 ---
 title: "Laravel SMS Gateway and OTP: What Breaks, and How We Built Ours"
 slug: laravel-sms-gateway-otp-botble
-description: "Sending SMS from a Laravel store looks like a two-hour job until you hit retries, consent, per-country routing and double-sends. Here is what our SMS Gateways plugin does about it. $20.30 direct."
+description: "Sending SMS from Laravel looks like a two-hour job until you hit retries, consent, per-country routing and double-sends. 8 providers + OTP, $20.30 direct."
 categories:
   - Development
   - Ecommerce
