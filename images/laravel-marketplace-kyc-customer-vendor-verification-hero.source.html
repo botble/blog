@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(145deg,#0a0f1c 0%,#131c33 55%,#1b2748 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(115px); }
+  .bloom.a { width:500px; height:500px; background:#6366f1; opacity:.24; top:-200px; left:-130px; }
+  .bloom.b { width:460px; height:460px; background:#f59e0b; opacity:.20; bottom:-200px; right:-100px; }
+
+  .content { position:relative; padding:52px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+             letter-spacing:1.6px; color:#c7d2fe; background:rgba(99,102,241,.16);
+             border:1px solid rgba(165,180,252,.32); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:20px; font-size:51px; line-height:1.09; font-weight:900; color:#fff;
+       letter-spacing:-1.3px; max-width:1020px; }
+  h1 em { font-style:normal; color:#fbbf24; }
+  p.sub { margin-top:15px; font-size:17px; color:#93a4bb; max-width:740px; line-height:1.55; }
+
+  /* two stacks of documents: one for the buyer, six for the seller */
+  .cols { position:absolute; left:64px; right:64px; bottom:104px; display:flex; gap:26px; }
+  .col { flex:1; background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.11);
+         border-radius:16px; padding:18px 20px 20px; }
+  .col .who { display:flex; align-items:baseline; justify-content:space-between; }
+  .col .role { font-size:16px; font-weight:800; color:#fff; letter-spacing:-.2px; }
+  .col .gate { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
+               color:#94a3b8; letter-spacing:.4px; }
+  .docs { margin-top:14px; display:flex; flex-wrap:wrap; gap:7px; }
+  .doc { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700;
+         padding:7px 11px; border-radius:7px; letter-spacing:.2px; }
+  .col.buyer .doc  { background:rgba(99,102,241,.16); border:1px solid rgba(165,180,252,.34); color:#c7d2fe; }
+  .col.seller .doc { background:rgba(245,158,11,.13); border:1px solid rgba(251,191,36,.32); color:#fde68a; }
+  .count { margin-top:13px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:#64748b; }
+
+  .foot { position:absolute; left:64px; bottom:38px; display:flex; align-items:center; gap:16px; }
+  .brand { font-size:16px; font-weight:800; color:#fff; letter-spacing:-.3px; }
+  .price { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#fde68a;
+           background:rgba(245,158,11,.13); border:1px solid rgba(251,191,36,.32);
+           padding:6px 12px; border-radius:7px; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="bloom a"></div><div class="bloom b"></div>
+
+  <div class="content">
+    <span class="eyebrow">KYC VERIFICATION FOR BOTBLE CMS</span>
+    <h1>Verifying a buyer and verifying a seller<br><em>are not the same job.</em></h1>
+    <p class="sub">One asks whether a person is real. The other asks whether a business can
+      legally trade, and where its money goes.</p>
+  </div>
+
+  <div class="cols">
+    <div class="col buyer">
+      <div class="who"><span class="role">Buyer</span><span class="gate">gate: checkout</span></div>
+      <div class="docs">
+        <span class="doc">Passport</span>
+        <span class="doc">National ID</span>
+        <span class="doc">Driving licence</span>
+      </div>
+      <div class="count">pick one &middot; graced by spend</div>
+    </div>
+    <div class="col seller">
+      <div class="who"><span class="role">Seller</span><span class="gate">gate: listing</span></div>
+      <div class="docs">
+        <span class="doc">Business licence</span>
+        <span class="doc">Tax certificate</span>
+        <span class="doc">VAT certificate</span>
+        <span class="doc">Articles of inc.</span>
+        <span class="doc">Bank statement</span>
+        <span class="doc">Director passport</span>
+      </div>
+      <div class="count">all of them &middot; graced by listings</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="brand">botble.com</span>
+    <span class="price">$20.30 direct</span>
+  </div>
+</div>
+</body></html>
