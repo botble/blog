@@ -28,6 +28,8 @@ that cannot ship the same page as everyone else: creative agencies and people wi
 Their site is the product. And reading its source is a decent way to see where the human work
 actually sits, because it is sitting right there in the numbers.
 
+![Orisa Creative Agency preset: a dark orange hero reading WE CREATE DIGITAL EXPERIENCES](https://botble.com/storage/news/orisa-preset-creative-agency.jpg)
+
 ## The argument is in the constants
 
 Here is the scroll setup:
@@ -72,6 +74,8 @@ What it will not do is open the page, feel that 0.1 is slightly dead, and go to 
 it lacks the concept, but because nothing in the loop is looking. Taste is a feedback process
 against a thing you perceive, and the perceiving is the part that is missing.
 
+![Orisa Personal Creative preset: an oversized wordmark running behind the subject](https://botble.com/storage/news/orisa-preset-personal-creative.jpg)
+
 The same split shows up across the whole theme. Twenty-nine shortcodes, each with multiple layout
 styles, all configurable from the admin: `hero-banner`, `projects`, `content-block`,
 `image-mosaic`, `video-showreel`, `keyword-ticker`, `our-journey`, `skills-carousel`, and so on.
@@ -84,9 +88,10 @@ decide.
 My favourite thing in this codebase is a file called `throwable.js`, and it runs on exactly one
 template: coming-soon.
 
-It loads the Matter.js physics engine. The words on the page are not text, they are rigid bodies.
-They drop in under gravity of 0.8, 80 milliseconds apart, bounce with a restitution of 0.3, pile
-up against invisible walls, and you can pick them up and throw them with the mouse:
+It loads the Matter.js physics engine, and the row of client logos on that page is not a row. The
+fourteen logo capsules are rigid bodies. They drop in under gravity of 0.8, 80 milliseconds apart,
+bounce with a restitution of 0.3, pile up against invisible walls, and you can pick them up and
+throw them with the mouse:
 
 ```js
 this.engine.gravity.y = .8;
@@ -96,6 +101,20 @@ const a = Matter.Bodies.rectangle(u, M, i.width, i.height,
 
 There is an option, off by default, that ties gravity to scroll velocity, so the pile lurches when
 you scroll.
+
+Fourteen capsules, by the way, from ten logos. The template repeats four of them, and the comment
+above the array says why:
+
+```php
+// Order/repetition mirrors the reference (10 unique + 4
+// repeats for visual density). The 1st, 5th, 11th use `bg-neutral-500`.
+$logoOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 5, 7, 3];
+$darkSlots = [0, 4, 10];
+```
+
+Ten logos made a thin pile, so somebody duplicated four of them and darkened three at hand-picked
+positions. That is not a feature with a ticket number. It is someone looking at a pile of shapes
+and deciding it needed more shapes.
 
 A coming-soon page is a page that says a site is not ready. The rational amount of effort to spend
 on it is close to zero. Somebody spent a physics engine on it, and that decision, more than any
@@ -124,6 +143,8 @@ a client will ever ask for.
 
 From the code only: new shortcode types, blade template changes, animation timing, SCSS overrides.
 So the 1.35 is not a settings field. If you want 1.2, you are editing JavaScript.
+
+![The five Orisa presets side by side: Creative Agency, Digital Agency, Marketing Agency, AI and Tech Agency, Personal Creative](https://botble.com/storage/news/orisa-five-presets.jpg)
 
 There are five presets, and this is the part people misread. Creative Agency, Digital Agency,
 Marketing Agency, AI and Tech Agency, Personal Creative are not a dropdown. Each is a full demo
