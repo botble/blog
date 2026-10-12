@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(140deg,#0b1220 0%,#132038 52%,#1a2b4a 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(115px); }
+  .bloom.a { width:540px; height:540px; background:#6366f1; opacity:.30; top:-210px; left:-140px; }
+  .bloom.b { width:470px; height:470px; background:#0ea5e9; opacity:.22; bottom:-200px; right:-110px; }
+
+  .content { position:relative; padding:70px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+             letter-spacing:1.8px; color:#a5b4fc; background:rgba(99,102,241,.15);
+             border:1px solid rgba(165,180,252,.32); padding:8px 15px; border-radius:8px; }
+  h1 { margin-top:26px; font-size:60px; line-height:1.07; font-weight:900; color:#fff; letter-spacing:-1.6px; max-width:900px; }
+  h1 em { font-style:normal; color:#a5b4fc; }
+  p.sub { margin-top:20px; font-size:20px; color:#93a4bb; max-width:680px; line-height:1.5; }
+
+  .topics { position:absolute; left:64px; bottom:118px; display:flex; flex-wrap:wrap; gap:10px; max-width:1070px; }
+  .t { background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.11);
+       border-radius:9px; padding:9px 15px; font-size:15px; color:#cbd5e1; font-weight:600; }
+
+  .foot { position:absolute; left:64px; bottom:52px; display:flex; align-items:center; gap:14px; }
+  .brand { font-size:19px; font-weight:800; color:#fff; letter-spacing:-.3px; }
+  .dot { width:4px; height:4px; border-radius:50%; background:#475569; }
+  .url { font-family:'JetBrains Mono',monospace; font-size:14px; color:#64748b; }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div><div class="bloom b"></div>
+    <div class="content">
+      <span class="eyebrow">BOTBLE BLOG</span>
+      <h1>Real prices.<br><em>Honest trade-offs.</em></h1>
+      <p class="sub">Buyer guides and technical comparisons for self-hosted Laravel software.</p>
+    </div>
+
+    <div class="topics">
+      <span class="t">Laravel CMS</span>
+      <span class="t">Ecommerce</span>
+      <span class="t">Multi-tenancy</span>
+      <span class="t">Car rental</span>
+      <span class="t">Real estate</span>
+      <span class="t">Helpdesk</span>
+      <span class="t">Licensing</span>
+      <span class="t">Self-hosting</span>
+    </div>
+
+    <div class="foot">
+      <span class="brand">Botble Technologies</span>
+      <span class="dot"></span>
+      <span class="url">botble.com/blog</span>
+    </div>
+  </div>
+</body></html>
