@@ -1,0 +1,101 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(145deg,#0a0a0f 0%,#15131f 55%,#1d1830 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(120px); }
+  .bloom.a { width:520px; height:520px; background:#a855f7; opacity:.20; top:-220px; left:-150px; }
+  .bloom.b { width:470px; height:470px; background:#f0ce0e; opacity:.16; bottom:-210px; right:-110px; }
+
+  .content { position:relative; padding:52px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+             letter-spacing:1.6px; color:#e9d5ff; background:rgba(168,85,247,.16);
+             border:1px solid rgba(216,180,254,.30); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:20px; font-size:50px; line-height:1.08; font-weight:900; color:#fff;
+       letter-spacing:-1.5px; max-width:900px; }
+  h1 em { font-style:normal; color:#f0ce0e; }
+  p.sub { margin-top:15px; font-size:17px; color:#9ca3b4; max-width:620px; line-height:1.55; }
+
+  /* four interchangeable generated layouts, and one that was designed */
+  .row { position:absolute; left:64px; right:64px; bottom:104px; display:flex; gap:16px; align-items:flex-end; }
+  .card { flex:1; border-radius:13px; padding:13px; height:150px;
+          background:rgba(255,255,255,.035); border:1px solid rgba(255,255,255,.09); }
+  .bar  { background:rgba(255,255,255,.14); border-radius:3px; }
+  .hero-bar { height:9px; width:62%; margin-bottom:7px; }
+  .line     { height:5px; width:88%; margin-bottom:5px; }
+  .line.s   { width:54%; }
+  .tiles { display:flex; gap:5px; margin-top:10px; }
+  .tile { flex:1; height:26px; border-radius:4px; background:rgba(255,255,255,.085); }
+  .tag { margin-top:9px; font-family:'JetBrains Mono',monospace; font-size:9.5px;
+         letter-spacing:.6px; color:#5b6274; }
+
+  .card.made { background:linear-gradient(150deg, rgba(240,206,14,.14), rgba(168,85,247,.16));
+               border:1px solid rgba(240,206,14,.42); height:178px; position:relative;
+               box-shadow:0 16px 44px rgba(0,0,0,.42); }
+  .card.made .big { font-size:30px; font-weight:900; color:#fff; letter-spacing:-1.1px;
+                    line-height:.96; margin-top:2px; }
+  .card.made .big span { color:#f0ce0e; display:block; font-style:italic; }
+  .card.made .rule { height:2px; width:46px; background:#f0ce0e; margin:11px 0 9px; border-radius:2px; }
+  .card.made .meta { font-family:'JetBrains Mono',monospace; font-size:9.5px;
+                     letter-spacing:.6px; color:#f0ce0e; }
+  .card.made .dot { position:absolute; right:13px; top:13px; width:9px; height:9px;
+                    border-radius:50%; background:#f0ce0e; }
+
+  .foot { position:absolute; left:64px; bottom:38px; display:flex; align-items:center; gap:16px; }
+  .brand { font-size:16px; font-weight:800; color:#fff; letter-spacing:-.3px; }
+  .price { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#f0ce0e;
+           background:rgba(240,206,14,.12); border:1px solid rgba(240,206,14,.34);
+           padding:6px 12px; border-radius:7px; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="bloom a"></div><div class="bloom b"></div>
+
+  <div class="content">
+    <span class="eyebrow">ORISA &middot; CREATIVE AGENCY THEME</span>
+    <h1>A model can write the page.<br><em>It cannot decide how it feels.</em></h1>
+    <p class="sub">Layout, copy and components generate in seconds now. Rhythm, restraint and
+      motion still do not.</p>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <div class="bar hero-bar"></div><div class="bar line"></div><div class="bar line s"></div>
+      <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+      <div class="tag">GENERATED</div>
+    </div>
+    <div class="card">
+      <div class="bar hero-bar"></div><div class="bar line"></div><div class="bar line s"></div>
+      <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+      <div class="tag">GENERATED</div>
+    </div>
+    <div class="card made">
+      <div class="dot"></div>
+      <div class="big">Orisa<span>designed</span></div>
+      <div class="rule"></div>
+      <div class="meta">MOTION &middot; TYPE &middot; RESTRAINT</div>
+    </div>
+    <div class="card">
+      <div class="bar hero-bar"></div><div class="bar line"></div><div class="bar line s"></div>
+      <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+      <div class="tag">GENERATED</div>
+    </div>
+    <div class="card">
+      <div class="bar hero-bar"></div><div class="bar line"></div><div class="bar line s"></div>
+      <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+      <div class="tag">GENERATED</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="brand">botble.com</span>
+    <span class="price">$39 intro</span>
+  </div>
+</div>
+</body></html>
