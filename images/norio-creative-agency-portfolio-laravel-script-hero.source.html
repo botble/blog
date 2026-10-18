@@ -1,0 +1,64 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+
+  .stage { position:relative; width:1200px; height:630px; background:#0d0d0e; overflow:hidden; }
+  .glow { position:absolute; border-radius:50%; filter:blur(130px); }
+  .glow.a { width:520px; height:520px; background:#ff5a1f; opacity:.20; top:-200px; right:120px; }
+  .glow.b { width:420px; height:420px; background:#e7d9c4; opacity:.10; bottom:-220px; left:-120px; }
+
+  .content { position:absolute; left:64px; top:62px; width:470px; }
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700; letter-spacing:1.6px;
+             color:#d6d3cd; }
+  .eyebrow b { color:#ff7a45; font-weight:700; }
+  h1 { margin-top:22px; font-size:52px; line-height:1.04; font-weight:800; color:#fff; letter-spacing:-2px; }
+  h1 em { font-style:normal; color:#ff7a45; }
+  p.sub { margin-top:18px; font-size:17px; color:#a3a29e; line-height:1.55; max-width:430px; }
+  .chips { margin-top:24px; display:flex; flex-wrap:wrap; gap:8px; max-width:540px; }
+  .chip { font-size:13px; font-weight:600; color:#e8e6e1; padding:7px 12px; border-radius:999px;
+          border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.04); }
+
+  /* real screenshots from the Norio demo */
+  .shot { position:absolute; border-radius:10px; overflow:hidden; background:#222;
+          box-shadow:0 30px 70px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.10); }
+  .shot img { display:block; width:100%; height:100%; object-fit:cover; object-position:top left; }
+  .s1 { width:520px; height:325px; left:600px; top:46px; transform:rotate(-2deg); z-index:2; }
+  .s2 { width:430px; height:269px; left:560px; top:330px; transform:rotate(2.5deg); z-index:3; }
+  .s3 { width:330px; height:206px; left:860px; top:392px; transform:rotate(-4deg); z-index:1; }
+
+  .foot { position:absolute; left:64px; bottom:40px; display:flex; align-items:center; gap:14px; }
+  .brand { font-size:16px; font-weight:800; color:#fff; letter-spacing:-.3px; }
+  .tag { font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700; color:#ff7a45;
+         background:rgba(255,122,69,.12); border:1px solid rgba(255,122,69,.34); padding:6px 12px; border-radius:7px; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="glow a"></div><div class="glow b"></div>
+
+  <div class="content">
+    <div class="eyebrow"><b>NEW</b> &middot; NORIO &middot; PORTFOLIO SCRIPT</div>
+    <h1>Work that speaks.<br><em>A site that stays out of the way.</em></h1>
+    <p class="sub">A complete portfolio and agency website for studios and freelancers, with its own admin panel.</p>
+    <div class="chips">
+      <span class="chip">3 homepages</span>
+      <span class="chip">Light &amp; dark</span>
+      <span class="chip">GSAP + WebGL</span>
+      <span class="chip">25 UI blocks</span>
+    </div>
+  </div>
+
+  <div class="shot s1"><img src="norio-light-dark-mode.jpg" alt=""></div>
+  <div class="shot s3"><img src="norio-about-page.jpg" alt=""></div>
+  <div class="shot s2"><img src="norio-overlay-menu.jpg" alt=""></div>
+
+  <div class="foot">
+    <span class="brand">botble.com</span>
+    <span class="tag">Laravel script</span>
+  </div>
+</div>
+</body></html>
