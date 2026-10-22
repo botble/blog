@@ -60,7 +60,7 @@ Partial payment is one of the clearest dividing lines in this comparison. Severa
 
 ### 4. The OTAs aren't going away
 
-Most operators sell through GetYourGuide or Viator as well as their own site. GetYourGuide tells suppliers its commission is 20 to 30%, depending on the country. That's the real reason operators want their own booking site: not to replace the OTAs, but to stop paying a quarter of the price on repeat customers and on people who already found you.
+Most operators sell through GetYourGuide or Viator as well as their own site. [GetYourGuide says](https://www.getyourguide.com/c/how-to-list-your-activity-on-getyourguide-step-by-step/) its commission is 20 to 30% of the ticket price, depending on the country the activity runs in. That's the real reason operators want their own booking site: not to replace the OTAs, but to stop paying a quarter of the price on repeat customers and on people who already found you.
 
 The awkward part is inventory. If you sell the same departure on your site and on Viator, the seat counts have to agree. Channel managers exist for exactly this, and none of the self-hosted scripts below sync live availability with the big OTAs out of the box. Booking Core has iCal sync, but for hotels and spaces, not tour seats. Plan on either a channel manager or splitting your capacity by hand ("ten seats on our site, four on GetYourGuide").
 
@@ -191,7 +191,7 @@ The upside is everything WooCommerce already does: any gateway with a WooCommerc
 
 Free on wordpress.org, 20,000+ active installs, 4.9 from 594 ratings, version 6.8.10 from October 2026. Easily the most-used and most actively updated product here.
 
-The free plugin covers tours, itineraries and booking with PayPal and bank transfer. Paid plans start at $12 a month billed yearly for one site; other gateways need the $25-a-month tier or above. Lifetime licences start at $499.
+The free plugin covers tours, itineraries and booking with PayPal and bank transfer. Paid plans currently start at $12 a month billed yearly for one site, discounted from $19, and the cheapest plan doesn't include the full set of payment gateways; for that you need the $25-a-month Growth plan or above. Lifetime licences start at $499, down from $599. Prices from [wptravelengine.com/pricing](https://wptravelengine.com/pricing/), 22 October 2026.
 
 **Pick it if** you're on WordPress, sell a modest number of tours, and want to start for nothing. Just budget for the yearly renewal, because that's how this one is priced.
 

@@ -239,6 +239,7 @@ Not to start. Your customers will book on a phone browser long before they insta
 
 - [Carento](https://marketplace.botble.com/portfolio/carento), demo at [carento.botble.com](https://carento.botble.com)
 - [Laravel CMS: the 9 best options in 2026](https://botble.com/laravel-cms-2026), if the rental part is only half your project
+- [Laravel tour booking scripts compared](https://botble.com/laravel-tour-booking-script-2026), if you sell seats on a departure rather than cars by the day
 - [Laravel real estate scripts compared](https://botble.com/laravel-real-estate-script-2026), the same exercise for property
 - [Laravel helpdesk scripts compared](https://botble.com/laravel-helpdesk-script-2026), and why the free tier disappearing changes the maths
 - [Why buying direct is 30% cheaper](https://botble.com/buy-botble-products-direct-and-save-30-vs-codecanyon)
