@@ -21,9 +21,9 @@ is_featured: false
 
 ![Ten self-hosted tour booking scripts, compared on price and last update](https://botble.com/storage/news/laravel-tour-booking-script-hero.jpg)
 
-When we started building [Travlla](https://marketplace.botble.com/portfolio/travlla), our tour booking script, the first version of the booking table had a date column and a price column. It looked like a hotel. Then we sat down and actually wrote out how a tour operator sells a three-day trip, and that table lasted about an afternoon.
-
 A hotel sells a room for a night. A tour operator sells **seats on a departure**: fourteen places on the bus leaving 12 March, priced per person, for a group of people who aren't all the same age, often paid months ahead with a deposit. Most of the trouble with tour booking software comes from products that were built for the first model and stretched to cover the second.
+
+We sell one of these, [Travlla](https://marketplace.botble.com/portfolio/travlla). Before writing this I went back through its source to check what it actually does at each of those points, rather than what the feature list says. Some of it held up. Some of it didn't, and that's in here too.
 
 So this guide does two things. It walks through the four places tour software breaks, which is how you should test any demo, ours included. Then it compares ten self-hosted products with real numbers.
 
@@ -42,7 +42,7 @@ We build and sell one of these, so the disclosure goes here rather than in a foo
 
 ### 1. Seats, not dates
 
-A departure has a capacity. When the fourteenth seat sells, the fifteenth person shouldn't be able to pay. That sounds obvious, and it's the single most common failure I see in cheap travel scripts: availability is a date range with a status, not a counter, so two people checking out at the same moment can both buy the last seat.
+A departure has a capacity. When the fourteenth seat sells, the fifteenth person shouldn't be able to pay. That sounds obvious, and it's easy to get wrong without noticing: if availability is a date range with a status rather than a counter that's locked while it changes, two people checking out at the same moment can both buy the last seat.
 
 What to check in a demo: create a departure with a capacity of 2, open two browsers, and book 2 people in each. One of them should fail. If both go through, you've found your first refund conversation.
 
@@ -54,9 +54,9 @@ Then there's the manifest. On a lot of tours you need every traveller's name, so
 
 ### 3. Deposits and balances
 
-Big tours sell months ahead. Operators commonly take a deposit at booking and the balance 30 to 60 days before departure. Software that can only take full payment pushes you into one of two bad options: lose the customers who won't pay $2,000 in March for a trip in September, or chase balances by hand in a spreadsheet.
+Big tours sell months ahead. Operators often take a deposit at booking and the balance 30 to 60 days before departure. Software that can only take full payment pushes you into one of two bad options: lose the customers who won't pay $2,000 in March for a trip in September, or chase balances by hand in a spreadsheet.
 
-Partial payment is one of the clearest dividing lines in this comparison. Several products don't have it at all.
+Partial payment is one of the clearest dividing lines in this comparison, so check it specifically. Ours doesn't have it, and some that do only support it through one payment route.
 
 ### 4. The OTAs aren't going away
 
@@ -95,7 +95,7 @@ My rough rule: if you have no one who can handle a PHP upgrade or restore a back
 | WooTour | WooCommerce plugin | $99 | 1,880 | 4.69 (96) | Jan 2026 |
 | WP Travel Engine | WordPress plugin | free, Pro from $12/mo | 20,000+ installs | 4.9 (594) | Oct 2026 |
 
-CodeCanyon prices are regular licences, which don't allow charging your end users to use the site. A marketplace where vendors list tours and you take a commission is a grey area worth reading the licence for; [our licence explainer](https://botble.com/understanding-botble-cms-license-regular-vs-extended) covers the difference.
+CodeCanyon prices are regular licences, which cover a site that doesn't charge its end users. A marketplace where vendors list tours and you take a commission does charge them, so it needs an extended licence, which is priced separately. That's how we read it for our own products, and [our licence explainer](https://botble.com/understanding-botble-cms-license-regular-vs-extended) covers the difference.
 
 Three things stand out.
 
@@ -113,7 +113,7 @@ $39, or **$27.30 buying direct**. 24 sales, no ratings yet, version 1.0.3 from O
 
 **How it models a tour.** Each tour has a per-person price, optional price tiers by hotel star rating, duration in days and nights, group size limits, minimum age, a day-by-day itinerary, inclusions and exclusions, amenities, destinations and categories. Departures are their own records with start and end dates, a capacity and an optional price.
 
-**Seats are handled properly.** When a booking comes in, the departure row is locked, remaining capacity is checked, and the seat count goes up in the same transaction. Ask for more seats than are left and it refuses. Cancelling releases the seats again. This is the part I'd test first in any competitor, and it's the part we spent the most time on.
+**Seats are handled properly.** When a booking comes in, the departure row is locked, remaining capacity is checked, and the seat count goes up in the same transaction. Ask for more seats than are left and it refuses. Cancelling releases the seats again. This is the part I'd test first in any competitor.
 
 **Marketplace mode.** Tour operators and guides can register as vendors, list tours that go through admin moderation, see their own bookings and revenue, and request withdrawals. Commission is set globally as a percentage or fixed fee, or per category.
 
@@ -129,7 +129,7 @@ $39, or **$27.30 buying direct**. 24 sales, no ratings yet, version 1.0.3 from O
 - **No pre-departure reminder email.** You get booking confirmation, status change and admin/vendor notices. The "see you Thursday, meet at the north gate" email is on you.
 - **It's young.** 24 sales means fewer people have hit the edge cases. The 1.0.3 release fixed the booking REST endpoints, which hadn't worked end to end before, and a Stripe fee that didn't match the quoted price. Both are fixed, but they tell you where the product is in its life.
 
-**Who it's for:** an operator or agency selling fixed-date departures at one price per person, who wants a proper CMS for the marketing side and can run a VPS. Also anyone building a tour marketplace who'd rather start from vendor payouts that already work. Read [the full Travlla introduction](https://botble.com/travlla-travel-tour-booking-laravel-system-for-tour-operators-marketplaces) for screenshots.
+**Who it's for:** an operator or agency selling fixed-date departures at one price per person, who wants a proper CMS for the marketing side and can run a VPS. Also anyone building a tour marketplace who'd rather start from vendor payouts that already work, on an extended licence. Read [the full Travlla introduction](https://botble.com/travlla-travel-tour-booking-laravel-system-for-tour-operators-marketplaces) for screenshots.
 
 ### Booking Core - the incumbent that does everything
 
@@ -163,7 +163,7 @@ Travel and hotel booking with an agency layer: commission setup, withdrawal requ
 
 ### TravelLab - cheapest, most gateways
 
-$29, 203 sales, 4.82 from 22 ratings, version 3.0 from June 2026, with a later patch to Laravel 13. Made by ViserLab, who sell a lot of scripts on a shared base.
+$29, 203 sales, 4.82 from 22 ratings, last updated October 2026. Version 3.0 in June 2026 moved it to Laravel 13. Made by ViserLab.
 
 Travel packages and ticket booking, with what the listing calls 30+ payment gateways and 250+ currencies. That gateway list is the standout here. If your customers pay through a regional gateway nobody else supports, start with this one.
 
@@ -189,11 +189,11 @@ The upside is everything WooCommerce already does: any gateway with a WooCommerc
 
 ### WP Travel Engine - free to start
 
-Free on wordpress.org, 20,000+ active installs, 4.9 from 594 ratings, version 6.8.10 from October 2026. Easily the most-used and most actively updated product here.
+Free on wordpress.org, 20,000+ active installs, 4.9 from 594 ratings, version 6.8.10 from October 2026. Easily the most-used product here.
 
 The free plugin covers tours, itineraries and booking with PayPal and bank transfer. Paid plans currently start at $12 a month billed yearly for one site, discounted from $19, and the cheapest plan doesn't include the full set of payment gateways; for that you need the $25-a-month Growth plan or above. Lifetime licences start at $499, down from $599. Prices from [wptravelengine.com/pricing](https://wptravelengine.com/pricing/), 22 October 2026.
 
-**Pick it if** you're on WordPress, sell a modest number of tours, and want to start for nothing. Just budget for the yearly renewal, because that's how this one is priced.
+**Pick it if** you're on WordPress, sell a modest number of tours, and want to start for nothing. Just budget for the yearly renewal, or pay once for lifetime if you're sure you'll stay.
 
 ### And one open-source mention: QloApps
 
@@ -228,11 +228,11 @@ If your marketing site is WordPress and you sell a few tours, a WordPress plugin
 
 ### Can I run a marketplace of tour operators?
 
-Travlla, Booking Core, MyTravel and Tourex all have vendor or agency features with commission and withdrawals. Check the licence terms if vendors pay to list or you charge them fees.
+Travlla, Booking Core and Tourex all have vendor or agency features with commission. Taking a cut from vendors means charging users, so plan on an extended licence rather than a regular one.
 
 ### What about a mobile app?
 
-Travlla and Booking Core both have REST APIs you can build an app against. Neither ships a finished tour app today. Our [Carento Mobile app](https://botble.com/carento-mobile-a-react-native-car-rental-app-for-your-carento-or-auxero-site) for the car rental script shows what that looks like when it exists.
+Travlla and Booking Core both have REST APIs you can build an app against. Travlla doesn't ship a finished tour app today. Our [Carento Mobile app](https://botble.com/carento-mobile-a-react-native-car-rental-app-for-your-carento-or-auxero-site) for the car rental script shows what that looks like when it exists.
 
 ## Where to next
 
