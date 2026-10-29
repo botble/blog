@@ -431,7 +431,7 @@ No. Filament is an admin panel builder: it generates forms, tables, and dashboar
 
 ### Should I use WordPress or a Laravel CMS?
 
-WordPress wins on plugin catalog size and on hiring non-technical editors and designers. A Laravel CMS wins when your team already writes PHP in Laravel, when you want one application and one database instead of two, and when you plan to extend the admin with custom business logic. Running WordPress alongside a Laravel app means maintaining two codebases, two update cycles, and two security surfaces.
+WordPress wins on plugin catalog size and on hiring non-technical editors and designers. A Laravel CMS wins when your team already writes PHP in Laravel, when you want one application and one database instead of two, and when you plan to extend the admin with custom business logic. Running WordPress alongside a Laravel app means maintaining two codebases, two update cycles, and two security surfaces. If you're already on WordPress and leaning toward the move, [here's what comes across and what you'll rebuild](https://botble.com/wordpress-to-laravel-migration).
 
 ### Can I use a headless CMS with Laravel?
 
