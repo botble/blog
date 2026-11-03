@@ -24,7 +24,7 @@ is_featured: false
 
 A job board is a two-sided product pretending to be a website. Employers pay to post. Candidates pay nothing and leave the moment the listings feel stale. The software has to keep both sides happy, keep fake employers out, and get every job in front of Google, because almost nobody types a job board's address into a browser.
 
-We sell two of these scripts, [Jobcy](https://marketplace.botble.com/portfolio/jobcy) and JobBox. Before writing this I read through their shared job board engine line by line, rather than trusting the feature list. That turned up real problems, including two that leaked data. They're fixed in the update that went out with this article, and I'll say exactly what they were, because they're the same things you should check in every other script here.
+We sell two of these scripts, [Jobcy](https://marketplace.botble.com/portfolio/jobcy) and JobBox. Before writing this I read through their shared job board engine line by line, rather than trusting the feature list. That turned up real problems. They're fixed in the update that went out with this article, and where they touch the tests below I'll say what they were, because they're the same things you should check in every other script here.
 
 So this guide does two things. It lists six tests to run in any demo, ours included. Then it compares ten self-hosted products with real numbers.
 
@@ -61,19 +61,15 @@ What to check: let a job expire in the demo (or ask the seller how), then renew 
 
 Google shows job listings in its own search box, and it builds them from `JobPosting` structured data on your job pages. For a new board this is the cheapest traffic you'll ever get. Paste a demo job URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) and look at what comes back.
 
-Ours outputs `JobPosting` on every open job. When I checked it properly, it had problems I'd rather admit than have you find:
+Things to look for in the result: a salary the employer chose to hide should not appear in the structured data, a confidential company should not be named, the currency and pay period should match the job, and expired jobs should carry a `validThrough` date. Hidden fields leaking into the page source is a common mistake, and you won't see it on the page itself.
 
-- **A salary the employer chose to hide was still in the page source**, inside the structured data. So was the real company name on jobs marked confidential.
-- The salary used the site's default currency instead of the job's own, and the pay period wasn't in the format Google expects.
-- A job without a company (possible after a CSV import) would most likely crash the page.
-
-All of that is fixed: hidden salaries and confidential companies stay hidden, currency and pay period are correct, and employment type uses Google's values. What's still missing is remote work, covered below.
+Ours outputs `JobPosting` on every open job, with the job's own currency and pay period, Google's employment types, and a `validThrough` taken from the expiry or closing date. Hidden salaries and confidential companies stay out of it. What's missing is remote work, covered below.
 
 ### 4. Who can open a candidate's CV
 
 This is the one to test even if you test nothing else. A CV holds a name, phone number, address and work history. Apply to a job in the demo with a PDF, then open the file's link in a private browser window.
 
-In ours, uploaded CVs used to sit in the public media folder, so anyone with the link could open them, and the download checks weren't as tight as they should have been. As of this update, new CVs and cover letters are stored privately and only the admin, the employer who posted that job, and the candidate can download them. Files from before the update can be moved with one command (`php artisan cms:job-board:privatize-application-files`, with a `--dry-run` option).
+In ours, CVs and cover letters are stored outside the public folder. Only the admin, the employer who posted that job, and the candidate can download them, and the mobile app gets download links that expire after an hour.
 
 ### 5. Something that brings candidates back
 
