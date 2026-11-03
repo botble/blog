@@ -61,7 +61,7 @@ What to check: let a job expire in the demo (or ask the seller how), then renew 
 
 Google shows job listings in its own search box, and it builds them from `JobPosting` structured data on your job pages. For a new board this is the cheapest traffic you'll ever get. Paste a demo job URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) and look at what comes back.
 
-Things to look for in the result: a salary the employer chose to hide should not appear in the structured data, a confidential company should not be named, the currency and pay period should match the job, and expired jobs should carry a `validThrough` date. Hidden fields leaking into the page source is a common mistake, and you won't see it on the page itself.
+Things to look for in the result: a salary the employer chose to hide should not appear in the structured data, a confidential company should not be named, the currency and pay period should match the job, and each job should carry a `validThrough` date so Google drops it when it expires. Hidden fields leaking into the page source is a common mistake, and you won't see it on the page itself.
 
 Ours outputs `JobPosting` on every open job, with the job's own currency and pay period, Google's employment types, and a `validThrough` taken from the expiry or closing date. Hidden salaries and confidential companies stay out of it. What's missing is remote work, covered below.
 
