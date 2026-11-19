@@ -34,6 +34,7 @@ Nine real choices below, what each one costs in 2026, and where each one falls a
 - **You want to define your own content models, not use someone's** → [Twill](#5-twill-a-cms-toolkit-not-a-cms) or [Filament](#6-filament-the-build-it-yourself-option)
 - **Content must feed a mobile app or a non-Laravel frontend** → [Strapi](#7-strapi-the-open-source-headless-default), [ButterCMS](#8-buttercms-the-headless-option-that-actually-ships-a-php-sdk), or [Hygraph](#9-hygraph-graphql-native-for-content-spread-across-systems)
 - **You're building a store, marketplace, booking site, or job board** → a Laravel CMS with a ready-made vertical on top, which in practice means [Botble](https://marketplace.botble.com/portfolio). For vehicle rental specifically, we compared [nine self-hosted options](https://botble.com/car-rental-booking-software-2026)
+- **You're building an agency or portfolio site** → start from a finished theme rather than a bare CMS. We compared [six ways to build one, Webflow to Laravel](https://botble.com/laravel-agency-portfolio-website-2026)
 
 ## What actually counts as a "Laravel CMS"
 
@@ -406,6 +407,7 @@ For most Laravel teams (one app, one site, a client who needs to edit it) native
 | Headless, managed, PHP-friendly | **ButterCMS** |
 | Content federated across several systems | **Hygraph** |
 | Store, marketplace, property portal, booking site, job board | **Botble** vertical ([catalog](https://marketplace.botble.com/portfolio)) |
+| Agency or portfolio site, live this month | A finished theme ([six routes compared](https://botble.com/laravel-agency-portfolio-website-2026)) |
 
 The mistake to avoid isn't picking the "wrong" CMS. It's picking before you've answered *who edits this, how many frontends, and how much is already built*. Answer those three and the list above collapses to one or two options.
 
@@ -454,6 +456,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
 - Building a marketplace? [Best Laravel Multi-Vendor Marketplace Scripts 2026](https://botble.com/best-laravel-multi-vendor-marketplace-scripts-2026-top-6)
 - Renting out vehicles? [Car Rental Booking Software in 2026](https://botble.com/car-rental-booking-software-2026)
 - Selling or listing property? [Laravel Real Estate Script: 8 options compared](https://botble.com/laravel-real-estate-script-2026)
+- Building a studio or portfolio site? [How to build an agency or portfolio website with Laravel](https://botble.com/laravel-agency-portfolio-website-2026)
 - Running customer support? [Laravel helpdesk scripts compared](https://botble.com/laravel-helpdesk-script-2026)
 - Selling your own scripts? [Botble License Manager, a self-hosted license server](https://botble.com/botble-license-manager-license-server)
 - Free add-ons: [Top 5 Free Botble CMS Plugins](https://botble.com/top-5-free-botble-cms-plugins-released-in-2025-2026)
