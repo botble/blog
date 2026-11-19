@@ -28,7 +28,7 @@ Nine real choices below, what each one costs in 2026, and where each one falls a
 ## TL;DR: pick by your situation
 
 - **You want a finished admin panel today, at the lowest price** → [Botble CMS](#1-botble-cms-the-most-finished-admin-panel-per-dollar) ($29 one-time, per site)
-- **Editorial UX matters more than budget** → [Statamic](#2-statamic-the-best-editing-experience-if-you-can-fund-it) ($349/yr per site)
+- **Editorial UX matters more than budget** → [Statamic](#2-statamic-the-best-editing-experience-if-you-can-fund-it) ($349 per site, then $99/yr)
 - **You want the biggest Laravel CMS community** → [October CMS](#3-october-cms-the-biggest-community) (free tier, $39/yr for updates)
 - **You want 100% free and MIT, forever** → [Winter CMS](#4-winter-cms-october-free-forever) or [Twill](#5-twill-a-cms-toolkit-not-a-cms)
 - **You want to define your own content models, not use someone's** → [Twill](#5-twill-a-cms-toolkit-not-a-cms) or [Filament](#6-filament-the-build-it-yourself-option)
@@ -53,14 +53,14 @@ Five questions, in the order that narrows the field fastest:
 1. **Who edits the content?** If it's a client or a marketing team, you need a real admin panel with a media library and a WYSIWYG. If it's only you, a flat-file or code-first tool is lighter.
 2. **Where should the content live?** Database (Botble, October, Twill, Winter) or flat files in Git (Statamic's default). Flat files version beautifully and hate high write volume.
 3. **How many frontends?** One Blade site → Laravel-native. Web plus native mobile apps → headless, or a Laravel-native CMS with a decent REST API.
-4. **One-time or recurring?** A per-site license you buy once behaves very differently on a 20-client agency spreadsheet than $349/year per site does.
+4. **One-time or recurring?** A per-site license you buy once behaves very differently on a 20-client agency spreadsheet than $349 per site plus $99 a year in updates does.
 5. **How much is already built?** This is the one people skip. If your project is a shop, a property portal, or a booking site, the CMS is maybe 30% of the work. Look for one that ships the other 70%.
 
 ## Comparison table
 | CMS | Type | Storage | Laravel / PHP | Pricing (2026) | License |
 |---|---|---|---|---|---|
 | **Botble CMS** | Laravel-native | Database (MySQL/MariaDB) | Laravel 13 / PHP 8.3+ | **$29 one-time, per site** ($20.30 direct) | Commercial (Envato), full source |
-| **Statamic** | Laravel-native | Flat file or database | Laravel 12–13 / PHP 8.3+ | Core free; **Pro $349/yr** per site, $99/yr after year 1 | Commercial + free core |
+| **Statamic** | Laravel-native | Flat file or database | Laravel 12–13 / PHP 8.3+ | Core free; **Pro $349** per site, then $99/yr for updates | Commercial + free core |
 | **October CMS** | Laravel-native | Database | Laravel 12 / PHP 8.2+ | Free 1st year; **$39/yr** single, $312/yr unlimited | Commercial, source included |
 | **Winter CMS** | Laravel-native | Database | Laravel 9+ / PHP 8.1+ | **Free** | MIT |
 | **Twill** | Laravel-native toolkit | Database | Laravel 9–12 / PHP 8.0+ | **Free** | MIT |
@@ -167,7 +167,7 @@ Content-first teams, publishers, and agencies where editorial UX is the deciding
 
 ### Statamic pricing
 
-Core is free forever, including for commercial use, but production sites need Pro: **$349/year per site**, dropping to $99/year after the first. Non-profit discounts and regional pricing available. [Pricing](https://statamic.com/pricing)
+Core is free forever, including for commercial use, but it allows a single admin user. A second editor, roles, revisions, multisite or the REST and GraphQL APIs need Pro: **$349 per site**, then **$99 a year** for updates. Pro is free while you're developing. Non-profit discounts and regional pricing available. [Pricing](https://statamic.com/pricing)
 
 ### Statamic trade-offs
 
@@ -421,11 +421,11 @@ No. Laravel is a framework, not a CMS. It ships routing, Eloquent, Blade, queues
 
 ### What is the best Laravel CMS in 2026?
 
-It depends on what you're optimizing for. Botble CMS gives the most finished admin panel per dollar at $29 one-time. Statamic has the best editorial experience at $349/year per site. October CMS has the largest community. Winter CMS and Twill are the best fully free, MIT-licensed options.
+It depends on what you're optimizing for. Botble CMS gives the most finished admin panel per dollar at $29 one-time. Statamic has the best editorial experience at $349 per site plus $99/year for updates. October CMS has the largest community. Winter CMS and Twill are the best fully free, MIT-licensed options.
 
 ### Is there a free Laravel CMS?
 
-Yes. Winter CMS and Twill are MIT-licensed and free for production. Statamic's Core edition is free but production sites need the Pro license. October CMS is free for the first year, then $39/year for updates.
+Yes. Winter CMS and Twill are MIT-licensed and free for production. Statamic's Core edition is free, including in production, but limited to one admin user; teams need Pro. October CMS is free for the first year, then $39/year for updates.
 
 ### Is Filament a CMS?
 
@@ -441,7 +441,7 @@ Yes. Strapi, ButterCMS, Hygraph, Directus, and Payload all work with Laravel ove
 
 ### How much does a Laravel CMS cost?
 
-Anywhere from free to $199/month. Free and MIT: Winter CMS, Twill, Filament, self-hosted Strapi. One-time: Botble CMS at $29 ($20.30 direct). Annual: October CMS $39/year single or $312/year unlimited, Statamic $349/year per site. Monthly SaaS: Strapi Cloud from $35, ButterCMS from $71, Hygraph from $199.
+Anywhere from free to $199/month. Free and MIT: Winter CMS, Twill, Filament, self-hosted Strapi. One-time: Botble CMS at $29 ($20.30 direct). Annual: October CMS $39/year single or $312/year unlimited. One-time plus updates: Statamic Pro $349 per site, then $99/year. Monthly SaaS: Strapi Cloud from $35, ButterCMS from $71, Hygraph from $199.
 
 ### Which Laravel CMS works best with AI coding assistants?
 
@@ -479,7 +479,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
       "name": "What is the best Laravel CMS in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends what you optimize for. Botble CMS gives the most finished admin panel per dollar at $29 one-time per site. Statamic has the best editorial experience at $349 per year per site. October CMS has the largest community and plugin marketplace. Winter CMS and Twill are the best fully free, MIT-licensed options."
+        "text": "It depends what you optimize for. Botble CMS gives the most finished admin panel per dollar at $29 one-time per site. Statamic has the best editorial experience at $349 per site plus $99 per year for updates. October CMS has the largest community and plugin marketplace. Winter CMS and Twill are the best fully free, MIT-licensed options."
       }
     },
     {
@@ -487,7 +487,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
       "name": "Is there a free Laravel CMS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Winter CMS and Twill are MIT-licensed and free for production use. Statamic's Core edition is free but production sites require the Pro license. October CMS is free for the first year, then $39 per year for continued updates."
+        "text": "Yes. Winter CMS and Twill are MIT-licensed and free for production use. Statamic's Core edition is free, including in production, but limited to one admin user; teams need the Pro license. October CMS is free for the first year, then $39 per year for continued updates."
       }
     },
     {
@@ -519,7 +519,7 @@ The one with the most predictable structure and readable source. Botble CMS ship
       "name": "How much does a Laravel CMS cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anywhere from free to $199 per month. Free and MIT: Winter CMS, Twill, Filament, and self-hosted Strapi. One-time: Botble CMS at $29, or $20.30 buying direct. Annual: October CMS $39 per year single or $312 per year unlimited, Statamic $349 per year per site. Monthly SaaS: Strapi Cloud from $35, ButterCMS from $71, Hygraph from $199."
+        "text": "Anywhere from free to $199 per month. Free and MIT: Winter CMS, Twill, Filament, and self-hosted Strapi. One-time: Botble CMS at $29, or $20.30 buying direct. Annual: October CMS $39 per year single or $312 per year unlimited. One-time plus updates: Statamic Pro $349 per site, then $99 per year. Monthly SaaS: Strapi Cloud from $35, ButterCMS from $71, Hygraph from $199."
       }
     },
     {
