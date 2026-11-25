@@ -1,6 +1,6 @@
 ---
 title: "Botble AI Kit: Teach Claude Code, Codex and Gemini to Write Real Botble Code"
-description: "AI assistants know Laravel, not Botble. The kit gives Claude Code, Codex and Gemini the rules we use to build Botble, and makes them check their own work."
+description: "Describe the plugin you need and get a working, tested Botble plugin you can ship to a client or sell on marketplace.botble.com. For Claude Code, Codex and Gemini."
 categories:
   - Announcements
   - Development
@@ -18,44 +18,57 @@ is_featured: false
 
 ![Botble AI Kit: an AI-written Botble table column corrected in red pen, with the checks it runs before it says done](https://botble.com/storage/news/botble-ai-kit-hero.jpg)
 
-Ask an AI assistant to add a status column to a Botble admin table and you'll usually get something that looks right.
+A client asks for a booking plugin for their spa: services, staff, time slots, a deposit at checkout, and a reminder email the day before. On a normal week that's three or four days of work before anyone tests it.
 
-It uses `Column::make('status')`, adds a `renderUsing()` closure, compares the status with `=== 'published'`, and tells you it's done. Then you open the page and every row says "Draft".
+With the **[Botble AI Kit](https://marketplace.botble.com/ai-kit)** loaded, you describe that in a paragraph. The assistant comes back with a plan: the database tables, the admin screens, the permissions, the settings page, the emails, the translations, and the tests it will write. You read it, cut what you don't need, and approve it. Then it builds the plugin one piece at a time, checks each piece, and tells you when something failed and how it fixed it. By the end of the afternoon you're clicking through a working plugin in your own admin panel, not reading a wall of generated code and hoping.
 
-Two things went wrong, and neither is the AI being stupid. `Column` silently ignores `renderUsing()`; you need `FormattedColumn`. And `status` on a Botble model isn't a string, it's an enum object, so `=== 'published'` is never true. The assistant knows Laravel very well. It just doesn't know Botble.
+That's the job we built the kit for.
 
-We've been using AI coding assistants on our own plugins and themes for most of this year, and that pattern kept repeating. The code compiled, passed a quick look, and was wrong in a way only someone who's built a few Botble plugins would spot. So we started writing the rules down where the assistant would read them. That pile of notes is now the **[Botble AI Kit](https://marketplace.botble.com/ai-kit)**.
+## Why plain AI assistants get Botble wrong
 
-## What it actually is
+AI assistants know Laravel very well. They don't know Botble. So they write code that looks fine and breaks in ways only someone who has shipped a few Botble plugins would spot: a status column that shows "Draft" on every row, a plugin that crashes the second time you activate it, a settings page that loses its values, text that can't be translated, a theme that gets soft-rejected on CodeCanyon because it loads a script from a CDN.
 
-It's a set of **skills**: plain instruction files, plus a few scripts, that your coding assistant reads before it touches Botble code. A skill says things like "tables that format a column use `FormattedColumn`", "compare enums with `->getValue()`", "guard every plugin migration with `Schema::hasTable()`, because plugins get activated and deactivated more than once", and "never load a script from a CDN, Envato will reject the item".
+We've been building our own plugins and themes with AI assistants for most of this year and kept fixing the same mistakes by hand. So we wrote the rules down where the assistant reads them before it writes a line. The kit is those rules, plus the checks we run before we ship anything.
 
-There's no server and no account. The kit sits on your machine and the assistant reads it like it reads your code. Your code doesn't go anywhere it wasn't already going.
+## From idea to marketplace
 
-It works with three assistants:
+This is the whole loop, and you can stop at any step:
 
-- **Claude Code**, as a plugin. You get commands like `/bb:plan`, `/bb:build`, `/bb:debug` and `/bb:review`.
-- **OpenAI Codex**, as skills it picks up when the task matches.
-- **Gemini and Antigravity**, as workflows (`/bb-plan`, `/bb-build` …).
+1. **Describe it** in plain words, the way you'd brief a developer.
+2. **It plans**: files, database, admin screens, permissions, settings, translations, tests. You approve or change the plan.
+3. **It builds** the plugin step by step, following the conventions the Botble team uses in its own products.
+4. **It tests**: PHP checks, code style, template checks, automated tests. Whatever fails, it fixes before moving on.
+5. **It reviews** like a senior Botble developer would: security, permissions, whether it survives an upgrade or a re-activation, and the CodeCanyon review list.
+6. **It fills in the rest**: demo data that looks real, translations into the languages you need, and the docs.
+7. **You ship it**: to your client, or zip it and upload it to [marketplace.botble.com](https://marketplace.botble.com) to sell or share with other Botble users.
 
-## The part I care about most: it checks its own work
+## What people build with it
 
-Telling an assistant the rules helps. Making it prove it followed them helps more.
+A few of the jobs we've been running through it, and what you get back:
 
-The build skill doesn't let the assistant say "done" after writing files. For every group of changes it runs the checks we run ourselves: `php -l` on PHP files, Pint for formatting, a Blade linter that catches an unclosed `@if` before it blanks a page, the plugin's PHPUnit tests, and the asset build if it touched JS or SCSS. If something fails, it fixes it first and tells you what it fixed.
+- **A booking plugin for a client site.** "Spa booking with services, staff, time slots and a deposit at checkout." You get the admin screens, a calendar view, the deposit wired into Botble's checkout, reminder emails, and tests.
+- **A local payment gateway.** "Add a bank QR payment method to my store, with webhook confirmation and refunds." You get a gateway that shows up in the payment settings like the built-in ones, handles the callback safely, and doesn't mark an order paid twice.
+- **A product import.** "Import 5,000 products from the supplier's Excel file, with images and categories." You get an importer that runs in batches, skips duplicates, and tells you which rows failed and why.
+- **An HTML template turned into a theme.** "Convert this template into a Botble theme." You get editable homepage sections, theme options for colours and logos, and demo content, instead of a hard-coded copy of the HTML.
+- **Something broke after an update.** "The checkout total is wrong since I updated Botble." It looks for the cause first, from a list of real causes we've hit, before it touches anything, so you don't end up with three new bugs.
+- **Getting a plugin ready to sell.** "Review my plugin before I upload it." You get a list of what would get it rejected, fixes for each, translations, and demo data for the screenshots.
 
-The review skill is the one I use most. Point it at your uncommitted changes, a commit, or a whole plugin folder, and it goes through Botble-specific problems: enums compared as strings, missing permission checks on routes, unescaped output in Blade, migrations that crash on re-activation, hard-coded English strings, and the list of things that get a CodeCanyon item soft-rejected.
+None of these are one prompt and done. You still read the plan, try the result, and push back when it's wrong. What changes is how much of the Botble-specific work you have to know and remember yourself.
+
+## Does it make the code bug-free?
+
+No, and I'd be wary of anything that says it does. AI assistants still make mistakes. What the kit changes is that the assistant checks its own work the way we check ours, so most of the Botble-specific mistakes get caught and fixed before you ever see them. Read the changes before you ship them. You'd do that with a new developer on the team too.
 
 ## What's inside
 
-Twenty skills and six specialist agents. Roughly:
+Twenty skills and six specialist agents, for Claude Code, OpenAI Codex and Gemini / Antigravity:
 
-- **The workflow**: plan, build, debug, review. Plan turns "add a booking module to my plugin" into a one-page list of files, migrations, permissions, translations and tests before any code gets written. Debug looks for the cause first, using about thirty causes we've actually hit, instead of trying fixes at random.
-- **How Botble works**: plugins, themes, ecommerce, admin forms and settings pages, tables and dashboard widgets, the REST API, media and storage drivers, SEO and slugs, multilingual content, assets and admin JavaScript, seeders, translations, and running a site in production.
-- **Troubleshooting**: symptom, cause, fix. Installs, upgrades, emails that don't send, images that vanish after a domain move, checkout totals that look wrong.
-- **Agents** for the bigger jobs: scaffolding a plugin with full CRUD, writing migrations that are safe to re-run, building theme shortcodes end to end, adding a payment gateway, and auditing a theme before you submit it to Envato.
+- **The workflow**: plan, build, debug, review. In Claude Code they're `/bb:plan`, `/bb:build`, `/bb:debug` and `/bb:review`; or just describe the task and the right one loads.
+- **How Botble works**: plugins, themes, ecommerce, admin forms and settings, tables and dashboards, the API, media, SEO, multilingual sites, seeders, translations, and running a site in production.
+- **Troubleshooting**: installs, upgrades, emails that don't send, images that vanish after a domain move, checkout totals that look wrong.
+- **Agents** for the bigger jobs: scaffolding a full plugin, writing safe database changes, building theme sections, adding a payment gateway, and auditing an item before you submit it.
 
-While writing it we checked every class, hook and command against the Botble 7.6 source code. We found a few places where even our own documentation had drifted from the code. The kit follows the code.
+It all runs on your machine. There's no server and no account, and your code doesn't go anywhere it wasn't already going.
 
 ## Who it's for
 
@@ -86,8 +99,6 @@ For Codex, run `./install.sh` in the `codex` folder. For Gemini or Antigravity, 
 It makes the assistant slower. Running Pint, the Blade linter and the tests after every step takes time, and for a one-line copy change that's overkill. You can tell it to skip the plan for small things, and it will.
 
 It also won't fix a bad request. "Make the shop better" still gets you a vague plan. "Add a minimum order amount to checkout, with a setting and a message on the cart page" gets you something you can review in ten minutes.
-
-And AI assistants still make mistakes, with or without the kit. It cuts out the Botble-specific ones we kept seeing, and makes the assistant check its work, but you should still read the diff before you ship it.
 
 ## Price
 
