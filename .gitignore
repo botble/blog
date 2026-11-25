@@ -1,1 +1,4 @@
 .claude/
+
+# Internal plans and reports stay local (this repo is public)
+plans/
