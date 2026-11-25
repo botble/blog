@@ -231,5 +231,5 @@ total passes it.
 
 Related: [Laravel SMS gateway and OTP](https://botble.com/laravel-sms-gateway-otp-botble) if you are
 verifying phone numbers rather than documents, and
-[the best Laravel multivendor marketplace scripts in 2026](https://botble.com/best-laravel-multivendor-marketplace-scripts-2026)
+[the best Laravel multivendor marketplace scripts in 2026](https://botble.com/best-laravel-multi-vendor-marketplace-scripts-2026-top-6)
 if you are still choosing what to build the marketplace on.
