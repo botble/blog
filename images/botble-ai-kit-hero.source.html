@@ -1,0 +1,97 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Caveat:wght@600;700&family=Inter:wght@500;600&family=JetBrains+Mono:wght@400;600&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden; background:#ebe5d8; }
+
+  .stage { position:relative; width:1200px; height:630px; overflow:hidden;
+    background:
+      repeating-linear-gradient(0deg, rgba(70,90,140,.07) 0 1px, transparent 1px 28px),
+      repeating-linear-gradient(83deg, rgba(0,0,0,.015) 0 1px, transparent 1px 7px),
+      #ebe5d8; }
+
+  .copy { position:absolute; left:64px; top:66px; width:500px; color:#1d1a16; }
+  .kicker { font:600 13px/1 'Inter',sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#1f4fa8; }
+  .kicker span { color:#6b645a; }
+  h1 { font-family:'Fraunces',serif; font-weight:400; font-size:64px; line-height:1.02; letter-spacing:-.02em;
+       margin-top:26px; font-variation-settings:"opsz" 144; }
+  h1 em { font-style:italic; color:#1f4fa8; }
+  .sub { font-family:'Fraunces',serif; font-size:21px; line-height:1.36; color:#3d3830; margin-top:24px; width:440px; }
+  .rule { width:56px; height:3px; background:#1d1a16; margin-top:28px; }
+  .foot { position:absolute; left:64px; bottom:46px; font:500 14px/1 'Inter',sans-serif; color:#6b645a; letter-spacing:.02em; }
+  .foot b { color:#1d1a16; font-weight:600; }
+
+  /* printed code page */
+  .sheet { position:absolute; left:600px; top:62px; width:470px; height:330px; background:#fbfaf5; transform:rotate(-3deg);
+           box-shadow:0 1px 1px rgba(0,0,0,.12), 0 14px 30px -12px rgba(40,30,15,.45); padding:22px 24px; }
+  .sheet .file { font:600 11px/1 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#8a8377; margin-bottom:14px; }
+  .code { font:400 14.5px/1.75 'JetBrains Mono',monospace; color:#2b2721; white-space:pre; font-variant-ligatures:none; font-feature-settings:'calt' 0, 'liga' 0; }
+  .code .ln { color:#b9b2a5; display:inline-block; width:26px; }
+  .code .k { color:#1f4fa8; }
+  .code .s { color:#2f7a4b; }
+  .code .bad { text-decoration: line-through; text-decoration-color:#b3261e; text-decoration-thickness:2px; }
+  .code .good { background:rgba(255,226,120,.55); }
+  .tape { position:absolute; width:96px; height:26px; background:rgba(236,226,196,.85); box-shadow:0 1px 2px rgba(0,0,0,.08); }
+
+  /* checklist sticky */
+  .sticky { position:absolute; left:892px; top:352px; width:250px; height:210px; background:#fde68a; transform:rotate(4deg);
+            box-shadow:0 2px 2px rgba(0,0,0,.08), 0 16px 26px -14px rgba(60,40,0,.5); padding:20px 22px; z-index:3; }
+  .sticky h3 { font:700 26px/1 'Caveat',cursive; color:#3a2f12; margin-bottom:10px; }
+  .sticky li { list-style:none; font:600 22px/1.32 'Caveat',cursive; color:#3a2f12; }
+  .sticky li b { color:#2f7a4b; font-weight:700; }
+
+  /* terminal chip */
+  .chip { position:absolute; left:598px; top:426px; background:#1d1a16; color:#efe9dc; border-radius:10px; padding:12px 16px;
+          font:400 14px/1.5 'JetBrains Mono',monospace; font-variant-ligatures:none; font-feature-settings:'calt' 0; box-shadow:0 12px 24px -12px rgba(0,0,0,.6); z-index:2; transform:rotate(-1deg); }
+  .chip .p { color:#f0b45a; }
+  .chip .d { color:#8fd19e; }
+
+  svg.pencil { position:absolute; left:0; top:0; z-index:5; overflow:visible; }
+  .note { position:absolute; font-family:'Caveat',cursive; font-weight:700; color:#b3261e; z-index:6; line-height:1; }
+</style></head>
+<body><div class="stage">
+
+  <div class="copy">
+    <div class="kicker">Botble AI Kit &nbsp;·&nbsp; <span>Claude Code, Codex, Gemini</span></div>
+    <h1>Your AI knows<br>Laravel. Teach<br>it <em>Botble.</em></h1>
+    <p class="sub">The rules we follow when we build Botble ourselves, packed as skills your coding assistant reads before it writes a line.</p>
+    <div class="rule"></div>
+  </div>
+  <div class="foot"><b>botble.com</b>&nbsp;&nbsp;/&nbsp;&nbsp;blog</div>
+
+  <div class="sheet">
+    <div class="tape" style="left:180px; top:-13px; transform:rotate(-2deg)"></div>
+    <div class="file">platform/plugins/blog · PostTable.php</div>
+<div class="code"><span class="ln">41</span>FormattedColumn::<span class="k">make</span>(<span class="s">'status'</span>)
+<span class="ln">42</span>  -&gt;<span class="k">renderUsing</span>(fn ($col) =&gt;
+<span class="ln">43</span>    <span class="bad">$col-&gt;getItem()-&gt;status === <span class="s">'published'</span></span>
+<span class="ln">44</span>    <span class="good">$col-&gt;getItem()-&gt;status-&gt;<span class="k">getValue</span>()</span>
+<span class="ln">45</span>      <span class="good">=== BaseStatusEnum::PUBLISHED</span>
+<span class="ln">46</span>      ? <span class="s">'Live'</span> : <span class="s">'Draft'</span>
+<span class="ln">47</span>  ),</div>
+  </div>
+
+  <div class="chip"><span class="p">&gt;</span> /bb:review<br><span class="d">✓</span> fixed: enum vs string</div>
+
+  <div class="sticky">
+    <h3>before it says "done"</h3>
+    <ul>
+      <li><b>✓</b> php -l</li>
+      <li><b>✓</b> Pint</li>
+      <li><b>✓</b> Blade lint</li>
+      <li><b>✓</b> PHPUnit green</li>
+    </ul>
+  </div>
+
+  <svg class="pencil" width="1200" height="630">
+    <!-- loop around the wrong line -->
+    <path d="M640 182 C 700 150, 1000 150, 1040 172 C 1070 192, 930 206, 780 203 C 670 200, 615 198, 640 182 Z"
+          fill="none" stroke="#b3261e" stroke-width="3" stroke-linecap="round" transform="translate(0,-9) rotate(-3 840 180)"/>
+    <!-- arrow to the note -->
+    <path d="M1048 166 C 1075 142, 1092 126, 1102 112" fill="none" stroke="#b3261e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1090 116 L1103 110 L1104 125" fill="none" stroke="#b3261e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <div class="note" style="left:1010px; top:50px; font-size:30px; transform:rotate(4deg)">it's an enum,<br>not a string!</div>
+
+</div></body></html>
