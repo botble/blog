@@ -55,6 +55,20 @@ A few of the jobs we've been running through it, and what you get back:
 
 None of these are one prompt and done. You still read the plan, try the result, and push back when it's wrong. What changes is how much of the Botble-specific work you have to know and remember yourself.
 
+## We build our own plugins this way
+
+This isn't a kit we wrote for other people and never used. For the last six months our team has planned, built, tested and reviewed the Botble plugins we sell with these same skills. Between late May and late November we shipped **4 new plugins** and **98 releases across 28 Botble and FriendsOfBotble plugins**, every one of them through plan, build, test and review.
+
+The new ones:
+
+- **[Landing Funnel](https://marketplace.botble.com/products/botble/landing-funnel)** (June): single-product ad landing pages with a one-page checkout for Botble Ecommerce. It has had 14 releases since.
+- **[BB Popup](https://marketplace.botble.com/products/botble/bb-popup)** and **[BB Store Locator](https://marketplace.botble.com/products/botble/bb-store-locator)** (August): popups with triggers, targeting and conversion stats, and a store locator that works with Google Maps or OpenStreetMap, no API key needed.
+- **[Website Translator](https://marketplace.botble.com/products/botble/website-translator)** (October): translates a whole Botble site into 45 languages with a flag switcher.
+
+And the ones that kept moving: [Live Chat](https://marketplace.botble.com/products/botble/live-chat) had 12 releases, [Loyalty Points](https://marketplace.botble.com/products/botble/loyalty-points) 11, [Wholesale](https://marketplace.botble.com/products/botble/ecommerce-wholesale) 7 and [E-Wallet](https://marketplace.botble.com/products/botble/e-wallet) 6. Most of those releases are small and unglamorous: an edge case a customer reported, planned, fixed with a test, and reviewed before it goes out.
+
+You can see all of them, with their changelogs, on [marketplace.botble.com/plugins](https://marketplace.botble.com/plugins).
+
 ## Does it make the code bug-free?
 
 No, and I'd be wary of anything that says it does. AI assistants still make mistakes. What the kit changes is that the assistant checks its own work the way we check ours, so most of the Botble-specific mistakes get caught and fixed before you ever see them. Read the changes before you ship them. You'd do that with a new developer on the team too.
