@@ -107,8 +107,9 @@ $service->syncCategories($post, $parsed['front_matter']['categories'] ?? []);
 $service->syncTags($post, $parsed['front_matter']['tags'] ?? []);
 ```
 
-Run it as `sudo -u nginx env HOME=/tmp php artisan tinker /tmp/script.php` (psysh cannot write to
-the nginx user's home). The real fix belongs in the plugin: match on the decoded name, or on slug.
+Run it as `sudo -u nginx env HOME=/tmp php artisan tinker /tmp/script.php < /dev/null` (psysh cannot write to
+the nginx user's home). Without `< /dev/null`, tinker runs the script and then waits for input forever
+over SSH (hit 25/11/2026 on the POS backlink; the update itself had applied). The real fix belongs in the plugin: match on the decoded name, or on slug.
 
 ## Success criteria
 
