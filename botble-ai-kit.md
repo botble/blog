@@ -48,7 +48,7 @@ The review skill is the one I use most. Point it at your uncommitted changes, a 
 
 ## What's inside
 
-Nineteen skills and six specialist agents. Roughly:
+Twenty skills and six specialist agents. Roughly:
 
 - **The workflow**: plan, build, debug, review. Plan turns "add a booking module to my plugin" into a one-page list of files, migrations, permissions, translations and tests before any code gets written. Debug looks for the cause first, using about thirty causes we've actually hit, instead of trying fixes at random.
 - **How Botble works**: plugins, themes, ecommerce, admin forms and settings pages, tables and dashboard widgets, the REST API, media and storage drivers, SEO and slugs, multilingual content, assets and admin JavaScript, seeders, translations, and running a site in production.
