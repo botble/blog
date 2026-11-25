@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+  .stage { position:relative; width:1200px; height:630px;
+           background:linear-gradient(145deg,#0d1117 0%,#14202a 55%,#1c2a33 100%); overflow:hidden; }
+  .bloom { position:absolute; border-radius:50%; filter:blur(110px); }
+  .bloom.a { width:500px; height:500px; background:#10b981; opacity:.20; top:-200px; left:-120px; }
+  .bloom.b { width:470px; height:470px; background:#f59e0b; opacity:.18; bottom:-200px; right:-110px; }
+  .content { position:relative; padding:56px 64px 0; }
+  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
+             letter-spacing:1.7px; color:#6ee7b7; background:rgba(16,185,129,.12);
+             border:1px solid rgba(110,231,183,.3); padding:7px 14px; border-radius:8px; }
+  h1 { margin-top:22px; font-size:54px; line-height:1.08; font-weight:900; color:#fff; letter-spacing:-1.5px; max-width:590px; }
+  h1 em { font-style:normal; color:#fcd34d; }
+  p.sub { margin-top:18px; font-size:18px; color:#93a4bb; max-width:520px; line-height:1.55; }
+  .panel { position:absolute; right:64px; top:92px; width:420px;
+           background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.11);
+           border-radius:15px; padding:20px 22px; }
+  .panel h2 { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700; color:#cbd5e1;
+              letter-spacing:1.1px; margin-bottom:14px; }
+  table { width:100%; border-collapse:collapse; }
+  td { font-size:15px; color:#e2e8f0; padding:8px 0; border-top:1px solid rgba(255,255,255,.06); text-align:right; font-weight:700; }
+  td:first-child { text-align:left; font-weight:600; color:#cbd5e1; }
+  td small { font-size:11.5px; color:#64748b; font-weight:600; }
+  .note { margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:11px; color:#64748b; line-height:1.5; }
+  .strip { position:absolute; left:64px; bottom:52px; display:flex; align-items:stretch; gap:13px; }
+  .chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+          border-radius:12px; padding:13px 17px; }
+  .chip.hot { border-color:rgba(110,231,183,.28); background:rgba(16,185,129,.09); }
+  .chip .k { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#64748b; letter-spacing:.6px; }
+  .chip .v { margin-top:5px; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.4px; }
+  .chip .v small { font-size:12.5px; font-weight:600; color:#93a4bb; }
+  .vs { align-self:center; font-family:'JetBrains Mono',monospace; font-size:12px; color:#475569; }
+</style></head>
+<body>
+  <div class="stage">
+    <div class="bloom a"></div><div class="bloom b"></div>
+    <div class="content">
+      <span class="eyebrow">LARAVEL POS SYSTEM &middot; 2026</span>
+      <h1>Your till and your website<br><em>should count the<br>same stock.</em></h1>
+      <p class="sub">Six self-hosted POS systems compared, and the test most buyers skip.</p>
+    </div>
+    <div class="panel">
+      <h2>HOSTED POS, PER LOCATION</h2>
+      <table>
+        <tr><td>Shopify POS Pro</td><td>$89 <small>/ month + plan</small></td></tr>
+        <tr><td>Square Plus</td><td>$49 <small>/ month + 2.5%</small></td></tr>
+        <tr><td>Square Free</td><td>$0 <small>+ 2.6% + 15&cent;</small></td></tr>
+        <tr><td>Loyverse inventory</td><td>$25 <small>/ store / month</small></td></tr>
+      </table>
+      <div class="note">Pricing pages checked 25 Nov 2026.</div>
+    </div>
+    <div class="strip">
+      <div class="chip"><div class="k">SELF&#8209;HOSTED SCRIPT</div><div class="v">$21&ndash;$79 <small>once</small></div></div>
+      <div class="vs">but ask</div>
+      <div class="chip hot"><div class="k">ONE STOCK COUNT?</div><div class="v">till = website <small>or a sync</small></div></div>
+      <div class="vs">and</div>
+      <div class="chip"><div class="k">WI&#8209;FI DROPS</div><div class="v">still selling? <small></small></div></div>
+    </div>
+  </div>
+</body></html>
