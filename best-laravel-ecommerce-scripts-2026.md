@@ -200,6 +200,8 @@ Once you've picked single vs multi-vendor, run candidates through these seven fi
 
 A common rookie mistake is buying the cheapest script and discovering the gateway you need is a $39 paid add-on. Always check the add-on costs on the author's CodeCanyon profile before purchase.
 
+Selling in a physical shop as well? Check how the script's POS handles stock before anything else. Some count the counter and the website from one stock table, others sync two systems. Our [Laravel POS system comparison](https://botble.com/laravel-pos-system-2026) walks through six self-hosted options and the demo tests that tell them apart.
+
 ## What if you want to host stores for other people?
 
 Every script above sells you one store. Every so often someone writes in wanting the other thing: merchants signing up on *their* domain, paying *them* monthly, each with their own shop. A small Shopify for one country or one niche.
