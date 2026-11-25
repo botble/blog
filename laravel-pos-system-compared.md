@@ -12,12 +12,12 @@ tags:
   - laravel
   - pos-pro
   - botble
-image: https://botble.com/storage/news/laravel-pos-system-hero.jpg
+image: https://botble.com/storage/news/laravel-pos-system-hero-v2.jpg
 status: published
 is_featured: false
 ---
 
-![Six self-hosted POS systems compared with Shopify POS, Square and Loyverse](https://botble.com/storage/news/laravel-pos-system-hero.jpg)
+![Six self-hosted POS systems compared with Shopify POS, Square and Loyverse](https://botble.com/storage/news/laravel-pos-system-hero-v2.jpg)
 
 A shop with a website has two places that sell the same box of tea.
 

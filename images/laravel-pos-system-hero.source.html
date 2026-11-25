@@ -1,66 +1,106 @@
 <!doctype html>
 <html><head><meta charset="utf-8">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { width:1200px; height:630px; overflow:hidden;
-         font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
-  .stage { position:relative; width:1200px; height:630px;
-           background:linear-gradient(145deg,#0d1117 0%,#14202a 55%,#1c2a33 100%); overflow:hidden; }
-  .bloom { position:absolute; border-radius:50%; filter:blur(110px); }
-  .bloom.a { width:500px; height:500px; background:#10b981; opacity:.20; top:-200px; left:-120px; }
-  .bloom.b { width:470px; height:470px; background:#f59e0b; opacity:.18; bottom:-200px; right:-110px; }
-  .content { position:relative; padding:56px 64px 0; }
-  .eyebrow { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;
-             letter-spacing:1.7px; color:#6ee7b7; background:rgba(16,185,129,.12);
-             border:1px solid rgba(110,231,183,.3); padding:7px 14px; border-radius:8px; }
-  h1 { margin-top:22px; font-size:54px; line-height:1.08; font-weight:900; color:#fff; letter-spacing:-1.5px; max-width:590px; }
-  h1 em { font-style:normal; color:#fcd34d; }
-  p.sub { margin-top:18px; font-size:18px; color:#93a4bb; max-width:520px; line-height:1.55; }
-  .panel { position:absolute; right:64px; top:92px; width:420px;
-           background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.11);
-           border-radius:15px; padding:20px 22px; }
-  .panel h2 { font-family:'JetBrains Mono',monospace; font-size:11.5px; font-weight:700; color:#cbd5e1;
-              letter-spacing:1.1px; margin-bottom:14px; }
-  table { width:100%; border-collapse:collapse; }
-  td { font-size:15px; color:#e2e8f0; padding:8px 0; border-top:1px solid rgba(255,255,255,.06); text-align:right; font-weight:700; }
-  td:first-child { text-align:left; font-weight:600; color:#cbd5e1; }
-  td small { font-size:11.5px; color:#64748b; font-weight:600; }
-  .note { margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:11px; color:#64748b; line-height:1.5; }
-  .strip { position:absolute; left:64px; bottom:52px; display:flex; align-items:stretch; gap:13px; }
-  .chip { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
-          border-radius:12px; padding:13px 17px; }
-  .chip.hot { border-color:rgba(110,231,183,.28); background:rgba(16,185,129,.09); }
-  .chip .k { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#64748b; letter-spacing:.6px; }
-  .chip .v { margin-top:5px; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.4px; }
-  .chip .v small { font-size:12.5px; font-weight:600; color:#93a4bb; }
-  .vs { align-self:center; font-family:'JetBrains Mono',monospace; font-size:12px; color:#475569; }
+  body { width:1200px; height:630px; overflow:hidden; font-family:'Inter',sans-serif; }
+  .stage { position:relative; width:1200px; height:630px; overflow:hidden;
+           background:#f6efe3; }
+  .stage::before { content:''; position:absolute; inset:0;
+           background:radial-gradient(circle at 85% 15%, #ffd9b3 0, transparent 38%),
+                      radial-gradient(circle at 10% 95%, #d7ead9 0, transparent 40%); }
+
+  .copy { position:absolute; left:64px; top:64px; width:470px; }
+  .tag { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700;
+         letter-spacing:1.6px; color:#9a4a22; background:#fbe2cf; padding:7px 13px; border-radius:999px; }
+  h1 { margin-top:24px; font-family:'Fraunces',serif; font-weight:800; font-size:62px; line-height:1.02;
+       color:#2b2118; letter-spacing:-1.5px; }
+  h1 em { font-style:italic; font-weight:600; color:#c2561f; }
+  p.sub { margin-top:22px; font-size:19px; line-height:1.5; color:#6b5a48; }
+  .foot { position:absolute; left:64px; bottom:56px; display:flex; gap:10px; }
+  .pill { font-size:14px; font-weight:600; color:#4a3b2c; background:#fffaf2; border:1.5px solid #e6d8c3;
+          padding:9px 15px; border-radius:999px; }
+  .pill b { color:#2f7a4f; }
+
+  /* receipt */
+  .receipt { position:absolute; left:620px; top:118px; width:228px; background:#fffdf8;
+             padding:22px 20px 30px; transform:rotate(-5deg);
+             box-shadow:0 18px 40px rgba(80,50,20,.16), 0 2px 6px rgba(80,50,20,.08);
+             font-family:'JetBrains Mono',monospace; color:#3d3126; }
+  .receipt::after { content:''; position:absolute; left:0; right:0; bottom:-10px; height:12px;
+             background:linear-gradient(-45deg, transparent 6px, #fffdf8 0) 0 0/12px 12px,
+                        linear-gradient(45deg, transparent 6px, #fffdf8 0) 0 0/12px 12px; }
+  .receipt .shop { text-align:center; font-weight:700; font-size:14px; letter-spacing:1px; }
+  .receipt .meta { text-align:center; font-size:10.5px; color:#9b8b78; margin-top:4px; }
+  .receipt hr { border:0; border-top:1.5px dashed #d9ccb9; margin:13px 0; }
+  .line { display:flex; justify-content:space-between; font-size:12.5px; margin:6px 0; }
+  .line.hl { background:#fff1c7; margin:6px -6px; padding:3px 6px; border-radius:3px; }
+  .total { display:flex; justify-content:space-between; font-size:14px; font-weight:700; }
+  .paid { margin-top:10px; font-size:10.5px; color:#9b8b78; text-align:center; }
+
+  /* product card (website) */
+  .web { position:absolute; left:842px; top:236px; width:300px; background:#fff; border-radius:16px;
+         transform:rotate(3deg); overflow:hidden;
+         box-shadow:0 22px 46px rgba(80,50,20,.18), 0 2px 6px rgba(80,50,20,.08); }
+  .bar { height:30px; background:#f1e8db; display:flex; align-items:center; gap:6px; padding:0 12px; }
+  .bar i { width:9px; height:9px; border-radius:50%; background:#dccbb3; display:block; }
+  .bar span { margin-left:10px; font-size:10.5px; color:#9b8b78; font-family:'JetBrains Mono',monospace; }
+  .prod { display:flex; gap:14px; padding:16px; }
+  .tin { width:78px; height:92px; border-radius:10px; position:relative;
+         background:linear-gradient(160deg,#2f7a4f,#1f5a39); }
+  .tin::before { content:''; position:absolute; left:12px; right:12px; top:26px; height:34px; border-radius:4px; background:#f6efe3; }
+  .tin::after { content:'OOLONG'; position:absolute; left:0; right:0; top:35px; text-align:center;
+                font-family:'Fraunces',serif; font-weight:800; font-size:11px; color:#1f5a39; }
+  .info h3 { font-family:'Fraunces',serif; font-size:17px; font-weight:800; color:#2b2118; }
+  .info .price { margin-top:4px; font-size:14px; color:#6b5a48; font-weight:600; }
+  .stock { margin-top:10px; display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700;
+           color:#2f7a4f; background:#e3f2e7; padding:5px 9px; border-radius:999px; }
+  .stock::before { content:''; width:7px; height:7px; border-radius:50%; background:#2f7a4f; }
+  .btn { margin:0 16px 16px; text-align:center; background:#c2561f; color:#fff; font-weight:700; font-size:13px;
+         padding:10px; border-radius:9px; }
+
+  /* the shared-stock link */
+  .link { position:absolute; left:780px; top:470px; width:190px; height:70px; }
+  .badge { position:absolute; left:700px; top:486px; background:#2b2118; color:#fff; border-radius:12px;
+           padding:10px 14px; font-size:13.5px; font-weight:600; box-shadow:0 10px 24px rgba(43,33,24,.25); }
+  .badge b { color:#ffcf8a; }
 </style></head>
 <body>
   <div class="stage">
-    <div class="bloom a"></div><div class="bloom b"></div>
-    <div class="content">
-      <span class="eyebrow">LARAVEL POS SYSTEM &middot; 2026</span>
-      <h1>Your till and your website<br><em>should count the<br>same stock.</em></h1>
-      <p class="sub">Six self-hosted POS systems compared, and the test most buyers skip.</p>
+    <div class="copy">
+      <span class="tag">LARAVEL POS · 2026</span>
+      <h1>One box of tea.<br><em>Two places</em><br>to sell it.</h1>
+      <p class="sub">Six self-hosted POS systems compared, and the stock test most buyers skip.</p>
     </div>
-    <div class="panel">
-      <h2>HOSTED POS, PER LOCATION</h2>
-      <table>
-        <tr><td>Shopify POS Pro</td><td>$89 <small>/ month + plan</small></td></tr>
-        <tr><td>Square Plus</td><td>$49 <small>/ month + 2.5%</small></td></tr>
-        <tr><td>Square Free</td><td>$0 <small>+ 2.6% + 15&cent;</small></td></tr>
-        <tr><td>Loyverse inventory</td><td>$25 <small>/ store / month</small></td></tr>
-      </table>
-      <div class="note">Pricing pages checked 25 Nov 2026.</div>
+    <div class="foot">
+      <div class="pill">Counter + website</div>
+      <div class="pill"><b>one</b> stock count</div>
     </div>
-    <div class="strip">
-      <div class="chip"><div class="k">SELF&#8209;HOSTED SCRIPT</div><div class="v">$21&ndash;$79 <small>once</small></div></div>
-      <div class="vs">but ask</div>
-      <div class="chip hot"><div class="k">ONE STOCK COUNT?</div><div class="v">till = website <small>or a sync</small></div></div>
-      <div class="vs">and</div>
-      <div class="chip"><div class="k">WI&#8209;FI DROPS</div><div class="v">still selling? <small></small></div></div>
+
+    <div class="receipt">
+      <div class="shop">THE TEA CORNER</div>
+      <div class="meta">Register 1 · 10:00</div>
+      <hr>
+      <div class="line hl"><span>Oolong tea, box</span><span>$14</span></div>
+      <div class="line"><span>Honey jar</span><span>$9</span></div>
+      <div class="line"><span>Paper bag</span><span>$0</span></div>
+      <hr>
+      <div class="total"><span>TOTAL</span><span>$23</span></div>
+      <div class="paid">Cash $10 · Card $13</div>
     </div>
+
+    <div class="web">
+      <div class="bar"><i></i><i></i><i></i><span>teacorner.shop/oolong</span></div>
+      <div class="prod">
+        <div class="tin"></div>
+        <div class="info">
+          <h3>Oolong tea, box</h3>
+          <div class="price">$14.00</div>
+          <div class="stock">11 left</div>
+        </div>
+      </div>
+      <div class="btn">Add to cart</div>
+    </div>
+    <div class="badge">Sold at the counter → <b>12 becomes 11</b> online</div>
   </div>
 </body></html>
