@@ -22,7 +22,11 @@ A client asks for a booking plugin for their spa: services, staff, time slots, a
 
 With the **[Botble AI Kit](https://marketplace.botble.com/ai-kit)** loaded, you describe that in a paragraph. The assistant comes back with a plan: the database tables, the admin screens, the permissions, the settings page, the emails, the translations, and the tests it will write. You read it, cut what you don't need, and approve it. Then it builds the plugin one piece at a time, checks each piece, and tells you when something failed and how it fixed it. By the end of the afternoon you're clicking through a working plugin in your own admin panel, not reading a wall of generated code and hoping.
 
-That's the job we built the kit for.
+That's the job we built the kit for. Here's the whole loop in 82 seconds:
+
+[youtube-video]//www.youtube.com/embed/q-nkpYzYRdQ?rel=0[/youtube-video]
+
+The chapters on [YouTube](https://youtu.be/q-nkpYzYRdQ) jump to the sample session (0:00), what you can build (0:25), real plugins we shipped with the kit (0:46), and install and pricing (1:06).
 
 ## Why plain AI assistants get Botble wrong
 
