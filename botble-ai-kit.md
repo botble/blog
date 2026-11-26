@@ -1,6 +1,6 @@
 ---
 title: "Botble AI Kit: Teach Claude Code, Codex and Gemini to Write Real Botble Code"
-description: "Describe the plugin you need and get a working, tested Botble plugin you can ship to a client or sell on marketplace.botble.com. For Claude Code, Codex and Gemini."
+description: "Describe what you need and get a working, tested Botble plugin, theme or complete script, even for a niche Botble does not sell yet. For Claude Code, Codex and Gemini."
 categories:
   - Announcements
   - Development
@@ -54,6 +54,7 @@ A few of the jobs we've been running through it, and what you get back:
 - **A local payment gateway.** "Add a bank QR payment method to my store, with webhook confirmation and refunds." You get a gateway that shows up in the payment settings like the built-in ones, handles the callback safely, and doesn't mark an order paid twice.
 - **A product import.** "Import 5,000 products from the supplier's Excel file, with images and categories." You get an importer that runs in batches, skips duplicates, and tells you which rows failed and why.
 - **An HTML template turned into a theme.** "Convert this template into a Botble theme." You get editable homepage sections, theme options for colours and logos, and demo content, instead of a hard-coded copy of the HTML.
+- **A complete script for a niche we don't sell.** "A clinic booking script on Botble CMS: doctors, schedules, online appointments and payments." Botble has no script for that yet, so you build one: the plugins for the domain with their admin screens, permissions and settings, a theme with editable homepage sections, and demo data, packaged to sell or to deliver to a client.
 - **Something broke after an update.** "The checkout total is wrong since I updated Botble." It looks for the cause first, from a list of real causes we've hit, before it touches anything, so you don't end up with three new bugs.
 - **Getting a plugin ready to sell.** "Review my plugin before I upload it." You get a list of what would get it rejected, fixes for each, translations, and demo data for the screenshots.
 
@@ -90,7 +91,7 @@ It all runs on your machine. There's no server and no account, and your code doe
 
 ## Who it's for
 
-If you build client sites on Botble, customise themes and plugins for a living, or sell your own items on CodeCanyon, this is for you. It's most useful when you already use an AI assistant and keep catching it writing generic Laravel where Botble has its own way.
+If you build client sites on Botble, customise themes and plugins for a living, sell your own items on CodeCanyon, or want a script for a niche Botble doesn't cover yet, this is for you. It's most useful when you already use an AI assistant and keep catching it writing generic Laravel where Botble has its own way.
 
 If you've never used Claude Code or Codex, you can still start here, but expect to spend an evening getting used to the assistant itself. The kit makes it better at Botble. It doesn't make it magic.
 
